@@ -1,9 +1,8 @@
 ---
 title: Penghui Du 杜鹏辉
 role: Undergraduate
-avatar_filename: untitled.png
-bio: My research interests include distributed robotics, mobile computing and
-  programmable matter.
+avatar_filename: avatar.png
+bio: ""
 interests:
   - Artificial Intelligence
   - Computational Linguistics
