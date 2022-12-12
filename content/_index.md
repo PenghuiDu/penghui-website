@@ -29,8 +29,8 @@ sections:
           company_url: ''
           company_logo: sustech
           location: Shenzhen
-          date_start: '2020-09'
-          date_end: '2024-06'
+          date_start: '2020-08-27'
+          date_end: '2024-06-27'
           description: |2-
               * Major: Intelligent Medical Engineering
               * Academic Supervisor: Professor Quanying Liu
