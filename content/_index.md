@@ -24,6 +24,19 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+      
+        - title: Undergraduate
+          company: Southern University of Science and Technology
+          company_url: ''
+          company_logo: sustech
+          location: Shenzhen
+          date_start: '2020-08-27'
+          date_end: '2024-06-27'
+          description: |2-
+              * Major: Intelligent Medical Engineering
+              * Academic Supervisor: Professor Quanying Liu
+              * Current GPA: 3.81 / 4
+              * Current Ranking: 3 / 21
         - title: Undergraduate
           company: Southern University of Science and Technology
           company_url: ''
