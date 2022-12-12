@@ -47,14 +47,12 @@ tags:
   - Cognitive tasks
 projects: []
 image:
-  caption: "Image credit:
-    [**Unsplash**](https://github.com/PenghuiDu/penghui-website/blob/main/image\
-    s/Transfer%20Learning%20to%20Decode.png)"
+  caption: https://github.com/PenghuiDu/penghui-website/blob/main/images/Transfer%20Learning%20to%20Decode.png
   focal_point: ""
   preview_only: false
 date: 2022-11-29T00:00:00.000Z
 url_slides: ""
-publishDate: 2017-01-01T00:00:00Z
+publishDate: 2017-01-01T00:00:00.000Z
 url_poster: ""
 url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 ---
