@@ -36,4 +36,4 @@ highlight_name: true
 first_name: Alice
 email: duph2020@mail.sustech.edu.cn
 ---
-I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. I’m interested in developing neural encoding and decoding models for brain-computer interfaces. I plan to pursue a PhD in this field and do related research in the future.{style="text-align: justify;"}
+I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. I’m interested in developing neural encoding and decoding models for brain-computer interfaces. I plan to pursue a PhD in this field and do related research in the future.
