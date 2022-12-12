@@ -1,7 +1,7 @@
 ---
 title: Penghui Du 杜鹏辉
 role: Undergraduate
-avatar_filename: avatar.png
+avatar_filename: avatar.jpg
 bio: ""
 interests:
   - Artificial Intelligence
