@@ -42,7 +42,7 @@ sections:
           company_url: ''
           company_logo: UZH
           location: Zurich
-          date_start: '2023-02-1'
+          date_start: '2023-02-01'
           date_end: '2023-07-31'
           description: |2-
               * Major: Neuroinformatics
