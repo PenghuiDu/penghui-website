@@ -12,7 +12,7 @@ en:
 zh:
  languageCode: zh
  contentDir: content/zh
- title: 杜鹏辉的个人网站
+ title: Penghui's Personal Website
  params:
    description: Site description in Chinese...
  menu:
