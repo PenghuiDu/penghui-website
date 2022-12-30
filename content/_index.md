@@ -61,7 +61,7 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
+        - certificate_url: https://github.com/PenghuiDu/penghui-website/blob/main/static/uploads/Neuromatch%20Certificate.pdf
           date_end: ''
           date_start: '2022-07-30'
           description: 'In this summer school, I learned basic principles of computational neuroscience such as reinforcement learning, leaky Integrate-and-Fire models, Hodgkin-Huxley models and Bayesian inference with other students in our team. After that, we did a project on RNN and working memory and gave a presentation on our result.'
@@ -70,13 +70,13 @@ sections:
           title: 2022 Neuromatch Computational Neuroscience Summer School
           url: ''
 
-        - certificate_url: https://www.edx.org
+        - certificate_url: https://raw.githubusercontent.com/PenghuiDu/penghui-website/main/static/uploads/CLS-CIBR-IDG.jpg
           date_end: ''
           date_start: '2022-07-10'
           description: Formulated informed blockchain models, hypotheses, and use cases.
-          organization: IDG/McGovern Institute for Brain Research at Tsinghua University and Peking University
+          organization: Tsinghua University and Peking University
           organization_url: http://mcgovern.life.tsinghua.edu.cn
-          title: CLS-CIBR-IDG Summer School in Neuroscience
+          title: Merit Student of CLS-CIBR-IDG Summer School in Neuroscience
           url: ''
 
         - certificate_url: https://www.datacamp.com
