@@ -1,5 +1,5 @@
 ---
-title: Penghui Du 杜鹏辉
+title: 杜鹏辉 Penghui Du
 role: 本科生
 avatar_filename: avatar.jpg
 bio: ""
