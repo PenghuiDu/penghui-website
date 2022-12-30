@@ -67,6 +67,7 @@ sections:
           description: ': In this summer school, I learned basic principles of computational neuroscience such as reinforcement learning, leaky Integrate-and-Fire models, Hodgkin-Huxley models and Bayesian inference with other students in our team. After that, we did a project on RNN and working memory and gave a presentation on our result.'
           organization: Neuromatch Academy
           organization_url: https://neuromatch.io/
+          company_logo: Neuromatch
           title: 2022 Neuromatch Computational Neuroscience Summer School
           url: ''
 
