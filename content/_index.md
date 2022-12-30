@@ -37,7 +37,7 @@ sections:
               * Academic Supervisor: Professor Quanying Liu
               * Current GPA: 3.81 / 4
               * Current Ranking: 3 / 21
-        - title: Regular Visiting Student
+        - title: Visiting Student
           company: University of Zurich
           company_url: ''
           company_logo: UZH
@@ -45,7 +45,7 @@ sections:
           date_start: '2023-02-01'
           date_end: '2023-07-31'
           description: |2-
-              * Major: Neuroinformatics
+              * Main Subject: Neuroinformatics
     design:
       columns: '2'
   - block: accomplishments
