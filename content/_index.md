@@ -80,20 +80,18 @@ sections:
           url: ''
 
         - certificate_url: https://penghui-du.com/uploads/bme.jpg
-          date_end: ''
-          date_start: '2022-07-01'
-            description: 'In the competition, we trained a deep learning model to segment critical organs in CT images. We developed a novel pretraining approach and achieved an accuracy of 85% in the segmentation task. As a result of our efforts, our team won first prize in the competition, beating out 188 other teams. As the team leader, I was responsible for building the model and writing the report.'
-          
+          date_end: '2022-07-01'
+          date_start: '2022-03-20'
+          description: 'In the competition, we trained a deep learning model to segment critical organs in CT images. We developed a novel pretraining approach and achieved an accuracy of 85% in the segmentation task. As a result of our efforts, our team won first prize in the competition, beating out 188 other teams. As the team leader, I was responsible for building the model and writing the report.'
           organization: Guangdong Biomedical Engineering Association
           organization_url: http://gdsbme.com/
           title: 'First Prize in 2022 Guangdong Undergraduate Biomedical Engineering Innovation Design Competition'
           url: ''
 
         - certificate_url: https://penghui-du.com/uploads/challenge_cup.pdf
-          date_end: ''
-          date_start: '2022-07-01'
-            description: 'In the competition, We designed a business plan for manufactoring brain health monitor devices for severely ill newborns. After seven month's hard work, we finally completed our work and won the first prize in the competition. As the team leader, I'm responsible for thinking of technical ideas and designing business plan.'
-          
+          date_end: '2022-07-01'
+          date_start: '2021-12-01'
+          description: 'In the competition, We designed a business plan for manufactoring brain health monitor devices for severely ill newborns. After seven month's hard work, we finally completed our work and won the first prize in the competition. As the team leader, I'm responsible for thinking of technical ideas and designing business plan.'
           organization: Department of Education of Guangdong Province
           organization_url: http://edu.gd.gov.cn/
           title: 'First prize in 13th "Challenge Cup" Entrepreneurship Plan Competition.'
