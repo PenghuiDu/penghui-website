@@ -73,7 +73,7 @@ sections:
         - certificate_url: https://raw.githubusercontent.com/PenghuiDu/penghui-website/main/static/uploads/CLS-CIBR-IDG.jpg
           date_end: ''
           date_start: '2022-07-10'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
+          description: In this summer school, researchers from molecular/cellular/systems/cognitive backgrounds gave us various exciting lectures on neuroscience. After that, our team discussed a literature about cognitive neuroscience and gave a presentation on the paper.
           organization: Tsinghua University and Peking University
           organization_url: http://mcgovern.life.tsinghua.edu.cn
           title: Merit Student of CLS-CIBR-IDG Summer School in Neuroscience
