@@ -61,31 +61,42 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://github.com/PenghuiDu/penghui-website/blob/main/static/uploads/Neuromatch%20Certificate.pdf
+        - certificate_url: https://penghui-du.com/uploads/neuromatch.pdf
           date_end: ''
           date_start: '2022-07-30'
-          description: 'In this summer school, I learned basic principles of computational neuroscience such as reinforcement learning, leaky Integrate-and-Fire models, Hodgkin-Huxley models and Bayesian inference with other students in our team. After that, we did a project on RNN and working memory and gave a presentation on our result.'
+          description: 'In this summer school, I learned basic principles of computational neuroscience such as reinforcement learning, leaky Integrate-and-Fire models, Hodgkin-Huxley models and Bayesian inference with other students in our team. After that, we did an amazing project on RNN and working memory and gave a presentation on our result.'
           organization: Neuromatch Academy
           organization_url: https://neuromatch.io/
           title: 2022 Neuromatch Computational Neuroscience Summer School
           url: ''
 
-        - certificate_url: https://raw.githubusercontent.com/PenghuiDu/penghui-website/main/static/uploads/CLS-CIBR-IDG.jpg
+        - certificate_url: https://penghui-du.com/uploads/CLS-CIBR-IDG.jpg
           date_end: ''
           date_start: '2022-07-10'
-          description: In this summer school, researchers from molecular/cellular/systems/cognitive backgrounds gave us various exciting lectures on neuroscience. After that, our team discussed a literature about cognitive neuroscience and gave a presentation on the paper.
+          description: 'In this summer school, researchers from molecular / cellular / systems / cognitive backgrounds gave us various exciting lectures on neuroscience. After that, we had discussion on some excellent works on cognitive neuroscience and gave a presentation on one of the them.'
           organization: Tsinghua University and Peking University
           organization_url: http://mcgovern.life.tsinghua.edu.cn
           title: Merit Student of CLS-CIBR-IDG Summer School in Neuroscience
           url: ''
 
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
+        - certificate_url: https://penghui-du.com/uploads/bme.jpg
+          date_end: '2022-03-20'
+          date_start: '2022-07-01'
+            description: 'In the competition, we trained a deep learning model to segment critical organs in CT images. We developed a novel pretraining approach and achieved an accuracy of 85% in the segmentation task. As a result of our efforts, our team won first prize in the competition, beating out 188 other teams. As the team leader, I was responsible for building the model and writing the report.'
+          
+          organization: Guangdong Biomedical Engineering Association
+          organization_url: http://gdsbme.com/
+          title: 'First Prize in 2022 Guangdong Undergraduate Biomedical Engineering Innovation Design Competition'
+          url: ''
+
+        - certificate_url: https://penghui-du.com/uploads/bme.jpg
+          date_end: '2021-12-01'
+          date_start: '2022-07-01'
+            description: 'In the competition, We designed a business plan for manufactoring brain health monitor devices for severely ill newborns. After seven month's hard work, we finally completed our work and won the first prize in the competition. As the team leader, I'm responsible for thinking of technical ideas and designing business plan.'
+          
+          organization: Department of Education of Guangdong Province
+          organization_url: http://edu.gd.gov.cn/
+          title: 'First prize in 13th "Challenge Cup" Entrepreneurship Plan Competition.'
           url: ''
     design:
       columns: '2'
