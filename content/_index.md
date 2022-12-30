@@ -75,7 +75,7 @@ sections:
           date_start: '2022-07-10'
           description: Formulated informed blockchain models, hypotheses, and use cases.
           organization: IDG/McGovern Institute for Brain Research at Tsinghua University and Peking University
-          organization_url: http://mcgovern.life.tsinghua.edu.cn/ch/info-institute
+          organization_url: http://mcgovern.life.tsinghua.edu.cn
           title: CLS-CIBR-IDG Summer School in Neuroscience
           url: ''
 
