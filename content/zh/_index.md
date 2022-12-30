@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Penghui Du's Personal Website
+title: Penghui's Personal Website
 date: 2022-10-24
 type: landing
 

@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Penghui Du's Personal Website
+title: Penghui's Personal Website
 date: 2022-10-24
 type: landing
 
@@ -63,20 +63,22 @@ sections:
       items:
         - certificate_url: https://www.coursera.org
           date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
+          date_start: '2022-07-30'
+          description: ': In this summer school, I learned basic principles of computational neuroscience such as reinforcement learning, leaky Integrate-and-Fire models, Hodgkin-Huxley models and Bayesian inference with other students in our team. After that, we did a project on RNN and working memory and gave a presentation on our result.'
+          organization: Neuromatch Academy
+          organization_url: https://neuromatch.io/
+          title: 2022 Neuromatch Computational Neuroscience Summer School
           url: ''
+
         - certificate_url: https://www.edx.org
           date_end: ''
-          date_start: '2021-01-01'
+          date_start: '2022-07-10'
           description: Formulated informed blockchain models, hypotheses, and use cases.
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+          organization: IDG/McGovern Institute for Brain Research at Tsinghua University and Peking University
+          organization_url: http://mcgovern.life.tsinghua.edu.cn/ch/info-institute
+          title: CLS-CIBR-IDG Summer School in Neuroscience
+          url: ''
+
         - certificate_url: https://www.datacamp.com
           date_end: '2020-12-21'
           date_start: '2020-07-01'
