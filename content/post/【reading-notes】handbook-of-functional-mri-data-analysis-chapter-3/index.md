@@ -1,7 +1,7 @@
 ---
 title: 【Reading Notes】Handbook of Functional MRI Data Analysis - Chapter 3
 subtitle: ""
-date: 2022-12-31T05:44:49.633Z
+date: 2022-11-04T05:44:49.633Z
 summary: These are the reading notes for Chapter 3 of *Handbook of Functional
   MRI Data Analysis*.
 draft: false
