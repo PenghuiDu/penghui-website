@@ -1,8 +1,8 @@
 ---
 title: 【Reading Notes】Handbook of Functional MRI Data Analysis - Chapter 2
 subtitle: ""
-date: 2022-12-31T06:34:05.079Z
-summary: These are the reading notes for Chapter 3 of *Handbook of Functional
+date: 2022-11-01T06:34:05.079Z
+summary: These are the reading notes for Chapter 2 of *Handbook of Functional
   MRI Data Analysis*.
 draft: false
 featured: false
@@ -27,174 +27,171 @@ image:
 ---
 <!--StartFragment-->
 
-Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit[](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483755&idx=1&sn=e78ebccebfc75fb6ad36301344659efa&chksm=c05aa0f0f72d29e67788c58be65a5f6e67ad2b65b6f5d3ead0d7c92e4598b206ce4d74e3ccac&token=1947952242&lang=zh_CN#rd)﻿ [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 3 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483721&idx=1&sn=ab2e6fa5e2ba5e00c798b5b38667a07a&chksm=c05aa0d2f72d29c47fed9adecfd96a7e055370b0503f54f55df2aa699a456a5135e704d2bdf5&token=1947952242&lang=zh_CN#rd)
+Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit[](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483755&idx=1&sn=e78ebccebfc75fb6ad36301344659efa&chksm=c05aa0f0f72d29e67788c58be65a5f6e67ad2b65b6f5d3ead0d7c92e4598b206ce4d74e3ccac&token=1947952242&lang=zh_CN#rd)﻿ [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 2 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483701&idx=1&sn=da22fb5dbe98476960e9253e444f47e5&chksm=c05aa0aef72d29b8995c4d1139644458a689b3e2cfd72122cd54587b76f25e7695a482648299&token=1947952242&lang=zh_CN#rd)[](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483721&idx=1&sn=ab2e6fa5e2ba5e00c798b5b38667a07a&chksm=c05aa0d2f72d29c47fed9adecfd96a7e055370b0503f54f55df2aa699a456a5135e704d2bdf5&token=1947952242&lang=zh_CN#rd)
 
 Most of the content of this reading note comes from the *Handbook of Functional MRI Data Analysis*. Please read [the original book](http://www.fmri-data-analysis.org/) for more accurate information. If there is any infringement, please get in touch with me and I will remove it immediately.
 
 - - -
 
-Today, we update the study notes of chapter 3. Chapter 3 is titled Preprocessing fMRI data, and it mainly deals with the preprocessing methods for fMRI images.
+<!--StartFragment-->
 
-# Chapter 3. Preprocessing fMRI data
+Today's update is the second chapter of study notes. Chapter 2 is titled Image processing basics, which mainly covers some basics in fMRI image processing.
 
-## 3.1. Introduction
+# Chapter 2: Image processing basics
 
-Preprocessing of fMRI images is performed to remove artifacts (from head movements, respiration, heartbeat, intrinsic properties of the instrument, etc.) and to prepare them for subsequent analysis.
+## 2.1. What is an image?
 
-## 3.2. An overview of fMRI preprocessing
+An image is represented by a numerical matrix in a computer and can be rendered as a grayscale/color map. In a 2D image, each element is generally referred to as a pixel. In a 3D fMRI image, each element is generally referred to as a voxel.
 
-The general flow is shown in Fig.
+![img](file://C:\Users\maomao\Desktop\1.png?lastModify=1672469110)
 
-![img](1.png)
+It is worth noting that images are analog signals in the real physical world, and become digital signals after inputting them into the computer for processing, which requires attention to their accuracy loss. (For example, it may not matter if the intensity is stored as a floating point number in a computer, but if it is stored as an integer in a computer, the loss of decimal places should be considered.)
 
-The preprocessing of fMRI images is mainly Distortion correction, Motion correction, Slice timing correction, and Spatial smoothing. Except for Motion correction, each of these steps is not necessary to be done. But we should make sure that we have Quality control to avoid the result of "Garbage in, garbage out".
+In addition to the numerical matrix accident, the image has some other important information also need to be saved. They are called Metadata and are stored in the header. Here the header may be kept in the same place as the numerical matrix, or it may be kept in its own separate file.
 
-## 3.3. Quality control techniques
+Common formats for fMRI images are Analyze, NIfTI, DICOM, etc. Each of them has its own characteristics. They each have their own characteristics.
 
-Quality control (QC) is not a special technology, but each step of processing must look at: what is the problem with the data before processing? Is the change in the data after processing as expected? Some common QC techniques are discussed below.
+An fMRI scan differs from a structural MRI scan in that it has information in the temporal dimension. So the actual is often saved as a four-dimensional tensor (the first dimension is time and the last three dimensions are space).
 
-### 3.3.1. Detecting scanner artifacts
+## 2.2. Coordinate systems
 
-There are many common artifacts caused by MRI scanners, here are two of the most common ones.
+MRI data comes from real-world objects. How can the numerical matrix in the computer correspond to the physical location in the real world? This is usually done by creating a three-dimensional Coordinate system for neuroimaging. The three dimensions are X-axis, representing left/right; Y-axis, representing anterior/posterior; and Z-axis, representing superior/superior. These three axes can be tilted into three directional planes, and we naturally have three ways to view the fMRI image slices. x/y/z are slightly different for different data preservation conventions, and the exact meaning will be explained in detail in the metadata of the image.
 
-Spikes are transient changes in images caused by unstable MRI power. It is not common, but has a great impact on data analysis.
+### 2.2.1. Radiological and neurological conventions
 
-![img](2.png)
+In a nutshell, radiologists and neuroscientists have different conventions for neuroimaging data preservation: the radiological convention is left brain on the right and right brain on the left, because it is like the subject is standing on the opposite side of the room; the neurological convention is left brain on the left and right brain on the right, because it is more intuitive. In short, one must be extra careful about the meaning of the X-axis, because the left and right halves of the brain are practically almost impossible to distinguish by morphological differences.
 
-2. ghosting. there are two common causes of ghosting: 1. slight differences in the phase of different rows in K-space; 2. periodic movements of the human body (e.g., heartbeat, breathing, etc.). The Chinese translation of it is very apt, which is probably a ghostly figure that appears on the graph. It may cause activation to be misinterpreted, but it can usually be corrected and is not a big problem.
+### 2.2.2. Standard coordinate spaces
 
-![img](3.png)
+The coordinate system discussed earlier provides a bridge between the physical world and the digital image. This coordinate system, obtained from the MRI scanner, is called "native space of the image". However, the coordinate system obtained from scans of different subjects/different scans of the same subject may not be aligned with each other. There are many possible reasons for this, such as head movements of the subjects, different brain shapes of different subjects, etc.
 
-### 3.3.2. Time series animation
+We can only analyze the data from different scans of different subjects effectively if all the data have approximately the same spatial structure; this requires that we have a "common space" for aligning the neural images obtained from each scan. This "common space" is also known as "standard space" and "stereotactic space". It also allows neurosurgeons to use standard surgical procedures more easily. The details are discussed in Chapter 4.
 
-For artifacts like these, use a tool like FSLView to play the fMRI signal as a small movie and you can see it clearly. You can see with the naked eye if there are any problems
+## 2.3. Spatial transformations
 
-### 3.3.3. independent components analysis
+Spatial transformations are used to align the brain from different scans into the same space. Spatial transformations have two main goals: 1. to allow within individual analysis and 2. to allow group/between individual analysis. This section only discusses the "volume based" transformation, and the "surface based" transformation will be mentioned in subsequent sections.
 
-The author has not yet pushed through the mathematical principles of ICA in detail, the following are perceptual explanations.
+The alignment process is divided into two steps: 1. selecting the transformation models and estimating the optimal parameters; 2. resampling and interpolating to obtain a realigned version of the neural image.
 
-Independent components analysis (Independent components analysis), also known as blind source separation. ICA can be very good at helping us detect signals of unknown patterns (that is, the signal exists, there is a specific pattern, but we also do not know what this pattern should look like.) The specific principles are discussed in detail in Chapter 8 of this book.
+### 2.3.1. Transformation models
 
-It is well known that head motion can be approximated as rigid body motion. However, head motion can actually bring some non-rigid body artifacts to the signal, and for dealing with these artifacts (the non-rigid body artifacts brought by head motion, the above mentioned two kinds of artifacts), the general motion correction cannot help, but it is possible to find a set of independent components that can represent these artifacts by ICA. ICA can be used to find a set of independent components that can represent these artifacts, and remove it, you can achieve the elimination of artifacts.
+#### 2.3.1.1. Affine transformations
 
-It is worth noting that noise reduction with ICA must have an expicit criterion to avoid subjective interference. A common criterion is to eliminate signal patterns that have strong alternation between slice. There are many mature packages for noise reduction with ICA, which can be called directly.
+Affine transformations are the simplest type of transformations. It uses a linear method to transform the original neural image into the target neural image. Affine transformations are a combination of the following four operations.
 
-![img](4.png)
+1. Translation
+2. Rotation
+3. Scaling
+4. Shearing
 
-## 3.4. Distortion correction
+One important feature of the affine transformation is that it does not change the shape of the original image. The points that were originally co-linear remain co-linear after the affine transformation.
 
-The most common method of acquiring fMRI is gradient-echo echoplanar imaging (EPI). There is a problem with this method: at the junction of air and tissue (e.g., sinus, ear canal, etc.), the main magnetic field B0 is inhomogeneous and can lead to artifacts in these areas.
+As you can see, the affine transformation is quite simple. With four transformations, each with three parameters in the XYZ axis, only 12 parameters are needed to achieve this. Can it be simpler? Yes!If we only correct for a slight movement of the same subject's head, we can assume that the subject's head shape and head size will not change, and that only Translation and Rotation are needed, so that only 6 parameters are needed. This further simplified transformation is called rigid body transformation.
 
-Dropout is better understood, which means that the signal becomes weak at places close to the air-tissue interface, such as orbitofrontal lobe, lateral temporal lobe, etc. If the dropout is severe, the signal becomes weak. If the dropout is very serious, there is no way to make corrections once the data is acquired, so it is better to deal with it at the time of scanning. A good way to detect dropout is to overlay the fMRI signal with structural terms, where the apparently dark areas are often affected by dropout.
+The affine transformations are linear, so they can be described directly by simple matrix multiplication. They correspond to the following equations, which can be read optionally if interested.
 
-![img](5.png)
+#### 2.3.1.2. Piecewise linear transformation
 
-Geometric distortion is also affected by the inhomogeneity of the main magnetic field at the air-tissue interface. It causes distortion of parts of the boundary (e.g., anterior prefrontal cortex, orbitofrontal cortex). distortion is in the same direction as the MRI pulse sequence, i.e., both along the Y-axis (anterior / posterior). geometric distortion can cause structural MRI is difficult to align with fMRI.
+Obviously, affine transformation is too simple for fMRI image correction. An improved approach is to divide the fMRI image into many small pieces and do an affine transformation, or Piecewise linear transformation, on each piece. this was also an early practice in fMRI data analysis.
 
-The main magnetic field inhomogeneity can be corrected by using field map. The general idea is to use the phase difference between two adjacent scans to detect the magnitude of the main magnetic field at different locations while scanning the image to make some corrections. But using field map will lead to the introduction of new noise, and it is not sure whether it will do more good or harm.
+#### 2.3.1.3. Nonlinear transformations
 
-![img](6.png)
+Whether Affine or Piecewise linear, it is difficult to change the local shape of fMRI images effectively, and sometimes it is difficult to align the images well. In contrast, Nonlinear transformations described by the basis function are very flexible, and the high-dimensional transformations can change the local features of the image more effectively. Of course, Nonlinear transformation also tends to have more parameters and is less likely to fit excellent solutions.
 
-If you do distortion correction, make sure that no new artifacts are introduced.
+e.g. Second-order polynomial basis functions: Not limited to linear combinations of X/Y/Z to obtain new X/Y/Z, but also nonlinear combinations of X/Y/Z by multiplication, squaring, etc. (Of course, the maximum number of polynomials should be the same as the number of polynomials. (Of course, the highest number of polynomials to <= 2, otherwise why is it called second-order polynomial basis function ~)
 
-## 3.5. Slice timing correction
+e.g. Discrete cosine transform basis functions (DCT basis set), which were used by SPM in the early days. A series of cosine functions distributed from low to high frequencies, respectively, portray the variation patterns of different frequency components in the image. the DCT basis set is closely related to the Fourier transform, which is an important reason for its effectiveness.
 
-The problem of slice timing is obvious. fMRI images are taken one slice at a time, and different slices actually correspond to different time points, which can cause problems for the analysis.
+### 2.3.2. cost functions
 
-The solution is to select a reference slice and do a translation + interpolation of the other slice in time to match the reference slice.
+With a transform model, there is also a way to measure how good the transform model is. How to evaluate whether a picture is well transformed or not? Usually the Cost function is used to characterize it. The better the image is aligned with each other, the smaller the value of cost function should be. If two images are similar, then the cost function between them should be very small as well. This is a very intuitive idea.
 
-![img](7.png)
+Comparing two images is actually discussed in two categories. The first category is the within-modality case, where the two images have the same modality (or at least the same type of data). The second category is the between-modality case. For example, one image is T1-weighted, with brighter white matter; the other is T2-weighted, with darker white matter. The two of them would not be good for direct comparison, and a smarter approach should be considered. For these two different types of problems, we also have different cost functions to measure.
 
-However, the artifact of an image at a particular point in time is propagated throughout the timeline due to interpolation. The head moving artifact behaves particularly well. And when the time per scan is <= 2 seconds, the difference in time between slice actually has little effect on event-related analysis. So very often, it is enough to take interleaved aquisition (see below) + spatial smoothing, and it is also possible to introduce time terms to some statistical models to correct them.
+#### 2.3.2.1. Least squares
 
-![img](8.png)
+The simplest one is the least squares error function (mean square error function?). . This function will do a voxel-by-voxel comparison, and is only suitable for within-modality. if within-modality has problems with contrast, etc., this cost function may also perform worse, so you need to normalize it before comparing.
 
-If you must use the slice timing correction, you must be careful with the artifact.
+#### 2.3.2.2. Normalized correlation
 
-## 3.6. Motion correction
+Normalized correlation also measures the difference between the two images per voxel intensity. It is better and is currently the default motion-correction cost function for FSL.
 
-Motion has two main types of effects on the fMRI signal.
+'
 
-① Location mismatch, which belongs to bulk motion, is simply a change in the position of the head, where the voxel that was in one place has changed to another. Directly do the standard operation discussed before can be corrected.
+#### 2.3.2.3. Mutual information
 
-But bulk motion can also lead to some strange problems. For example, a place where there was no voxel suddenly has a voxel, it will show a strong response. Problems such as large ring-like positive/negative activation may occur (common in orbitofrontal cortex). The edges of the ventricles also often show such artifacts.
+Mutual information is a cost function that can be used in between-modality. before discussing Mutual information (MI), we first introduce the concept of entropy. Entropy can be understood as the degree of chaos or unpredictability of a system. The higher the entropy, the more chaotic the system is and the less information it carries; the lower the entropy, the more orderly the system is and the more information it carries. For a given probability density function p(i), its entropy can be calculated by the following equation.
 
-![img](9.png)
+The flatter the distribution, the more difficult it is to predict information from the distribution, the higher the entropy, and the less information; the more "concentrated" the distribution, the easier it is to predict information from the distribution, the lower the entropy, and the more information. In an extreme case, all possibilities are concentrated on a particular value, and the system is then deterministic and most informative.
 
-② Disruption of signal (spin history effect). The movement of protons within the brain is also moving, and this is likely to produce streaks of artifacrt because of interleaved acquisition. it may be possible to correct this with methods such as ICA.
+For two images, we can calculate the entropy of their joint histogram (joint histogram) to analyze the amount of information they share. The formula is as follows.
 
-### 3.6.1. Stimulus correlated motion
+The following figure is a histogram of the joint distribution of T1 MRI images and T2 MRI images.
 
-The most problematic aspect of motion is that it can be highly correlated with tasks. For example, if a task involves speech, or if a subject's muscle movement is caused by tension, both motion and artifact may be highly correlated with task time, and removing the artifact may also result in the removal of the task signal, causing a decrease in sensitivity. One possible solution is to use the time-delayed nature of the BOLD signal to separate the artifacts generated by the motion directly from the BOLD signal in time, if the time of the motion can be determined.
+At this point we can define the mutual information. The mutual information can be expressed as the sum of the entropy of each of the two images minus the entropy shared by the two images (the entropy of the joint histogram), as follows.
 
-### 3.6.2. Motion correction techniques
+The higher the entropy of the joint histogram, the less information the two images share and the smaller the mutual information. The lower the entropy of the joint histogram, the more information the two images share, and the greater the mutual information. If the two images are identical, the joint histogram should have values only on the diagonal.
 
-The ultimate goal of motion correction is to eliminate misalignment as much as possible by taking a reference slice and realigning the rest of the slice. Of course, the basic assumption of such an approach is that motion brings about rigid body transformation, and in fact motion also affects the strength of activation, which is difficult to correct.
+Considering the possible effects of H(A) and H(B) on MI, the original formula has a correction that works better. All packages will provide for both forms.
 
-The main process has three steps: Estimate motion -> Choose a target -> Choose cost function -> Create realigned images.
+#### 2.3.2.4. Correlation ratio
 
-Estimate motion is to choose a better transformation model to estimate the parameters.
+Correlation ratio portrays the extent to which the variance of one image can capture the variance of the other image. For the two images A, B, it is defined as
 
-Choose a target is to choose a target to align all the slice to a slice. Generally choose an intermediate slice is good, because the magnetic field is unstable at the beginning, the contrast may change; and the intermediate time slice should be closer to the beginning and end of the slice.
+where Var is the function to calculate the variance, k represents the subscript of each unique value in B, and N is the number of unique values in B. If A and B are identical, we might as well set the kth unique value value of B to x, then the values of A_k are also x at this time, that is, Var(A_k) is always 0, that is, C=0, and A cannot capture the variance of B. At this point, the two correspond to the best results. Conversely, C>0, the larger the C the more the two images do not match.
 
-SPM5 uses Least squares and FSL4 uses Normalized correlation ratio, but if the task-related signal is too large, then the activation of voxel may also be mistaken for motion, and this time Consider using a cost function such as mutual information.
+Correlation ratio is the default method for calculating between-modality in the FSL package.
 
-Create realigned images: Knowing how to transform is not enough, because the image needs to be interpolated after translation and rotation. There are linear and higher-order interpolation methods, which were discussed in the previous tweet. In theory, you should use the higher-order ones as much as possible, but in practice, the effect seems to make little difference, since you have to do gaussian smoothing later anyway.
+### 2.3.3. Estimating the transformation
 
-![img](10.png)
+For the previously defined Transformation, it is generally difficult to find the analytical solution and almost impossible to traverse the parameter space to find the optimal parameters, which can only be estimated by optimization methods. One of the commonly used methods is Gradient Descent.
 
-![img](11.png)
+Gradient Descent is widely used in the field of machine learning, but it is easily disturbed by the local minima/saddle point when the number of parameters to be estimated is large. How to avoid this kind of problem? Two methods are discussed here.
 
-### 3.6.3. Prospective motion correction
+#### 2.3.3.1. Regularization
 
-A relatively new operation is that the position of the subject's head can be tracked directly during scanning, and the position and angle of the data aquisition can be adjusted in real time so that it can be aligned directly without interpolation. However, there are still some difficulties and potential problems with the application of this technique.
+Regularization, i.e., imposing a penalty on a particular parameter so that its value cannot deviate too far from 0. The rationale behind this is simple: we expect the solution to be no farther from zero than is reasonable. If it is far off the mark, it means that gradient descent has fumbled some unreasonable but data-compliant parameters by vigorous brick-and-fly methods - which is obviously not what we want.
 
-### 3.6.4. Quality control for motion correction
+The regularization in SPM is a bit more tricky. It uses "bending energy" to measure the extent to which the original image is distorted, imposing a larger penalty for more complex distortion changes (warps). The idea is also very simple: if you think it should be twisted in a messy way, it is usually not reasonable. You have to have enough evidence to support it (data) to overcome the limitations of regularization and twist the place into a mess.
 
-Just watch the animation directly. If you can see a significant change in the position of the image, the correction is not very successful. However, multiple corrections are not recommended, as information is lost with each interpolation.
+The effect of regularization is significant. If you use non-linear transformations without regularization, you will get some outrageous warps. and imposing regularization corrects them nicely.
 
-### 3.6.5. Interactions between motion and susceptibility artifacts
+#### 2.3.3.2. Multiscale optimization
 
-Some artifacts such as dropout and distortion are related to scan direction and rigid body motion cannot be described, i.e. they cannot be corrected efficiently. Care should be taken to interpret data from some brain regions with caution.
+The idea of this method is also very simple: learn the transformation gradually from coarse to fine, first learning how the large structure should be transformed, and then learning how the fine structure should be transformed. low-resolution -> high-resolution. an example of this method for learning the transformation parameters in FSL is shown in the following figure .
 
-### 3.6.6. Interactions between motion correction and slice timing correction
+As a side note, the size of the rotation angle is the most difficult to learn in the process of transformation. By low-res, we can let the model ignore all the details first and focus on how to rotate at the macro level, and solve the most difficult problems first before dealing with fine details.
 
-Motion correction and slice timing correction can interfere oddly with each other.
+### 2.3.4. Reslicing and interpolation
 
-If motion correction is done first, then the voxel acquired at one time will be moved to another slice, which will be treated as if it was scanned at another time, leading to a timing mismatch. If the moving distance is large, it may be fixed messy.
+Why interpolation? Because after a beating of Transformation, the coordinates of the individual voxels may no longer be integers. There is no way to represent them properly in the computer, so interpolation must be done.
 
-If the slice timing correction is done first, then the artifact caused by motion (which can be large!) will propagate along the time. And in fact, if there is rotation or through-plane motion, the same problem as above will still occur. (If you use prospective motion correction, you can solve this problem to some extent.)
+#### 2.3.4.1. Nearest neighbor interpolation
 
-Author's advice: try to be careful with slice timing correction, and if you have to use it, we recommend doing motion correction first.
+Nearest neighbor interpolation directly interpolates the value of the nearest voxel to the current position. It is seldom used because it will cause the image to look jagged and the resolution will be poor; and when using nearest neighbor interpolation, the continuous change of the Transformation parameter will bring about a non-continuous change of the loss function, which will bring great trouble to the gradient descent.
 
-### 3.6.7. How much is too much motion?
+So when to use it? It is good to use it when the value of voxel represents label. Because at this time, if you use averaging or other methods, it will cause the label to lose its meaning.
 
-How much motion is too much? It depends on how well the rigid body motion can describe the fMRI image. Sometimes the motion can be a large distance, but it is very smooth and often saved at this time. Even with artifact, it is often possible to solve the problem with 1. ICA; 2. adding motion-related factors to the statistical model; and 3. using only information from the time points where there is no motion. Throwing the data away directly should only be seen as a last resort. Of course in the clinical setting (pathology scans/adolescent scans), motion can cause a large portion of the data to be unusable.
+#### 2.3.4.2. Linear interpolation
 
-3.6.8. Physiological motion
+Linear interpolation is one of the easiest and fastest methods to compute. It is also known as Tri-linear interpolation in 3D space, and is done by finding the nearest 8 voxels (imagine a square with 8 vertices and a point in the middle) and doing a weighted average.
 
-Periodic physiological activity such as heartbeat and respiration can also affect imaging. Moreover, the scan frequency is lower than the heart rate, so there is aliasing in the frequency, which makes this artifact more complicated.
+Disadvantage: It can lead to a more severe blurring of the image.
 
-![img](12.png)
+#### 2.3.4.3. Higher-order interpolation
 
-Method 1: Record the heartbeat and respiration data while scanning, and try to remove the artifact afterwards by combining these data, but it requires additional monitoring at the same time as the fMRI scan, which is troublesome.
+Most commonly, the sinc function (sin(x) / x) is used as an interpolation function. In theory, the sinc function can be extended to infinity, so it should be used for all voxels in the graph.
 
-Method 2: Interesting idea: Cardiac gating, where the subject's heartbeat triggers the scan. This method can largely improve the imaging of deep brain tissue by fMRI, but the unevenness of the heartbeat also makes the data obtained by this method difficult to analyze.
+The choice of window is also a matter of concern, the common ones are Hanning window, Rectangle window.
 
-Method 3: Direct ICA is used to remove. The effect is not as good as direct monitoring of heartbeat, respiration, but it does not require additional data.
+In addition to the sinc function, you can also use the previously mentioned basic functions, such as B-splines, which will be discussed further.
 
-## 3.7. Spatial smoothing
+## 2.4. Filtering and Fourier analysis
 
-Spatial smoothing can remove some high frequency noise, improve signal-to-noise ratio, reduce cross-individual mismatch, and it can also benefit subsequent analysis. Although it sounds like the resolution will be reduced, in fact *fMRI resolution is not that high* in fact, the brain areas in the fMRI signal are activated in pieces, as long as the smoothing size is not larger than the activation range.
+After the Transformation is done, we will consider further filtering of the image using the Fourier transform. At the same time, the convolution operation in the null domain can also be understood from the frequency domain perspective by using the Fourier transform. Here we will not carefully expand the basics of Fourier transform, and only put some original pictures in the book. You can read the following links if you are interested.
 
-The operation of smoothing is very simple, just convolve it directly in three dimensions.
+In-depth explanation of the Fourier transform (really easy to understand) - h2z - 博客园 (cnblogs.com)
 
-How to describe the intensity of smoothing? It can be described by Full width half maximum. The FWHM of a convolution kernel = 2σ√(2ln(2)) ≈ 2.55σ, and the smoothness of a picture after convolution can be described as
+Fourier transform of images - Zhihu (zhihu.com)
 
-![img](13.png)
-
-### 3.7.1. How much should I smooth?
-
-Depends on the purpose of the smoothness. Smaller smoothing will allow you to see a more localized activation pattern, larger smoothing will allow you to see a more global pattern.
-
-![img](640.jpg)
+<!--EndFragment-->
