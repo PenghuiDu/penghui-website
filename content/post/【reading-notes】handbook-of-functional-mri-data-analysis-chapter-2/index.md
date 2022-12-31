@@ -6,7 +6,8 @@ summary: These are the reading notes for Chapter 2 of *Handbook of Functional
   MRI Data Analysis*.
 draft: false
 featured: false
-authors: []
+authors:
+  - admin
 lastmod: 2020-12-13T00:00:00.000Z
 tags:
   - fMRI
