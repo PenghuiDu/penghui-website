@@ -23,7 +23,7 @@ image:
   filename: featured.jpg
 url_code: ""
 ---
-**Research question:** To what extent do neural networks resemble the human brain's fMRI representation when visual stimuli are input? This project aims to compare a large number of neural networks with fMRI signals with Partial Least Squares (PLS) and establish a benchmark based on fMRI that measures the similarity of machine learning models to brain representations.
+**Research question:** To what extent do neural networks resemble the human brain's representation when visual stimuli are input? This project aims to compare the representation of neural networks with human fMRI signals by Partial Least Squares (PLS) and establish a benchmark. We hope to discover something interesting by analysing the similarity of a large number of neural networks to the brain.
 
 ![](1.png "Planned workflow of the project ")
 
