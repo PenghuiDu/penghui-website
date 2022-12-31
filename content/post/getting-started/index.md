@@ -1,28 +1,29 @@
 ---
 title: 【Reading Notes】Handbook of Functional MRI Data Analysis - Chapter 4
 subtitle: ""
-date: 2020-12-13T00:00:00Z
-summary: Welcome 👋 We know that first impressions are important, so we've
-  populated your new site with some initial content to help you get familiar
-  with everything in no time.
+date: 2022-12-08T00:00:00.000Z
+summary: 👋 Thank you for your reading
 draft: false
 featured: false
 authors:
-  - admin
-  - 吳恩達
-lastmod: 2020-12-13T00:00:00Z
+  - Penghui Du
+lastmod: 2020-12-13T00:00:00.000Z
 tags:
-  - Academic
-  - 开源
+  - fMRI
+  - Data Processing
+  - Neuroimaging
 categories:
-  - Demo
-  - 教程
+  - Reading Notes
 projects: []
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)"
+  caption: "Image credit: [**National Institute of Mental
+    Health**](http://nimh.nih.gov/health/publications/neuroimaging-and-mental-i\
+    llness-a-window-into-the-brain/neuroimaging-and-mental-illness-a-window-int\
+    o-the-brain.shtml)"
   focal_point: ""
   placement: 2
   preview_only: false
+  filename: featured.jpg
 ---
 <!--StartFragment-->
 
