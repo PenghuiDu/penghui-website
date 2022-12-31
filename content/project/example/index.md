@@ -9,7 +9,7 @@ date: 2022-12-31T00:00:00.000Z
 external_link: ""
 url_slides: ""
 title: Ongoing | Research on relationship between human vision and machine
-  vision with fMRI images
+  vision with fMRI signals
 tags:
   - Vision
   - Deep Learning
