@@ -6,8 +6,7 @@ summary: These are the reading notes for Chapter 3 of *Handbook of Functional
   MRI Data Analysis*.
 draft: false
 featured: false
-authors:
-  - Penghui Du
+authors: []
 lastmod: 2020-12-13T00:00:00.000Z
 tags:
   - fMRI
