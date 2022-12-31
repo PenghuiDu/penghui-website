@@ -164,9 +164,7 @@ sections:
     content:
       title: Recent Publications
       text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+        
       filters:
         folders:
           - publication
@@ -185,7 +183,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        
+
       # Contact (add or remove contact options as necessary)
       email: duph2020@mail.sustech.edu.cn
       phone: +86 158 8937 2606
