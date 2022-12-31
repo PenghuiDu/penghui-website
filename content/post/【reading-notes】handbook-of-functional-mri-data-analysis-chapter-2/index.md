@@ -229,6 +229,6 @@ In-depth explanation of the Fourier transform (really easy to understand) - h2z 
 
 Fourier transform of images - Zhihu (zhihu.com)
 
-![img](22.png)
+![img](22.png) 
 
 ![img](23.png)
