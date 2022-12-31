@@ -25,13 +25,11 @@ image:
   preview_only: false
   filename: featured.jpg
 ---
-<!--StartFragment-->
-
 Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 4 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483755&idx=1&sn=e78ebccebfc75fb6ad36301344659efa&chksm=c05aa0f0f72d29e67788c58be65a5f6e67ad2b65b6f5d3ead0d7c92e4598b206ce4d74e3ccac&token=1947952242&lang=zh_CN#rd)
 
 Most of the content of this reading note comes from the *Handbook of Functional MRI Data Analysis*. Please read [the original book](http://www.fmri-data-analysis.org/) for more accurate information. If there is any infringement, please get in touch with me and I will remove it immediately.
 
-- - -
+------
 
 Missing people returns. Open for more!
 
@@ -49,7 +47,7 @@ Broadly speaking, every human brain is similar: there are two hemispheres, and b
 
 Jean Talairach proposed a method based on anatomical landmarks: find the anterior commissure, posterior commissure, middle sagittal plane and exterior boundaries, a 3D Cartesian coordinate system can be defined, and each point in the fMRI data can be described by a 3D coordinate.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeibtDoUEVQ88F2V6EZHGjYHGOwQyBo1yaH22LJgnjL7tQAbND2TqL7GA/640?wx_fmt=png)
+![img](1.png)
 
 ## **4.4. Atlases and templates**
 
@@ -75,7 +73,7 @@ Data acquired under a strong magnetic field will have a low-frequency drift in t
 
 There are two common methods of bias field correction: 1. doing a high-pass filter to remove the low-frequency signal directly, and 2. modelling three types of tissues: grey matter, white matter, and CSF, and making certain constraints to require the same tissue to have approximately the same brightness. Generally, the second method works better.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeDftbNvWdabqlYCYibmxQsXtdicYiaKELoVnh6zrBuA6bfKWSwaiaCibvw9g/640?wx_fmt=png)
+![img](2.png)
 
 ### **4.5.2. Brain extraction**
 
@@ -97,7 +95,7 @@ Both methods are possible, and the second one is relatively less computationally
 
 Another problem that exists is the question of what image to use for normalization. As shown in Figure 4.3 left, the easiest way is to normalize the fMRI data directly to a similar fMRI template. This approach is commonly used in SPM packages. However, this is not the best method because using EPI fMRI data as a template with low resolution only ensures that the edges of the brain are effectively aligned, and the details inside are not guaranteed to be well aligned.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeO7dqicVfsoV4ZWFEQYicSdsGK553y6UbJ27bqmcVpzVhQskJcgTuJzYg/640?wx_fmt=png)
+![img](3.png)
 
 An alternative approach is to use the structural MRI data as a complementary aid to normalize. this approach is called **coregistration.** In theory, we can first align the fMRI data to the coplanar image (structural MRI image) and then align the coplanar image to the structural MRI image. ), then align the coplanar image to a high-precision structural MRI and then align the high-precision structural MRI to a standard template. Of course, in practice, this would involve multiple interpolations and lead to unnecessary blurring. All three transformations are linear transformations, so they can be eventually combined into a single transformation.
 
@@ -115,11 +113,11 @@ The most common method of spatial registration (I personally consider registrati
 
 Another wonderful method is called computational anatomy. a series of previous methods have tended to simply design a nonlinear basis without considering the physical laws of the real world, but this method is different. It analyzes the shape of the brain from the physical properties of elastic material deformation and mucus flow. a well-known class of methods in computational anatomy is called diffeomorphism, the details of which are not developed here because they involve *complex mathematical derivations*. The conclusion is this: after this method, the transformation of one brain image aligned to another is expressed as a vector field, and by some constraints, this transformation can be required to be smooth and physically consistent, without violating the basic topology of the brain structure.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeMZ9Hp02Yl8kQU3ibEMBQ13libHhL6kP0OPt73rd7MzSGqoBwdlzCfBMg/640?wx_fmt=png)
+![img](4.png)
 
 Currently the DARTEL toolbox in SPM and the FNIRT in FSL both provide methods for computational anatomy. The comparison in the figure below shows that these methods have good alignment results and have great potential in the future.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeJqUaIicT9xJwNvYOkkOib2pw1dghtXMbCqqE97NtuZEmaUw2lXp4MQNA/640?wx_fmt=png)
+![img](5.png)
 
 ## **4.9. Choosing a spatial normalization method**
 
@@ -127,13 +125,13 @@ In the end, which method should be chosen to normalize? Since many researchers t
 
 A 2004 study by Ardekani systematically explored the effectiveness of various spatial normalization methods in group analysis. It was concluded that high-dimensional methods using nonlinear warping have better sensitivity and reproducibility. Moreover, nonlinear methods detect more regions of activation and detect smaller regions of activation than linear methods, also suggesting that nonlinear normalization methods generally perform better. 2009 Klein's study pointed to the same conclusion, and also found that nonlinear norm effects differed across packages. This study concluded that the packages with the best results at that time were ART, SYN, IRTK and DARTEL.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeUASSr0Ry4egfQUWH1LFkqVGiaBpRAgTNsNSp8c6e0y8csI1JngjrvbA/640?wx_fmt=png)
+![img](6.png)
 
 ## **4.10. Quality control for spatial normalization**
 
 Quality control for coregistration and spatial normalization is critical. One of the most common methods is to stack the template and the aligned image together to check the effect. The second method is to check the average of the aligned images of the subjects. Generally speaking, the result of their averaging should look like a fuzzy version of the template brain. If there is a different outline, it often indicates that something is wrong. Finally FSLview can also be used to play each individual IMAGE as an animation. Images that are not paired will look very jumpy.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeoNmPnE2zyGvVTPo2bsClI4gjVwLnpfc1HeqicHWNiclMhJia7g6YVzotQ/640?wx_fmt=png)
+![img](7.png)
 
 ## **4.11. Troubleshooting normalization problems**
 
@@ -143,13 +141,13 @@ If there is a big difference, first check if the template and the image being al
 
 If there is a problem with the alignment of an individual, first check whether the pre-processing operations such as brain extraction are done correctly. Sometimes, manually adjusting the orientation of the image will make the alignment better.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCewfx37qCc9VS8BrRzticPXQnDNvTc6pcAHSXWMp3EWY5jiaPibZ8v8S1Xw/640?wx_fmt=png)
+![img](8.png)
 
 ## **4.12. Normalizing data from special populations**
 
 The structure of the brain may change with age, so aligning the brains of individuals of different ages may be somewhat difficult. Also, if the images are from patients with brain damage, alignment may become difficult.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibx7Udk35dvl21Xa3NMjicuCeTkpCbibM6MF02ysuWqHYuIaibgAJDERicVWsLElBA7YU20XicYyf3APsQA/640?wx_fmt=png)
+![img](9.png)
 
 ### **4.12.1. Normalizing data from children**
 
@@ -166,5 +164,3 @@ Doing normalization of images from the elderly is also difficult. Ageing causes 
 ### **4.12.3. Normalizing data with lesions**
 
 Brain damage may lead to structural changes or even absence of some regions, which can lead to errors during spatial normalization. The standard way to deal with this situation is cost function masking, i.e., to exclude some regions from the cost function during alignment. If the damage is too severe, manual alignment is preferable.
-
-<!--EndFragment-->
