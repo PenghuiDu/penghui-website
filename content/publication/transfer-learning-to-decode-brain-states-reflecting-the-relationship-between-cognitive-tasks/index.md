@@ -30,11 +30,11 @@ authors:
 author_notes: []
 publication: In International Workshop on Human Brain and Artificial Intelligence
 summary: ""
-url_dataset: https://github.com/wowchemy/wowchemy-hugo-themes
+url_dataset: ""
 url_project: ""
 publication_short: ""
-url_source: https://github.com/wowchemy/wowchemy-hugo-themes
-url_video: https://youtube.com
+url_source: https://link.springer.com/chapter/10.1007/978-981-19-8222-4_10
+url_video: ""
 title: Transfer learning to decode brain states reflecting the relationship
   between cognitive tasks
 doi: https://doi.org/10.1007/978-981-19-8222-4_10
@@ -49,9 +49,9 @@ image:
   focal_point: ""
   preview_only: false
   filename: featured.jpg
-date: 2022-12-31T08:19:12.651Z
+date: 2022-11-29T00:00:00.000Z
 url_slides: ""
-publishDate: 2017-01-01T00:00:00.000Z
+publishDate: 2022-11-29T00:00:00.000Z
 url_poster: ""
-url_code: https://github.com/wowchemy/wowchemy-hugo-themes
+url_code: ""
 ---
