@@ -9,14 +9,14 @@ en:
   # contentDir: content/
 
 # Uncomment the lines below to configure your website in a second language.
-zh:
- languageCode: zh
- contentDir: content/zh
- title: Penghui's Personal Website
- params:
-   description: Site description in Chinese...
- menu:
-   main:
-     - name: 传
-       url: '#about'
-       weight: 1
+# zh:
+#  languageCode: zh
+#  contentDir: content/zh
+#  title: Penghui's Personal Website
+#  params:
+#    description: Site description in Chinese...
+#  menu:
+#    main:
+#      - name: 传
+#        url: '#about'
+#        weight: 1
