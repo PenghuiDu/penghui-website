@@ -25,16 +25,11 @@ image:
   preview_only: false
   filename: featured.jpg
 ---
-<!--StartFragment-->
-
 Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit[](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483755&idx=1&sn=e78ebccebfc75fb6ad36301344659efa&chksm=c05aa0f0f72d29e67788c58be65a5f6e67ad2b65b6f5d3ead0d7c92e4598b206ce4d74e3ccac&token=1947952242&lang=zh_CN#rd)﻿ [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 2 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483701&idx=1&sn=da22fb5dbe98476960e9253e444f47e5&chksm=c05aa0aef72d29b8995c4d1139644458a689b3e2cfd72122cd54587b76f25e7695a482648299&token=1947952242&lang=zh_CN#rd)[](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483721&idx=1&sn=ab2e6fa5e2ba5e00c798b5b38667a07a&chksm=c05aa0d2f72d29c47fed9adecfd96a7e055370b0503f54f55df2aa699a456a5135e704d2bdf5&token=1947952242&lang=zh_CN#rd)
 
 Most of the content of this reading note comes from the *Handbook of Functional MRI Data Analysis*. Please read [the original book](http://www.fmri-data-analysis.org/) for more accurate information. If there is any infringement, please get in touch with me and I will remove it immediately.
 
 - - -
-
-<!--StartFragment-->
-
 Today's update is the second chapter of study notes. Chapter 2 is titled Image processing basics, which mainly covers some basics in fMRI image processing.
 
 # Chapter 2: Image processing basics
@@ -43,7 +38,7 @@ Today's update is the second chapter of study notes. Chapter 2 is titled Image p
 
 An image is represented by a numerical matrix in a computer and can be rendered as a grayscale/color map. In a 2D image, each element is generally referred to as a pixel. In a 3D fMRI image, each element is generally referred to as a voxel.
 
-![img](file://C:\Users\maomao\Desktop\1.png?lastModify=1672469110)
+![img](1.png)
 
 It is worth noting that images are analog signals in the real physical world, and become digital signals after inputting them into the computer for processing, which requires attention to their accuracy loss. (For example, it may not matter if the intensity is stored as a floating point number in a computer, but if it is stored as an integer in a computer, the loss of decimal places should be considered.)
 
@@ -56,6 +51,8 @@ An fMRI scan differs from a structural MRI scan in that it has information in th
 ## 2.2. Coordinate systems
 
 MRI data comes from real-world objects. How can the numerical matrix in the computer correspond to the physical location in the real world? This is usually done by creating a three-dimensional Coordinate system for neuroimaging. The three dimensions are X-axis, representing left/right; Y-axis, representing anterior/posterior; and Z-axis, representing superior/superior. These three axes can be tilted into three directional planes, and we naturally have three ways to view the fMRI image slices. x/y/z are slightly different for different data preservation conventions, and the exact meaning will be explained in detail in the metadata of the image.
+
+![img](2.png)
 
 ### 2.2.1. Radiological and neurological conventions
 
@@ -84,11 +81,19 @@ Affine transformations are the simplest type of transformations. It uses a linea
 3. Scaling
 4. Shearing
 
+![img](3.png)
+
 One important feature of the affine transformation is that it does not change the shape of the original image. The points that were originally co-linear remain co-linear after the affine transformation.
 
 As you can see, the affine transformation is quite simple. With four transformations, each with three parameters in the XYZ axis, only 12 parameters are needed to achieve this. Can it be simpler? Yes!If we only correct for a slight movement of the same subject's head, we can assume that the subject's head shape and head size will not change, and that only Translation and Rotation are needed, so that only 6 parameters are needed. This further simplified transformation is called rigid body transformation.
 
 The affine transformations are linear, so they can be described directly by simple matrix multiplication. They correspond to the following equations, which can be read optionally if interested.
+
+![img](4.png)
+
+![img](5.png)
+
+![img](6.png)
 
 #### 2.3.1.2. Piecewise linear transformation
 
@@ -99,6 +104,8 @@ Obviously, affine transformation is too simple for fMRI image correction. An imp
 Whether Affine or Piecewise linear, it is difficult to change the local shape of fMRI images effectively, and sometimes it is difficult to align the images well. In contrast, Nonlinear transformations described by the basis function are very flexible, and the high-dimensional transformations can change the local features of the image more effectively. Of course, Nonlinear transformation also tends to have more parameters and is less likely to fit excellent solutions.
 
 e.g. Second-order polynomial basis functions: Not limited to linear combinations of X/Y/Z to obtain new X/Y/Z, but also nonlinear combinations of X/Y/Z by multiplication, squaring, etc. (Of course, the maximum number of polynomials should be the same as the number of polynomials. (Of course, the highest number of polynomials to <= 2, otherwise why is it called second-order polynomial basis function ~)
+
+![img](7.png)
 
 e.g. Discrete cosine transform basis functions (DCT basis set), which were used by SPM in the early days. A series of cosine functions distributed from low to high frequencies, respectively, portray the variation patterns of different frequency components in the image. the DCT basis set is closely related to the Fourier transform, which is an important reason for its effectiveness.
 
@@ -112,31 +119,49 @@ Comparing two images is actually discussed in two categories. The first category
 
 The simplest one is the least squares error function (mean square error function?). . This function will do a voxel-by-voxel comparison, and is only suitable for within-modality. if within-modality has problems with contrast, etc., this cost function may also perform worse, so you need to normalize it before comparing.
 
+![img](8.png)
+
 #### 2.3.2.2. Normalized correlation
 
 Normalized correlation also measures the difference between the two images per voxel intensity. It is better and is currently the default motion-correction cost function for FSL.
 
-'
+![img](9.png)'
+
+
 
 #### 2.3.2.3. Mutual information
 
 Mutual information is a cost function that can be used in between-modality. before discussing Mutual information (MI), we first introduce the concept of entropy. Entropy can be understood as the degree of chaos or unpredictability of a system. The higher the entropy, the more chaotic the system is and the less information it carries; the lower the entropy, the more orderly the system is and the more information it carries. For a given probability density function p(i), its entropy can be calculated by the following equation.
 
+![img](10.png)
+
 The flatter the distribution, the more difficult it is to predict information from the distribution, the higher the entropy, and the less information; the more "concentrated" the distribution, the easier it is to predict information from the distribution, the lower the entropy, and the more information. In an extreme case, all possibilities are concentrated on a particular value, and the system is then deterministic and most informative.
 
 For two images, we can calculate the entropy of their joint histogram (joint histogram) to analyze the amount of information they share. The formula is as follows.
 
+![img](11.png)
+
 The following figure is a histogram of the joint distribution of T1 MRI images and T2 MRI images.
+
+![img](12.png)
 
 At this point we can define the mutual information. The mutual information can be expressed as the sum of the entropy of each of the two images minus the entropy shared by the two images (the entropy of the joint histogram), as follows.
 
+![img](13.png)
+
 The higher the entropy of the joint histogram, the less information the two images share and the smaller the mutual information. The lower the entropy of the joint histogram, the more information the two images share, and the greater the mutual information. If the two images are identical, the joint histogram should have values only on the diagonal.
 
+![img](14.png)
+
 Considering the possible effects of H(A) and H(B) on MI, the original formula has a correction that works better. All packages will provide for both forms.
+
+![img](15.png)
 
 #### 2.3.2.4. Correlation ratio
 
 Correlation ratio portrays the extent to which the variance of one image can capture the variance of the other image. For the two images A, B, it is defined as
+
+![img](16.png)
 
 where Var is the function to calculate the variance, k represents the subscript of each unique value in B, and N is the number of unique values in B. If A and B are identical, we might as well set the kth unique value value of B to x, then the values of A_k are also x at this time, that is, Var(A_k) is always 0, that is, C=0, and A cannot capture the variance of B. At this point, the two correspond to the best results. Conversely, C>0, the larger the C the more the two images do not match.
 
@@ -156,11 +181,15 @@ The regularization in SPM is a bit more tricky. It uses "bending energy" to meas
 
 The effect of regularization is significant. If you use non-linear transformations without regularization, you will get some outrageous warps. and imposing regularization corrects them nicely.
 
+![img](17.png)
+
 #### 2.3.3.2. Multiscale optimization
 
 The idea of this method is also very simple: learn the transformation gradually from coarse to fine, first learning how the large structure should be transformed, and then learning how the fine structure should be transformed. low-resolution -> high-resolution. an example of this method for learning the transformation parameters in FSL is shown in the following figure .
 
 As a side note, the size of the rotation angle is the most difficult to learn in the process of transformation. By low-res, we can let the model ignore all the details first and focus on how to rotate at the macro level, and solve the most difficult problems first before dealing with fine details.
+
+![img](18.png)
 
 ### 2.3.4. Reslicing and interpolation
 
@@ -178,6 +207,8 @@ Linear interpolation is one of the easiest and fastest methods to compute. It is
 
 Disadvantage: It can lead to a more severe blurring of the image.
 
+![img](19.png)
+
 #### 2.3.4.3. Higher-order interpolation
 
 Most commonly, the sinc function (sin(x) / x) is used as an interpolation function. In theory, the sinc function can be extended to infinity, so it should be used for all voxels in the graph.
@@ -185,6 +216,10 @@ Most commonly, the sinc function (sin(x) / x) is used as an interpolation functi
 The choice of window is also a matter of concern, the common ones are Hanning window, Rectangle window.
 
 In addition to the sinc function, you can also use the previously mentioned basic functions, such as B-splines, which will be discussed further.
+
+![img](20.png)
+
+![img](21.png)
 
 ## 2.4. Filtering and Fourier analysis
 
@@ -194,4 +229,6 @@ In-depth explanation of the Fourier transform (really easy to understand) - h2z 
 
 Fourier transform of images - Zhihu (zhihu.com)
 
-<!--EndFragment-->
+![img](22.png)
+
+![img](23.png)
