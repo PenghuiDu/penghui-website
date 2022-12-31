@@ -163,4 +163,4 @@ Doing normalization of images from the elderly is also difficult. Ageing causes 
 
 ### **4.12.3. Normalizing data with lesions**
 
-Brain damage may lead to structural changes or even absence of some regions, which can lead to errors during spatial normalization. The standard way to deal with this situation is cost function masking, i.e., to exclude some regions from the cost function during alignment. If the damage is too severe, manual alignment is preferable.
+Brain damage may lead to structural changes or even absence of some regions, which can lead to errors during spatial normalization. The standard way to deal with this situation is cost function masking, i.e., to exclude some regions from the cost function during alignment. If the damage is too severe, manual alignment is preferable. 
