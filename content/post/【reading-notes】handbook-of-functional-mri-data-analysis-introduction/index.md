@@ -1,6 +1,6 @@
 ---
 title: "Lecture Summary | NeuroAI Book Club - Different Path Same Aim: Biovision
-  and Artificial Vision"
+  and Machine Vision"
 subtitle: ""
 date: 2022-10-31T07:01:11.322Z
 summary: These are the reading notes for Introduction Chapter of *Handbook of
