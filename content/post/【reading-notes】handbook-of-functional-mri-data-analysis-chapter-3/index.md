@@ -45,7 +45,7 @@ Preprocessing of fMRI images is performed to remove artifacts (from head movemen
 
 The general flow is shown in Fig.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHa08ibicw2RKzYUzkgC4xGHv2CcBa55Y9icYWxpBOGqzcSicZgQCjPAjC6Eg/640?wx_fmt=png)
+![img](file://C:/Users/maomao/Desktop/1.png?lastModify=1672467863)
 
 The preprocessing of fMRI images is mainly Distortion correction, Motion correction, Slice timing correction, and Spatial smoothing. Except for Motion correction, each of these steps is not necessary to be done. But we should make sure that we have Quality control to avoid the result of "Garbage in, garbage out".
 
@@ -59,11 +59,7 @@ There are many common artifacts caused by MRI scanners, here are two of the most
 
 Spikes are transient changes in images caused by unstable MRI power. It is not common, but has a great impact on data analysis.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHaX55ibKyaHcTnarTibPibomz4mib5XibaVUx8FSkEHjSicQ0blZzHZvFUlic1w/640?wx_fmt=png)
-
 2. ghosting. there are two common causes of ghosting: 1. slight differences in the phase of different rows in K-space; 2. periodic movements of the human body (e.g., heartbeat, breathing, etc.). The Chinese translation of it is very apt, which is probably a ghostly figure that appears on the graph. It may cause activation to be misinterpreted, but it can usually be corrected and is not a big problem.
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHaK0eiaMJEZUIAETrXu8OhuIkHmTEImO8PbnoFDD4XO9SD1Hr0aUdVwCg/640?wx_fmt=png)
 
 ### 3.3.2. Time series animation
 
@@ -79,21 +75,15 @@ It is well known that head motion can be approximated as rigid body motion. Howe
 
 It is worth noting that noise reduction with ICA must have an expicit criterion to avoid subjective interference. A common criterion is to eliminate signal patterns that have strong alternation between slice. There are many mature packages for noise reduction with ICA, which can be called directly.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHa5VOZOatvBYJD539bRgczBIXq9JrorCsjdJCkZOfbtA0reHr500NtoA/640?wx_fmt=png)
-
 ## 3.4. Distortion correction
 
 The most common method of acquiring fMRI is gradient-echo echoplanar imaging (EPI). There is a problem with this method: at the junction of air and tissue (e.g., sinus, ear canal, etc.), the main magnetic field B0 is inhomogeneous and can lead to artifacts in these areas.
 
 Dropout is better understood, which means that the signal becomes weak at places close to the air-tissue interface, such as orbitofrontal lobe, lateral temporal lobe, etc. If the dropout is severe, the signal becomes weak. If the dropout is very serious, there is no way to make corrections once the data is acquired, so it is better to deal with it at the time of scanning. A good way to detect dropout is to overlay the fMRI signal with structural terms, where the apparently dark areas are often affected by dropout.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHaDrm7HeK1ibPlcsibjHUwTP9mFo03icx6QZ4iaUgWGzAPicJYia0I27pt3QRw/640?wx_fmt=png)
-
 Geometric distortion is also affected by the inhomogeneity of the main magnetic field at the air-tissue interface. It causes distortion of parts of the boundary (e.g., anterior prefrontal cortex, orbitofrontal cortex). distortion is in the same direction as the MRI pulse sequence, i.e., both along the Y-axis (anterior / posterior). geometric distortion can cause structural MRI is difficult to align with fMRI.
 
 The main magnetic field inhomogeneity can be corrected by using field map. The general idea is to use the phase difference between two adjacent scans to detect the magnitude of the main magnetic field at different locations while scanning the image to make some corrections. But using field map will lead to the introduction of new noise, and it is not sure whether it will do more good or harm.
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHajPzcZVzHBYoyBmmC2ZFTH2JvGO2vISpsGmjXDc7hgj5C1xAjDvsFhA/640?wx_fmt=png)
 
 If you do distortion correction, make sure that no new artifacts are introduced.
 
@@ -103,11 +93,7 @@ The problem of slice timing is obvious. fMRI images are taken one slice at a tim
 
 The solution is to select a reference slice and do a translation + interpolation of the other slice in time to match the reference slice.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHa5omrmd9MotyNKFlSN8WShPVCpx6nwG4uQYRM9ZRZC5WiamVoDH3FwPA/640?wx_fmt=png)
-
 However, the artifact of an image at a particular point in time is propagated throughout the timeline due to interpolation. The head moving artifact behaves particularly well. And when the time per scan is <= 2 seconds, the difference in time between slice actually has little effect on event-related analysis. So very often, it is enough to take interleaved aquisition (see below) + spatial smoothing, and it is also possible to introduce time terms to some statistical models to correct them.
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHa2ud2pz6qEMaw1uL5INTGprrlLFIyK3Coqbu9SuSXPE4vbfNLDJNjJA/640?wx_fmt=png)
 
 If you must use the slice timing correction, you must be careful with the artifact.
 
@@ -118,8 +104,6 @@ Motion has two main types of effects on the fMRI signal.
 ① Location mismatch, which belongs to bulk motion, is simply a change in the position of the head, where the voxel that was in one place has changed to another. Directly do the standard operation discussed before can be corrected.
 
 But bulk motion can also lead to some strange problems. For example, a place where there was no voxel suddenly has a voxel, it will show a strong response. Problems such as large ring-like positive/negative activation may occur (common in orbitofrontal cortex). The edges of the ventricles also often show such artifacts.
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHa7sfiatSDovMXWLicIapjKP5R5XvpegPs7NMUm07ibEMn0nwB41Z5ia3dYg/640?wx_fmt=png)
 
 ② Disruption of signal (spin history effect). The movement of protons within the brain is also moving, and this is likely to produce streaks of artifacrt because of interleaved acquisition. it may be possible to correct this with methods such as ICA.
 
@@ -140,10 +124,6 @@ Choose a target is to choose a target to align all the slice to a slice. General
 SPM5 uses Least squares and FSL4 uses Normalized correlation ratio, but if the task-related signal is too large, then the activation of voxel may also be mistaken for motion, and this time Consider using a cost function such as mutual information.
 
 Create realigned images: Knowing how to transform is not enough, because the image needs to be interpolated after translation and rotation. There are linear and higher-order interpolation methods, which were discussed in the previous tweet. In theory, you should use the higher-order ones as much as possible, but in practice, the effect seems to make little difference, since you have to do gaussian smoothing later anyway.
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHaFW3nKbtq2svrDpdAticQsLjnOIdwCD9tXQanicNv4Id77xiaDz0H6CZtQ/640?wx_fmt=png)
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHap1WrRJ215W4tffxJkR1kOGibFAQT33PmTRApicFGP6fvuS17bg697mVA/640?wx_fmt=png)
 
 ### 3.6.3. Prospective motion correction
 
@@ -175,8 +155,6 @@ How much motion is too much? It depends on how well the rigid body motion can de
 
 Periodic physiological activity such as heartbeat and respiration can also affect imaging. Moreover, the scan frequency is lower than the heart rate, so there is aliasing in the frequency, which makes this artifact more complicated.
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHaia6Roy5GeYM00k0aeoH2F5aXiaviafIHzySpvuX5XRbwheNxwGoZJibr4g/640?wx_fmt=png)
-
 Method 1: Record the heartbeat and respiration data while scanning, and try to remove the artifact afterwards by combining these data, but it requires additional monitoring at the same time as the fMRI scan, which is troublesome.
 
 Method 2: Interesting idea: Cardiac gating, where the subject's heartbeat triggers the scan. This method can largely improve the imaging of deep brain tissue by fMRI, but the unevenness of the heartbeat also makes the data obtained by this method difficult to analyze.
@@ -191,12 +169,10 @@ The operation of smoothing is very simple, just convolve it directly in three di
 
 How to describe the intensity of smoothing? It can be described by Full width half maximum. The FWHM of a convolution kernel = 2σ√(2ln(2)) ≈ 2.55σ, and the smoothness of a picture after convolution can be described as
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/k2HrPbh93ibwgwPRFTufE9IQKsh2wZMHauebQTIdCTUibu9jicuicFqCEa3n6lDvcHZnwcnQuKxHxjEGwYqUb83b8g/640?wx_fmt=png)
-
 ### 3.7.1. How much should I smooth?
 
 Depends on the purpose of the smoothness. Smaller smoothing will allow you to see a more localized activation pattern, larger smoothing will allow you to see a more global pattern.
 
-![](640.jpg)
+
 
 <!--EndFragment-->
