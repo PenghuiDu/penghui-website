@@ -1,5 +1,5 @@
 ---
-title: "【Reading Notes】Handbook of Functional MRI Data Analysis - Introduction"
+title: "Reading Notes | Handbook of Functional MRI Data Analysis - Introduction"
 subtitle: ""
 date: 2022-10-31T07:01:11.322Z
 summary: These are the reading notes for Introduction Chapter of *Handbook of

@@ -8,7 +8,7 @@ draft: false
 featured: false
 authors:
   - admin
-lastmod: 2022-12-08T00:00:00.000Z
+lastmod: 2022-12-14T07:33:22.005Z
 tags:
   - Vision
   - fMRI
