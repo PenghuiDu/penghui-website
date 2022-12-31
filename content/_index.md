@@ -152,19 +152,11 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="my_album" >}}
-    design:
-      columns: '1'
   - block: collection
     content:
       title: Recent Publications
       text: |-
-        
+
       filters:
         folders:
           - publication
@@ -177,6 +169,14 @@ sections:
       title: Popular Topics
     design:
       columns: '2'
+  - block: markdown
+    content:
+      title: Gallery
+      subtitle: ''
+      text: |-
+        {{< gallery album="my_album" >}}
+    design:
+      columns: '1'
   - block: contact
     id: contact
     content:
