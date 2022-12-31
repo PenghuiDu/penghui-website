@@ -33,7 +33,7 @@ summary: ""
 url_dataset: ""
 url_project: ""
 publication_short: ""
-url_source: https://link.springer.com/chapter/10.1007/978-981-19-8222-4_10
+url_source: ""
 url_video: ""
 title: Transfer learning to decode brain states reflecting the relationship
   between cognitive tasks
