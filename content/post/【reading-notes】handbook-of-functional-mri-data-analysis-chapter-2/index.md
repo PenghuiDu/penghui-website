@@ -125,7 +125,7 @@ The simplest one is the least squares error function (mean square error function
 
 Normalized correlation also measures the difference between the two images per voxel intensity. It is better and is currently the default motion-correction cost function for FSL.
 
-![img](9.png)'
+![img](9.png)
 
 
 
