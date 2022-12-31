@@ -11,11 +11,16 @@ url_slides: ""
 title: Ongoing | Research on relationship between human vision and machine
   vision with fMRI images
 tags:
+  - Vision
   - Deep Learning
+  - Partial Least Squares
+  - fMRI
+  - Similarity Analysis
 links: []
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: ""
   focal_point: Smart
+  filename: featured.jpg
 url_code: ""
 ---
 **Research question:** To what extent do neural networks resemble the human brain's fMRI representation when visual stimuli are input? This project aims to compare a large number of neural networks with fMRI signals with Partial Least Squares (PLS) and establish a benchmark based on fMRI that measures the similarity of machine learning models to brain representations.
