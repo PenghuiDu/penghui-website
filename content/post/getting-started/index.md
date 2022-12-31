@@ -22,7 +22,7 @@ image:
   focal_point: ""
   placement: 2
   preview_only: false
-  filename: featured.png
+  filename: featured.jpg
 ---
 <!--StartFragment-->
 
