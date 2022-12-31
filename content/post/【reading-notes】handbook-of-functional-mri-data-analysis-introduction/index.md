@@ -1,6 +1,5 @@
 ---
-title: "Lecture Summary | NeuroAI Book Club - Different Path Same Aim: Biovision
-  and Machine Vision"
+title: "【Reading Notes】Handbook of Functional MRI Data Analysis - Introduction"
 subtitle: ""
 date: 2022-10-31T07:01:11.322Z
 summary: These are the reading notes for Introduction Chapter of *Handbook of
@@ -9,7 +8,7 @@ draft: false
 featured: false
 authors:
   - admin
-lastmod: 2020-12-13T00:00:00.000Z
+lastmod: 2022-10-31T07:01:11.322Z
 tags:
   - fMRI
   - Data Processing
@@ -26,9 +25,9 @@ image:
   preview_only: false
   filename: featured.jpg
 ---
-Welcome 👋 This is an English-translated version of the original lecture summary via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit [讲座总结 | NeuroAI读书会 - 殊途同归：生物视觉与人工视觉 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzI1MTc1MjQxMg==&mid=2247489080&idx=1&sn=0963d38a0b1dabc7e04bc1c87a2c5920&chksm=e9ef6c8bde98e59dc37f7eed4d5cb4ffbbd79682cf0b720c67ba0b4f1e2b0002bc5fc3265705&token=1564453875&lang=zh_CN#rd)
+Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit [【读书笔记】Handbook of Functional MRI Data Analysis - Introduction (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483670&idx=1&sn=09925ce7abda6fdb03a083314d9d2514&chksm=c05aa08df72d299b7eaeab1d18443b80ea161b3b910071550b80761a395a6599a462e756bfae&token=1947952242&lang=zh_CN#rd)
 
-Most of the content of this reading note comes from Professor Pinglei Bao’s Lecture in the NeuroAI Book Club. If there is any infringement, please get in touch with me and I will remove it immediately.
+Most of the content of this reading note comes from the *Handbook of Functional MRI Data Analysis*. Please read [the original book](http://www.fmri-data-analysis.org/) for more accurate information. If there is any infringement, please get in touch with me and I will remove it immediately.
 
 - - -
 

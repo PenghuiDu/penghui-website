@@ -8,7 +8,7 @@ draft: false
 featured: false
 authors:
   - admin
-lastmod: 2020-12-13T00:00:00.000Z
+lastmod: 2022-11-04T05:44:49.633Z
 tags:
   - fMRI
   - Data Processing
