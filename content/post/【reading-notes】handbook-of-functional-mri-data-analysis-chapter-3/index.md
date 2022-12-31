@@ -27,7 +27,7 @@ image:
 ---
 <!--StartFragment-->
 
-Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 4 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483755&idx=1&sn=e78ebccebfc75fb6ad36301344659efa&chksm=c05aa0f0f72d29e67788c58be65a5f6e67ad2b65b6f5d3ead0d7c92e4598b206ce4d74e3ccac&token=1947952242&lang=zh_CN#rd)
+Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit[](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483755&idx=1&sn=e78ebccebfc75fb6ad36301344659efa&chksm=c05aa0f0f72d29e67788c58be65a5f6e67ad2b65b6f5d3ead0d7c92e4598b206ce4d74e3ccac&token=1947952242&lang=zh_CN#rd)﻿ [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 3 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483721&idx=1&sn=ab2e6fa5e2ba5e00c798b5b38667a07a&chksm=c05aa0d2f72d29c47fed9adecfd96a7e055370b0503f54f55df2aa699a456a5135e704d2bdf5&token=1947952242&lang=zh_CN#rd)
 
 Most of the content of this reading note comes from the *Handbook of Functional MRI Data Analysis*. Please read [the original book](http://www.fmri-data-analysis.org/) for more accurate information. If there is any infringement, please get in touch with me and I will remove it immediately.
 
@@ -198,5 +198,3 @@ How to describe the intensity of smoothing? It can be described by Full width ha
 Depends on the purpose of the smoothness. Smaller smoothing will allow you to see a more localized activation pattern, larger smoothing will allow you to see a more global pattern.
 
 ![img](640.jpg)
-
-
