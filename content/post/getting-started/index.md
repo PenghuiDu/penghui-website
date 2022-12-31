@@ -2,7 +2,7 @@
 title: 【Reading Notes】Handbook of Functional MRI Data Analysis - Chapter 4
 subtitle: ""
 date: 2022-12-08T00:00:00.000Z
-summary: 👋 Thank you for your reading
+summary: ""
 draft: false
 featured: false
 authors:
@@ -16,14 +16,13 @@ categories:
   - Reading Notes
 projects: []
 image:
-  caption: "Image credit: [**National Institute of Mental
-    Health**](http://nimh.nih.gov/health/publications/neuroimaging-and-mental-i\
-    llness-a-window-into-the-brain/neuroimaging-and-mental-illness-a-window-int\
-    o-the-brain.shtml)"
+  caption: "Image credit: [**Dr. Mark Allen
+    PhD**](https://www.cognitivefxusa.com/blog/fmri-brain-scans-duke-study-impl\
+    ications)"
   focal_point: ""
   placement: 2
   preview_only: false
-  filename: featured.jpg
+  filename: featured.png
 ---
 <!--StartFragment-->
 
