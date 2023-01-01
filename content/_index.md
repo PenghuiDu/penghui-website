@@ -49,7 +49,7 @@ sections:
                 * Biomedical Optics (A+)
                 * Neurobiology (B)
                 * Machine Learning (A)
-                * Intelligent Sensing Technology (A); 
+                * Intelligent Sensing Technology (A)
           
         - title: Visiting Student
           company: University of Zurich
