@@ -38,7 +38,9 @@ sections:
               * Academic Supervisor: Professor Quanying Liu
               * Current GPA: 3.81 / 4
               * Current Ranking: 3 / 21
-              * Core Courses: Linear Algebra(A); JAVA Programming(A); Probability and Statistics(A-); Signals and Systems(A); Data Structures and Algorithms(A+); Biomedical Optics(A+); Neurobiology(B); Machine Learning(A); Intelligent Sensing Technology(A); 
+              * Core Courses: 
+                * Linear Algebra(A)
+                * JAVA Programming(A); Probability and Statistics(A-); Signals and Systems(A); Data Structures and Algorithms(A+); Biomedical Optics(A+); Neurobiology(B); Machine Learning(A); Intelligent Sensing Technology(A); 
         - title: Visiting Student
           company: University of Zurich
           company_url: ''
