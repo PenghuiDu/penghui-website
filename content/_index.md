@@ -192,10 +192,8 @@ sections:
       text: |-
 
       # Contact (add or remove contact options as necessary)
-      email: duph2020@mail.sustech.edu.cn
-      email: penghui.du@uzh.ch
-      phone: +86 158 8937 2606
-      phone: +41 76 293 24 87
+      email: duph2020@mail.sustech.edu.cn / penghui.du@uzh.ch
+      phone: +86 158 8937 2606 / +41 76 293 24 87
       address:
         street: No.1088, Xueyuan Blvd
         city: Shenzhen
@@ -204,7 +202,7 @@ sections:
         country: China
         country_code: CN
       # Automatically link email and phone or display as text?
-      autolink: true
+      autolink: false
     design:
       columns: '2'
 ---
