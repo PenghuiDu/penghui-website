@@ -36,8 +36,9 @@ sections:
           description: |2-
               * Major: Intelligent Medical Engineering
               * Academic Supervisor: Professor Quanying Liu
-              * Current GPA: 3.81 / 4
-              * Current Ranking: 3 / 21
+              * Current GPA: 3.84 / 4
+              * Current Ranking: 1 / 22
+              * Weighted Average Score: 92.79
           
         - title: Visiting Student
           company: University of Zurich
