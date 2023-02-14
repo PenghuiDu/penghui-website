@@ -192,7 +192,9 @@ sections:
 
       # Contact (add or remove contact options as necessary)
       email: duph2020@mail.sustech.edu.cn
+      email: penghui.du@uzh.ch
       phone: +86 158 8937 2606
+      phone: +41 76 293 24 87
       address:
         street: No.1088, Xueyuan Blvd
         city: Shenzhen

@@ -5,8 +5,8 @@ avatar_filename: avatar.jpg
 bio: ""
 interests:
   - Artificial Intelligence
-  - Neuroscience
-  - Vision
+  - Computational Neuroscience
+  - Biological Perception
 social:
   - icon: envelope
     icon_pack: fas
@@ -36,4 +36,4 @@ highlight_name: true
 first_name: Penghui
 email: duph2020@mail.sustech.edu.cn
 ---
-I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. I’m interested in developing neural encoding and decoding models for brain-computer interfaces. I plan to pursue a PhD in this field and do related research in the future.
+I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. My passion lies at the intersection of computational neuroscience, machine learning, and biological perception. I am eager to pursue a PhD in this field and conduct cutting-edge research in the future.
