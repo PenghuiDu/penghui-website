@@ -2,7 +2,7 @@
 title: Reading Notes | Handbook of Functional MRI Data Analysis - Chapter 5
 subtitle: ""
 date: 2023-02-22T22:11:36.918Z
-summary: These are the reading notes for Chapter 4 of *Handbook of Functional
+summary: These are the reading notes for Chapter 5 of *Handbook of Functional
   MRI Data Analysis*.
 draft: false
 featured: false
