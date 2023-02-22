@@ -25,15 +25,13 @@ image:
   preview_only: false
   filename: featured.jpg
 ---
-Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 4 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483755&idx=1&sn=e78ebccebfc75fb6ad36301344659efa&chksm=c05aa0f0f72d29e67788c58be65a5f6e67ad2b65b6f5d3ead0d7c92e4598b206ce4d74e3ccac&token=1947952242&lang=zh_CN#rd)
+Welcome 👋 This is an English-translated version of the original reading notes via DeelL.com. There may be some inaccuracies in the translation, so please correct me if you see any. For the original Chinese version, please visit [【读书笔记】Handbook of Functional MRI Data Analysis - Chapter 5 (qq.com)](https://mp.weixin.qq.com/s?__biz=Mzg5ODg3MzU4OA==&mid=2247483969&idx=1&sn=edd70b861be9a391b74c8d3143770c9b&chksm=c05aa3daf72d2acc4f4ff8c9dd6098e69b21b1c1fe06e71e13ab55bdf3ec46025891f2ca44a3&token=406560438&lang=zh_CN#rd)
 
 Most of the content of this reading note comes from the *Handbook of Functional MRI Data Analysis*. Please read [the original book](http://www.fmri-data-analysis.org/) for more accurate information. If there is any infringement, please get in touch with me and I will remove it immediately.
 
-------
+- - -
 
 I'm back! It has been 2 months since I updated my last reading notes XD
-
-
 
 ## Chapter 5. Statistical Modeling: Single Subject Analysis
 
@@ -49,12 +47,11 @@ Neuronal activity causes the local blood oxygen level to rise, which leads to a 
 
 Figure 5.2 shows a graphical representation of the BOLD signal, which has several important features as follows.
 
-- Peak height: This is the most important feature because it is directly related to the intensity of neural activity in this region. In general, primary perceptual stimuli bring about at most 5% change in BOLD signal, and in cognitive studies, there is generally only 0.1%-0.5% change in BOLD signal.
-
-- Time to peak: generally 4-6 seconds after stimulus onset.
-- Width: HRF starts to rise after 1-2 seconds and returns to baseline after about 12-20 seconds.
-- Initial dip: In the very first 1-2 seconds, there is an initial dip, which is generally thought to be caused by the consumption of blood oxygen by neural activity. It is generally not significant.
-- Poststimuli undershoot: HRF will generally have the presence of undershoot in the late stages. The magnitude is not significant and may last about 20s.
+* Peak height: This is the most important feature because it is directly related to the intensity of neural activity in this region. In general, primary perceptual stimuli bring about at most 5% change in BOLD signal, and in cognitive studies, there is generally only 0.1%-0.5% change in BOLD signal.
+* Time to peak: generally 4-6 seconds after stimulus onset.
+* Width: HRF starts to rise after 1-2 seconds and returns to baseline after about 12-20 seconds.
+* Initial dip: In the very first 1-2 seconds, there is an initial dip, which is generally thought to be caused by the consumption of blood oxygen by neural activity. It is generally not significant.
+* Poststimuli undershoot: HRF will generally have the presence of undershoot in the late stages. The magnitude is not significant and may last about 20s.
 
 ![image-20230219184044712](image-20230219184044712.png)
 
@@ -64,7 +61,7 @@ An important property of the BOLD signal is that there is an approximate **linea
 
 ![image-20230219195222228](image-20230219195222228.png)
 
-> The linear nature of the BOLD signal is crucial, and it has been carefully verified in the literature on fMRI. This property provides the theoretical basis for our analysis of the BOLD signal using GLM. It is important to note that there are some situations that may ** lead to a nonlinear relationship between the stimulus and the BOLD signal**. But not only that, **the relationship between stimulus and neural activity** may also be nonlinear in some cases (habituation, sensitization, etc.), e.g., a high-frequency sound signal sequence does not induce a linear counterpart of neural activity, but rather produces aphasic burst at the beginning and end of the signal. there are other examples: e.g., successive rapidly repeating stimulus sequences induce However, for most fMRI cognitive experiments, the effect of these nonlinear cases is limited.
+> The linear nature of the BOLD signal is crucial, and it has been carefully verified in the literature on fMRI. This property provides the theoretical basis for our analysis of the BOLD signal using GLM. It is important to note that there are some situations that may  **lead to a nonlinear relationship between the stimulus and the BOLD signal**. But not only that, **the relationship between stimulus and neural activity** may also be nonlinear in some cases (habituation, sensitization, etc.), e.g., a high-frequency sound signal sequence does not induce a linear counterpart of neural activity, but rather produces aphasic burst at the beginning and end of the signal. there are other examples: e.g., successive rapidly repeating stimulus sequences induce However, for most fMRI cognitive experiments, the effect of these nonlinear cases is limited.
 
 The nature of LTI allows us to directly convolve a given stimulus to obtain the corresponding BOLD signal. Specifically, we write the stimulus as f(t) and simply convolve f(t) with the HRF (Hemodynamic Response Function, h) to obtain a function that is very close to the BOLD response as follows.
 $$
@@ -86,7 +83,7 @@ Some other earlier work found that the gamma function could be used to fit the H
 
 The blood oxygen response is actually different between different tissues, so the HRF should be different as well. If the classical double-gamma HRF is used, there will be bias. But if we use a too complex model, there are too many parameters to tune, and the prediction will have a big flexibility, which is not what we expect. So we usually have to do bias-variance tradeoff. a common slightly more complex HRF is to choose a set of basis functions and let them combine linearly to produce the HRF.
 
-##### 5.1.2.1. Modeling the derivative 
+##### 5.1.2.1. Modeling the derivative
 
 The most commonly used basis is "canonical HRF plus derivatives". Why can the time domain first order derivatives of the canonical HRF also be used as a basis? The time shift of the HRF is nonlinear, so a time-shifted version of the HRF cannot be obtained by simple addition and multiplication, but it can be modeled by adding the first-order derivatives of a specific multiple of the first-order derivatives. (Why is this possible? Consider the Taylor expansion of the HRF)
 
@@ -130,7 +127,7 @@ To eliminate this effect, two approaches are offered here: 1. vary the duration 
 
 ![image-20230220215907648](image-20230220215907648.png)
 
-### 5.2. The BOLD noise 
+### 5.2. The BOLD noise
 
 This section models the noise. The noise is divided into two categories: 1. white noise, which is broad-spectrum and not limited to specific frequencies; 2. structured noise, which reflects the effects of physiological fluctuations at specific frequencies, and so is colored noise. analyzing these noises can improve the model fit (especially structured noise, which may affect the (especially structured noise, which may affect the most basic independence assumption in GLM, leading to higher false positive).
 
@@ -160,7 +157,7 @@ WY=WX\beta+W\epsilon
 $$
 In this way, the covariance of $$W\epsilon$$ is $$Cov(W\epsilon)=\sigma^2WVW'=\sigma^2I_T$$, so that the whitened model has error terms that are independent of each other for the GLM to give the optimal estimate. Why use residue to estimate the autocorrelation? This is to ensure that the removed time-domain autocorrelation is from the noise and not from the task of interest.
 
-There are a number of models that can effectively describe the correlation present in the noise of the BOLD signal. the simplest is the AR(1) model, which assumes a variance of 1 at each time point and that the correlation between two data points decreases geometrically as the distance between the two data points increases in time ($cor(y_i, y_{i+a})=\ rho^a$). A slightly more complex model that takes white noise into account, adding an additional variance parameter to the white noise, is called the AR(1) + WN model. A more general model is the autoregressive, moving average (ARMA) model, of which the first two models are special forms. These models all fit the 1/f trend in the fMRI time series very well. There is another algorithm called unstructured covariance estimation, which is more unbiased than AR(1) + WN, but the estimation results are also more unstable.
+There are a number of models that can effectively describe the correlation present in the noise of the BOLD signal. the simplest is the AR(1) model, which assumes a variance of 1 at each time point and that the correlation between two data points decreases geometrically as the distance between the two data points increases in time ($cor(y*i, y*{i+a})=\ rho^a$). A slightly more complex model that takes white noise into account, adding an additional variance parameter to the white noise, is called the AR(1) + WN model. A more general model is the autoregressive, moving average (ARMA) model, of which the first two models are special forms. These models all fit the 1/f trend in the fMRI time series very well. There is another algorithm called unstructured covariance estimation, which is more unbiased than AR(1) + WN, but the estimation results are also more unstable.
 
 In the selection process of the correlation model, there is a trade-off between the accuracy of the correlation description and the number of parameters. If the estimation of the model is not stable enough, a possible solution is to increase the degree of freedom. This can be achieved by reducing the number of parameters to be estimated, or by increasing the number of available data points (pooling data across multiple voxels, pulling data from nearby voxels to use them as well). Of course, the correlation structure of the adjacent voxel may not necessarily be consistent with the current voxel, which may pose certain problems; but conversely, if the number of parameters in the model is too small, it will result in the model not being able to fully capture the trends in the data. SPM and FSL use different correlation models respectively, so pay more attention when using them.
 
@@ -184,7 +181,7 @@ In order to achieve a balance between estimation and detection, one way is to us
 
 In most studies, there are often multiple stimuli, and the order and timing of stimuli presentation is important. Sometimes the order of stimuli is fixed, for example, a cue is given first, then a stimulus is given, and then the RESPONSE is obtained.
 
-Before comparing different experimental designs, we first need to introduce the concept of Efficiency. When the regressors in GLM are highly correlated with each other, the estimation of the parameters becomes very unstable or, in other words, inefficient. Here efficiency is defined as the inverse of variance of the parameter estimates. If the design matrix is X, the parameter is $\beta$, and the error variance is $\sigma^2$, then the covariance of the parameter is $Cov(\beta)=(X'X)^{-1}\sigma^2$. The efficiency is generally considered to be related to design only, so it is $(X'X)^{-1}$. Then for a given c (contrast of parameters), efficiency is defined as $eff(c\hat\beta)=\frac{1}{c(X'X)^{-1}c'}$. As an example, if the model has two parameters $\beta_0, \beta_1$ and we care about $\beta_0$, then let's set $c$ as $[1, 0]$. With the definition of efficiency, we can make a quantitative comparison of different experimental designs. The example in Figure 5.18 shows us that a certain degree of random scheduling of the timing of multiple stimuli can effectively reduce the correlation between them, thus increasing the measurement efficiency and improving the fit of the GLM model.
+Before comparing different experimental designs, we first need to introduce the concept of Efficiency. When the regressors in GLM are highly correlated with each other, the estimation of the parameters becomes very unstable or, in other words, inefficient. Here efficiency is defined as the inverse of variance of the parameter estimates. If the design matrix is X, the parameter is $\beta$, and the error variance is $\sigma^2$, then the covariance of the parameter is $Cov(\beta)=(X'X)^{-1}\sigma^2$. The efficiency is generally considered to be related to design only, so it is $(X'X)^{-1}$. Then for a given c (contrast of parameters), efficiency is defined as $eff(c\hat\beta)=\frac{1}{c(X'X)^{-1}c'}$. As an example, if the model has two parameters $\beta_0, \beta_1$ and we care about $\beta_0$, then let's set $c$ as $\[1, 0]$. With the definition of efficiency, we can make a quantitative comparison of different experimental designs. The example in Figure 5.18 shows us that a certain degree of random scheduling of the timing of multiple stimuli can effectively reduce the correlation between them, thus increasing the measurement efficiency and improving the fit of the GLM model.
 
 ![](image-20230222230113512.png)
 
