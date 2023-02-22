@@ -63,10 +63,14 @@ An important property of the BOLD signal is that there is an approximate **linea
 
 > The linear nature of the BOLD signal is crucial, and it has been carefully verified in the literature on fMRI. This property provides the theoretical basis for our analysis of the BOLD signal using GLM. It is important to note that there are some situations that may  **lead to a nonlinear relationship between the stimulus and the BOLD signal**. But not only that, **the relationship between stimulus and neural activity** may also be nonlinear in some cases (habituation, sensitization, etc.), e.g., a high-frequency sound signal sequence does not induce a linear counterpart of neural activity, but rather produces aphasic burst at the beginning and end of the signal. there are other examples: e.g., successive rapidly repeating stimulus sequences induce However, for most fMRI cognitive experiments, the effect of these nonlinear cases is limited.
 
-The nature of LTI allows us to directly convolve a given stimulus to obtain the corresponding BOLD signal. Specifically, we write the stimulus as f(t) and simply convolve f(t) with the HRF (Hemodynamic Response Function, h) to obtain a function that is very close to the BOLD response as follows.
+The nature of LTI allows us to directly convolve a given stimulus to obtain the corresponding BOLD signal. Specifically, we write the stimulus as f(t) and simply convolve f(t) with the HRF (Hemodynamic Response Function, h) to obtain a function that is very close to the BOLD response as follows:
+
+
 $$
 (h*f)(t) = \int h(\tau)f(t-\tau)d\tau
 $$
+
+
 It is easy to realize that choosing a good HRF is crucial to the effectiveness of the GLM fit to the BOLD signal.
 
 ##### 5.1.1.1. Characterizing the hemodynamic response function
@@ -147,15 +151,25 @@ There are two common approaches to high-pass filtering: 1. adding a Discrete Cos
 
 After doing high-pass filtering, the fMRI signal is still autocorrelated in time. In order to make the GLM estimates unbiased and reduce the estimated variance, the input data to the model should be uncorrelated and the variance should be the same at each time point. prewhitening is the method to remove the autocorrelation from the data. prewhitening is divided into two steps: 1. modeling the raw unprocessed data with GLM, removing from the The model residues are obtained by removing all the variability captured by the model from the original data. 2. The autocorrelation structure is estimated using the residues, and the autocorrelation is removed from the data and the design matrix and modeled again using GLM.
 
-In summary, doing GLM on the raw data is roughly of the form.
+In summary, doing GLM on the raw data is roughly of the form:
+
+
 $$
 Y = X\beta + \epsilon
 $$
-where Y is the BOLD signal, X is the design matrix, $$ \beta$$ is the parameter to be estimated, and $$ \epsilon$$ is the error (usually considered to have a mean of 0 and a variance of $$ \sigma^2V$$). When V is the identity matrix, the GLM estimate of $\beta$ is optimal. However, since there is autocorrelation in the BOLD signal, V is not an identity matrix and there may be values that are not on the diagonal indicating the existence of correlation, and there may be values of different sizes on the diagonal indicating different variances at different times. prewhitening is to find a matrix W such that $WVW'=I_T$, where $I_T $ is the identity matrix. then multiplying the GLM expression left and right by each of W gives.
+
+
+where Y is the BOLD signal, X is the design matrix, $$ \beta$$ is the parameter to be estimated, and $$ \epsilon$$ is the error (usually considered to have a mean of 0 and a variance of $$ \sigma^2V$$). When V is the identity matrix, the GLM estimate of $\beta$ is optimal. However, since there is autocorrelation in the BOLD signal, V is not an identity matrix and there may be values that are not on the diagonal indicating the existence of correlation, and there may be values of different sizes on the diagonal indicating different variances at different times. prewhitening is to find a matrix W such that $WVW'=I_T$, where $I_T$ is the identity matrix. then multiplying the GLM expression left and right by each of W gives:
+
+
 $$
 WY=WX\beta+W\epsilon
 $$
+
+
 In this way, the covariance of $$W\epsilon$$ is $$Cov(W\epsilon)=\sigma^2WVW'=\sigma^2I_T$$, so that the whitened model has error terms that are independent of each other for the GLM to give the optimal estimate. Why use residue to estimate the autocorrelation? This is to ensure that the removed time-domain autocorrelation is from the noise and not from the task of interest.
+
+
 
 There are a number of models that can effectively describe the correlation present in the noise of the BOLD signal. the simplest is the AR(1) model, which assumes a variance of 1 at each time point and that the correlation between two data points decreases geometrically as the distance between the two data points increases in time ($cor(y*i, y*{i+a})=\ rho^a$). A slightly more complex model that takes white noise into account, adding an additional variance parameter to the white noise, is called the AR(1) + WN model. A more general model is the autoregressive, moving average (ARMA) model, of which the first two models are special forms. These models all fit the 1/f trend in the fMRI time series very well. There is another algorithm called unstructured covariance estimation, which is more unbiased than AR(1) + WN, but the estimation results are also more unstable.
 
