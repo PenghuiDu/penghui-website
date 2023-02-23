@@ -36,4 +36,4 @@ highlight_name: true
 first_name: Penghui
 email: duph2020@mail.sustech.edu.cn
 ---
-I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. My passion lies at the intersection of computational neuroscience, machine learning, and biological perception. I am eager to pursue a PhD in this field and conduct cutting-edge research in the future.
+I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. My passion lies at the intersection of computational neuroscience, machine learning, and cognition. I am eager to pursue a PhD in this field and do related research in the future.
