@@ -36,4 +36,4 @@ highlight_name: true
 first_name: Penghui
 email: duph2020@mail.sustech.edu.cn
 ---
-I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering, and currently studying as a visiting student at the University of Zurich. My academic interests encompass neuroscience, machine learning, and cognition, with a specific focus on fMRI data analysis. I am highly motivated to pursue a PhD in this field and conduct research to advance our understanding of the human brain.
+I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering, and currently studying as a visiting student at the University of Zurich. My academic interests encompass neuroscience, machine learning, and cognition. I am highly motivated to pursue a PhD in this field and conduct research to advance our understanding of the human brain.
