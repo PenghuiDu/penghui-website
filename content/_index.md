@@ -137,19 +137,19 @@ sections:
         folders:
           - project
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      default_button_index: 0
+      # default_button_index: 0
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+      # buttons:
+      #   - name: All
+      #     tag: '*'
+      #   - name: Deep Learning
+      #     tag: Deep Learning
+      #   - name: Other
+      #     tag: Demo
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
@@ -192,8 +192,8 @@ sections:
       text: |-
 
       # Contact (add or remove contact options as necessary)
-      email: duph2020@mail.sustech.edu.cn / penghui.du@uzh.ch
-      phone: +86 158 8937 2606 / +41 76 293 24 87
+      email: duph2020@mail.sustech.edu.cn / undefined0326@gmail.com / pedu@mgh.harvard.edu
+      phone: +86 158 8937 2606 / +1 (617) 256-3945
       address:
         street: No.1088, Xueyuan Blvd
         city: Shenzhen

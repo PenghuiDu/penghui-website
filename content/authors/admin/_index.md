@@ -1,11 +1,12 @@
 ---
 title: Penghui Du 杜鹏辉
-role: Undergraduate
+role: Undergraduate (Graduate in 2024 Fall)
 avatar_filename: avatar.jpg
 bio: ""
 interests:
-  - Artificial Intelligence
   - Computational Neuroscience
+  - Artificial Intelligence
+  - functional Magnetic Resonance Imaging
   - Biological Perception
 social:
   - icon: envelope
