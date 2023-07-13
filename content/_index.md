@@ -52,7 +52,7 @@ sections:
               * GPA: 5.3 / 6
         
         - title: Undergraduate Research Assistant
-          company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
+          company: Athinoula A. Martinos Center for Biomedical Imaging,            Harvard Medical School
           company_url: 'https://www.martinos.org/'
           company_logo: Martinos
           location: Charlestown, Unites States
