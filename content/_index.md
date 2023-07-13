@@ -28,7 +28,7 @@ sections:
       
         - title: Undergraduate
           company: Southern University of Science and Technology
-          company_url: ''
+          company_url: 'www.sustech.edu.cn'
           company_logo: sustech
           location: Shenzhen
           date_start: '2020-08-27'
@@ -37,7 +37,7 @@ sections:
               * Major: Intelligent Medical Engineering
               * Academic Supervisor: Professor Quanying Liu
               * Current GPA: 3.84 / 4
-              * Current Ranking: 1 / 22
+              * Current Ranking: 2 / 22
               * Weighted Average Score: 92.79
           
         - title: Visiting Student
@@ -46,9 +46,14 @@ sections:
           company_logo: UZH
           location: Zurich
           date_start: '2023-02-01'
-          date_end: '2023-07-31'
+          date_end: '2023-06-15'
           description: |2-
               * Main Subject: Neuroinformatics
+              * GPA: 5.3 / 6
+        
+        # - title: Undergraduate Research Assistant
+        #   company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
+        #   company_url: 
     design:
       columns: '2'
   - block: accomplishments

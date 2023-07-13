@@ -37,4 +37,8 @@ highlight_name: true
 first_name: Penghui
 email: duph2020@mail.sustech.edu.cn
 ---
-I am a junior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering, and currently studying as a visiting student at the University of Zurich. My academic interests encompass neuroscience, machine learning, and cognition. I am highly motivated to pursue a PhD in this field and conduct research to advance our understanding of the human brain.
+My name is Penghui Du, I am a senior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. I’m currently a visiting student at Martinos Center for Biomedical Imaging in Harvard Medical School.
+
+I am a huge enthusiast of coding because it utilizes sophisticated logic to govern the workings of a system. Whenever I encounter a piece of code that puzzles me, I enjoy deconstructing it line by line, striving to understand its purpose. I firmly believe that even our complex brains operate on an intricate, yet elegant code that facilitates all functions and thought processes. This notion fuels my curiosity, driving me to uncover the nature of this neural code. As such, I've made the decision to pursue studies in computational and cognitive neuroscience.
+
+Beyond my academic pursuits, I love cooking, jogging and travelling. I have posted some photos of the meals I've cooked in the gallery below. If you're interested, feel free to send me an email and come try these dishes at my place in Somerville.
