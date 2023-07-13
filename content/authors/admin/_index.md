@@ -39,6 +39,6 @@ email: duph2020@mail.sustech.edu.cn
 ---
 My name is Penghui Du, I am a senior at the Southern University of Science and Technology, majoring in Intelligent Medical Engineering. I’m currently a undergraduate research assistant at Martinos Center for Biomedical Imaging in Harvard Medical School. 
 
-I am a huge enthusiast of programming as it uses concise logic to direct the workings of a system. Whenever I encounter a piece of code that puzzles me, I find enjoyment in deconstructing it line by line, striving to comprehend its purpose. This curiosity extends beyond programming, leading me to think that even our complex brains may operate on an intricate, yet elegant code that facilitates our great minds. This notion fuels my curiosity, driving me to dive into the field of computational and cognitive neuroscience to uncover the 'code' underlying our brains.
+I am a huge enthusiast of programming, which uses concise logic to dictate system operations. I believe that our complex brains may also function according to an intricate, yet elegant, 'code' that enables our incredible cognitive abilities. Propelled by this notion, I am eager to delve into the field of computational and cognitive neuroscience, aiming to uncover the 'code' underpinning our brains.
 
 Outside of my academic interests, I enjoy cooking, jogging, and traveling. I also have a keen interest in digital products and enjoy experimenting with computer modifications.
