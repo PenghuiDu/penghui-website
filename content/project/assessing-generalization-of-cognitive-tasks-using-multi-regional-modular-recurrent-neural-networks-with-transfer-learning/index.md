@@ -44,3 +44,5 @@ The results demonstrated better transferability between cognitive tasks in the s
 # Conclusion
 
 These findings shed light on the coordination and functioning of functional modules in different brain regions and present transfer learning as a new way for investigating generalization across diverse cognitive tasks.
+
+![](qq图片20230712223607.jpg)
