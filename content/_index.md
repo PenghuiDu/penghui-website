@@ -28,7 +28,7 @@ sections:
       
         - title: Undergraduate
           company: Southern University of Science and Technology
-          company_url: 'www.sustech.edu.cn'
+          company_url: 'https://www.sustech.edu.cn'
           company_logo: sustech
           location: Shenzhen
           date_start: '2020-08-27'
