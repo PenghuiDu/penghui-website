@@ -31,17 +31,17 @@ Nasopharyngeal cancer is a malignant tumor that occurs in the nasopharyngeal cav
 
 The model in this project is trained with TranUNet as the basic framework, using the R50+VitB16 model pre-trained on ImageNet21K as the initial parameters of the Transformer layer. The model mainly consists of CNN downsampling layer, Transformer encoder layer and CNN upsampling layer alternately. sampling layer alternately. In testing the model segmentation performance, we we use DSC (DiceSimilarityCoefficient) coefficient and ASD (AverageSurfaceDistance) as the technical indexes to evaluate the model segmentation effect.
 
-![image-20230712225414287](C:\Users\maomao\AppData\Roaming\Typora\typora-user-images\image-20230712225414287.png)
+![image-20230712225414287](image-20230712225414287.png)
 
 # Results
 
-![image-20230712225507767](C:\Users\maomao\AppData\Roaming\Typora\typora-user-images\image-20230712225507767.png)
+![image-20230712225507767](image-20230712225507767.png)
 
-![image-20230712225518226](C:\Users\maomao\AppData\Roaming\Typora\typora-user-images\image-20230712225518226.png)
+![image-20230712225518226](image-20230712225518226.png)
 
-![image-20230712225528177](C:\Users\maomao\AppData\Roaming\Typora\typora-user-images\image-20230712225528177.png)
+![image-20230712225528177](image-20230712225528177.png)
 
-![image-20230712225553820](C:\Users\maomao\AppData\Roaming\Typora\typora-user-images\image-20230712225553820.png)
+![image-20230712225553820](image-20230712225553820.png)
 
 # Conclusions
 
@@ -51,3 +51,5 @@ The model in this project is trained with TranUNet as the basic framework, using
 3. The model uses a supervised binary classification model combined with an unsupervised clustering algorithm for classification, which effectively reduces the training cost compared to direct multi-classification, and the design of the loss function is more convenient in training.
 4. The model takes multiple clustering algorithms into consideration and adopts the DBSCAN algorithm with the best effect. It can realize effective clustering for nonlinear regions, and it can remove a small amount of scattering noise introduced when the model is subject to classification.
 5. The model is based on the a priori of large-scale image data, has an attention mechanism that gradually converges to focus on pathological regions, can discard some of the scattered noise, and has strong interpretability.
+
+![image-20230712223619.jpg](image-20230712223619.jpg)
