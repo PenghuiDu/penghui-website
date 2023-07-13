@@ -30,7 +30,7 @@ sections:
           company: Southern University of Science and Technology
           company_url: 'https://www.sustech.edu.cn'
           company_logo: sustech
-          location: Shenzhen
+          location: Shenzhen, China
           date_start: '2020-08-27'
           date_end: '2024-06-27'
           description: |2-
@@ -42,18 +42,22 @@ sections:
           
         - title: Visiting Student
           company: University of Zurich
-          company_url: ''
+          company_url: 'https://uzh.ch/cmsssl/en.html'
           company_logo: UZH
-          location: Zurich
+          location: Zurich, Switzerland
           date_start: '2023-02-01'
           date_end: '2023-06-15'
           description: |2-
               * Main Subject: Neuroinformatics
               * GPA: 5.3 / 6
         
-        # - title: Undergraduate Research Assistant
-        #   company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
-        #   company_url: 
+        - title: Undergraduate Research Assistant
+          company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
+          company_url: 'https://www.martinos.org/'
+          company_logo: Martinos
+          location: Charlestown, Massachusetts
+          date_start: '2023-07-05'
+          date_end: '2024-02-29'
     design:
       columns: '2'
   - block: accomplishments
