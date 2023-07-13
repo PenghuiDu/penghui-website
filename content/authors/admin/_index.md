@@ -1,6 +1,6 @@
 ---
 title: Penghui Du 杜鹏辉
-role: Undergraduate (Graduate in 2024 Fall)
+role: Undergraduate
 avatar_filename: avatar.jpg
 bio: ""
 interests:

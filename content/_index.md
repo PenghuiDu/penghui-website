@@ -55,9 +55,12 @@ sections:
           company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
           company_url: 'https://www.martinos.org/'
           company_logo: Martinos
-          location: Charlestown, Massachusetts
+          location: Charlestown, Unites States
           date_start: '2023-07-05'
           date_end: '2024-02-29'
+          description: |2-
+              * Research Topic (Ongoing): Mapping morphology of resting state metabolic (FDG-PET) and functional activations (R-fMRI)
+              * Supervisor: Professor Jingyuan Chen
     design:
       columns: '2'
   - block: accomplishments
