@@ -52,4 +52,6 @@ The model in this project is trained with TranUNet as the basic framework, using
 4. The model takes multiple clustering algorithms into consideration and adopts the DBSCAN algorithm with the best effect. It can realize effective clustering for nonlinear regions, and it can remove a small amount of scattering noise introduced when the model is subject to classification.
 5. The model is based on the a priori of large-scale image data, has an attention mechanism that gradually converges to focus on pathological regions, can discard some of the scattered noise, and has strong interpretability.
 
+
+![image-20230712223619.jpg](bme.jpg)
 ![image-20230712223619.jpg](image-20230712223619.jpg)
