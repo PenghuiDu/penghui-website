@@ -204,7 +204,7 @@ sections:
       text: |-
 
       # Contact (add or remove contact options as necessary)
-      email: duph2020@mail.sustech.edu.cn / undefined0326@gmail.com / pedu@mgh.harvard.edu
+      email: duph2020@mail.sustech.edu.cn / undefined0326@gmail.com
       phone: +86 158 8937 2606 / +1 (617) 256-3945
       address:
         street: No.1088, Xueyuan Blvd
