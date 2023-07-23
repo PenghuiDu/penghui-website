@@ -112,6 +112,17 @@ sections:
           organization_url: http://edu.gd.gov.cn/
           title: 'First prize in 13th "Challenge Cup" Entrepreneurship Plan Competition.'
           url: ''
+        
+        - certificate_url: https://penghui-du.com/uploads/cuda.png
+          date_end: '2020-11-20'
+          date_start: '2020-11-21'
+          description: ''
+          organization: Nvidia
+          organization_url: https://www.nvidia.com/en-us/
+          title: 'Certificate of Competency - Basics of CUDA-accelerated computing'
+          url: ''
+        
+
     design:
       columns: '2'
   - block: collection
