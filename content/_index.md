@@ -37,8 +37,8 @@ sections:
               * Major: Intelligent Medical Engineering
               * Academic Supervisor: Professor Quanying Liu
               * GPA: 3.84 / 4 (92.79), Ranking 2 / 22
-              * 2021 - 2022 Department of Biomedical Engineering "Fortunatt" Scholarship
-              * 2021 - 2022 SUSTech Outstanding Student Scholarships - First Prize
+              * 2022 BME "Fortunatt" Scholarship
+              * 2022 Outstanding Student Scholarships - First Prize
         - title: Visiting Student
           company: University of Zurich
           company_url: 'https://uzh.ch/cmsssl/en.html'
