@@ -36,10 +36,9 @@ sections:
           description: |2-
               * Major: Intelligent Medical Engineering
               * Academic Supervisor: Professor Quanying Liu
-              * Current GPA: 3.84 / 4
-              * Current Ranking: 2 / 22
-              * Weighted Average Score: 92.79
-          
+              * GPA: 3.84 / 4 (92.79), Ranking 2 / 22
+              * 2021 - 2022 Department of Biomedical Engineering "Fortunatt" Scholarship
+              * 2021 - 2022 SUSTech Outstanding Student Scholarships - First Prize
         - title: Visiting Student
           company: University of Zurich
           company_url: 'https://uzh.ch/cmsssl/en.html'
@@ -77,6 +76,17 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+
+        - certificate_url: https://penghui-du.com/uploads/challenge_cup.pdf
+          date_end: '2022-07-01'
+          date_start: '2021-12-01'
+          description: 'In the competition, We designed a business plan for manufactoring brain health monitor devices for severely ill newborns. After seven months of hard work, we finally completed our work and won the first prize in the competition. As the team leader, I am responsible for thinking of technical ideas and designing business plan.'
+          organization: Department of Education of Guangdong Province
+          organization_url: http://edu.gd.gov.cn/
+          title: 'First prize in 13th "Challenge Cup" Entrepreneurship Plan Competition.'
+          url: ''
+        
+
         - certificate_url: https://penghui-du.com/uploads/neuromatch.pdf
           date_end: ''
           date_start: '2022-07-30'
