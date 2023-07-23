@@ -35,10 +35,11 @@ sections:
           date_end: '2024-06-27'
           description: |2-
               * Major: Intelligent Medical Engineering
-              * Academic Supervisor: Professor Quanying Liu
+              * Academic Supervisor: Dr. Quanying Liu
               * GPA: 3.84 / 4 (92.79), Ranking 2 / 22
               * 2022 BME "Fortunatt" Scholarship
-              * 2022 Outstanding Student Scholarships - First Prize
+              * 2022 Outstanding Student Scholarships (First Prize)
+          
         - title: Visiting Student
           company: University of Zurich
           company_url: 'https://uzh.ch/cmsssl/en.html'
@@ -58,8 +59,8 @@ sections:
           date_start: '2023-07-05'
           date_end: '2024-02-29'
           description: |2-
-              * Research Topic (Ongoing): Mapping morphology of resting state metabolic (FDG-PET) and functional activations (R-fMRI)
-              * Supervisor: Professor Jingyuan Chen
+              * Research Focus: We utilize both resting state brain metabolic data (FDG-PET) and BOLD data to identify boundaries that indicate abrupt change of functional connectivity. Following this, we conduct a comparative analysis of the boundary morphologies derived from these two distinct imaging modalities, aiming to quantify their degree of alignment.
+              * Supervisor: Dr. Jingyuan Chen
     design:
       columns: '2'
   - block: accomplishments
@@ -78,19 +79,19 @@ sections:
       items:
 
         - certificate_url: https://penghui-du.com/uploads/challenge_cup.pdf
-          date_end: '2022-07-01'
-          date_start: '2021-12-01'
-          description: 'In the competition, We designed a business plan for manufactoring brain health monitor devices for severely ill newborns. After seven months of hard work, we finally completed our work and won the first prize in the competition. As the team leader, I am responsible for thinking of technical ideas and designing business plan.'
+          date_end: '2022-05-01'
+          date_start: '2021-11-01'
+          description: 'We designed a business plan for manufactoring brain health monitor devices for severely ill newborns, and won first prize in the competition. I'm team captain in this competition, and I'm responsible for proposing technical ideas and designing business plan.'
           organization: Department of Education of Guangdong Province
           organization_url: http://edu.gd.gov.cn/
-          title: 'First prize in 13th "Challenge Cup" Entrepreneurship Plan Competition.'
+          title: 'First prize in 13th "Challenge Cup" Entrepreneurship Competition.'
           url: ''
         
 
         - certificate_url: https://penghui-du.com/uploads/neuromatch.pdf
           date_end: ''
           date_start: '2022-07-30'
-          description: 'In this summer school, I learned basic principles of computational neuroscience such as reinforcement learning, leaky Integrate-and-Fire models, Hodgkin-Huxley models and Bayesian inference with other students in our team. After that, we did an amazing project on RNN and working memory and gave a presentation on our result.'
+          description: 'I studied computational neuroscience fundamentals such as reinforcement learning, leaky Integrate-and-Fire models, Hodgkin-Huxley models with my teammates. We then conducted an project on RNN and working memory, and presented our results to other teams.'
           organization: Neuromatch Academy
           organization_url: https://neuromatch.io/
           title: 2022 Neuromatch Computational Neuroscience Summer School
@@ -99,7 +100,7 @@ sections:
         - certificate_url: https://penghui-du.com/uploads/CLS-CIBR-IDG.jpg
           date_end: ''
           date_start: '2022-07-10'
-          description: 'In this summer school, researchers from molecular / cellular / systems / cognitive backgrounds gave us various exciting lectures on neuroscience. After that, we had discussion on some excellent works on cognitive neuroscience and gave a presentation on one of the them.'
+          description: 'I attended various neuroscience lectures in the summer school, followed by our team's presentation on a chosen paper. I was recognized with a Merit Student Award.'
           organization: Tsinghua University and Peking University
           organization_url: http://mcgovern.life.tsinghua.edu.cn
           title: Merit Student of CLS-CIBR-IDG Summer School in Neuroscience
@@ -108,19 +109,10 @@ sections:
         - certificate_url: https://penghui-du.com/uploads/bme.jpg
           date_end: '2022-07-01'
           date_start: '2022-03-20'
-          description: 'In the competition, we trained a deep learning model to segment critical organs in CT images. We developed a novel pretraining approach and achieved an accuracy of 85% in the segmentation task. As a result of our efforts, our team won first prize in the competition, beating out 188 other teams. As the team leader, I was responsible for building the model and writing the report.'
+          description: 'We utilized a deep learning model, combining Transformer and UNet, for labeling the key organs involved in radiotherapy in CT images. Our unique pre-training approach ensured high segmentation accuracy and reduced computational cost, earning us first prize in the competition.'
           organization: Guangdong Biomedical Engineering Association
           organization_url: http://gdsbme.com/
           title: 'First Prize in 2022 Guangdong Undergraduate Biomedical Engineering Innovation Design Competition'
-          url: ''
-
-        - certificate_url: https://penghui-du.com/uploads/challenge_cup.pdf
-          date_end: '2022-07-01'
-          date_start: '2021-12-01'
-          description: 'In the competition, We designed a business plan for manufactoring brain health monitor devices for severely ill newborns. After seven months of hard work, we finally completed our work and won the first prize in the competition. As the team leader, I am responsible for thinking of technical ideas and designing business plan.'
-          organization: Department of Education of Guangdong Province
-          organization_url: http://edu.gd.gov.cn/
-          title: 'First prize in 13th "Challenge Cup" Entrepreneurship Plan Competition.'
           url: ''
         
         - certificate_url: https://penghui-du.com/uploads/cuda.png
