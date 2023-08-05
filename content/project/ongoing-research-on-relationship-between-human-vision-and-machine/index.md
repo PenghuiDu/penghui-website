@@ -1,15 +1,14 @@
 ---
-# slides: example
 slides: ""
 url_pdf: ""
 summary: ""
 authors:
   - admin
 url_video: ""
-date: 2022-12-31T00:00:00.000Z
+date: 2022-08-31T23:00:00.000Z
 external_link: ""
 url_slides: ""
-title: Ongoing | Research on relationship between human vision and machine
+title: In Prep | Research on relationship between human vision and machine
   vision with fMRI signals
 tags:
   - Vision
@@ -32,4 +31,4 @@ url_code: ""
 
 ![](3.png "Part 2: Regulate machine vision models with fMRI signals, and analyze the outcomes. (Accuracy, Robustness, etc.)")
 
-The study is currently underway and is scheduled to be completed by June 2024
+The study is currently underway and will be completed by June 2024
