@@ -15,7 +15,7 @@ featured: false
 authors:
   - Youzhi Qu
   - Wenxin Che
-  - Penghui Du
+  - admin
   - Xinyao Jian
   - Quanying Liu
 tags:
