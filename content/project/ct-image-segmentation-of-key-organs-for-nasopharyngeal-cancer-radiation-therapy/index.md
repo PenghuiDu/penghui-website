@@ -10,7 +10,7 @@ summary: Nasopharyngeal cancer is a serious tumor in the upper pharynx,
 draft: false
 featured: false
 authors:
-  - Penghui Du
+  - admin
   - Wenxin Che
   - Rihan Huang
   - Quanying Liu
