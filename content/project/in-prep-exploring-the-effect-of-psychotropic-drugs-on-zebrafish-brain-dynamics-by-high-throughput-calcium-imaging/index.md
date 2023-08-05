@@ -14,10 +14,9 @@ featured: false
 authors:
   - Youzhi Qu
   - Xuan Luo
-  - Penghui Du
+  - admin
   - Zimeng Xue
   - Quanying Liu
-  - admin
 tags:
   - Zebrafish
   - Neuropharmacology
