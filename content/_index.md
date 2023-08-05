@@ -60,7 +60,7 @@ sections:
           date_end: '2024-02-29'
           description: |2-
               * Research Focus: We plan to use PET-MRI data to detect boundaries signifying abrupt change in metabolism rate and functional connectivity. Then we will compare the boundary morphologies derived from these two modalities, and quantify how well they align with each other. We also plan to compare the results with other parcellation criteria such as cytoarchitecture and anatomical landmarks.
-              * Supervisor: Dr. Jingyuan Chen
+              * Supervisor: Dr. Jingyuan Chen (https://jechenlab.com/)
     design:
       columns: '2'
   - block: accomplishments
