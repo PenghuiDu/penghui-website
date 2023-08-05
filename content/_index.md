@@ -81,7 +81,7 @@ sections:
         - certificate_url: https://penghui-du.com/uploads/challenge_cup.pdf
           date_end: '2022-05-01'
           date_start: '2021-11-01'
-          description: 'We designed a business plan for manufactoring brain health monitor devices for severely ill newborns, and won first prize in the competition. I'm team captain in this competition, and I'm responsible for proposing technical ideas and designing business plan.'
+          description: 'We designed a business plan for manufactoring brain health monitor devices for severely ill newborns, and won first prize in the competition. I am team captain in this competition, and I am responsible for proposing technical ideas and designing business plan.'
           organization: Department of Education of Guangdong Province
           organization_url: http://edu.gd.gov.cn/
           title: 'First prize in 13th "Challenge Cup" Entrepreneurship Competition.'
