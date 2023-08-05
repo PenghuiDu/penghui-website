@@ -113,16 +113,6 @@ sections:
           organization_url: http://gdsbme.com/
           title: 'First Prize in 2022 Guangdong Undergraduate Biomedical Engineering Innovation Design Competition'
           url: ''
-
-        
-        - certificate_url: https://penghui-du.com/uploads/cuda.png
-          date_end: '2020-11-20'
-          date_start: '2020-11-21'
-          description: ''
-          organization: Nvidia
-          organization_url: https://www.nvidia.com/en-us/
-          title: 'Certificate of Competency - Basics of CUDA-accelerated computing'
-          url: ''
         
 
     design:
