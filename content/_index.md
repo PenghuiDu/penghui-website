@@ -79,9 +79,9 @@ sections:
       items:
 
         - certificate_url: https://penghui-du.com/uploads/challenge_cup.pdf
-          date_end: '2022-07-01'
-          date_start: '2021-12-01'
-          description: 'In the competition, We designed a business plan for manufactoring brain health monitor devices for severely ill newborns. After seven months of hard work, we finally completed our work and won the first prize in the competition. As the team leader, I am responsible for thinking of technical ideas and designing business plan.'
+          date_end: '2022-05-01'
+          date_start: '2021-11-01'
+          description: 'We designed a business plan for manufactoring brain health monitor devices for severely ill newborns, and won first prize in the competition. I'm team captain in this competition, and I'm responsible for proposing technical ideas and designing business plan.'
           organization: Department of Education of Guangdong Province
           organization_url: http://edu.gd.gov.cn/
           title: 'First prize in 13th "Challenge Cup" Entrepreneurship Competition.'
@@ -99,7 +99,7 @@ sections:
         - certificate_url: https://penghui-du.com/uploads/CLS-CIBR-IDG.jpg
           date_end: ''
           date_start: '2022-07-10'
-          description: 'I attended various neuroscience lectures in the summer school, followed by our team's presentation on a chosen paper. I was recognized with a Merit Student Award.'
+          description: 'I attended various neuroscience lectures in the summer school, followed by our teams presentation on a chosen paper. I was recognized with a Merit Student Award.'
           organization: Tsinghua University and Peking University
           organization_url: http://mcgovern.life.tsinghua.edu.cn
           title: Merit Student of CLS-CIBR-IDG Summer School in Neuroscience
