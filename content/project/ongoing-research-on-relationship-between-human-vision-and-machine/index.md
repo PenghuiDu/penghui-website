@@ -5,7 +5,7 @@ summary: ""
 authors:
   - admin
 url_video: ""
-date: 2022-12-31T00:00:00.000Z
+date: 2022-08-31T23:00:00.000Z
 external_link: ""
 url_slides: ""
 title: In Prep | Research on relationship between human vision and machine
