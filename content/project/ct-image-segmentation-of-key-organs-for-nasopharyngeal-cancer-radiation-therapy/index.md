@@ -1,6 +1,12 @@
 ---
 title: CT image segmentation of key organs for nasopharyngeal cancer radiation therapy
 date: 2023-06-16T02:35:06.963Z
+summary: Nasopharyngeal cancer is a serious tumor in the upper pharynx,
+  requiring careful outlining of key organs for radiotherapy planning.
+  Traditionally, this is done manually on CT images, a slow, labor-intensive
+  process reliant on the physician's experience. To improve this, we use a
+  pre-trained 3D model and an enhanced TransUNet network to automate
+  segmentation of four key organs with impressive results.
 draft: false
 featured: false
 authors:
