@@ -59,7 +59,7 @@ sections:
           date_start: '2023-07-05'
           date_end: '2024-02-29'
           description: |2-
-              * Research Focus: We utilize both resting state brain metabolic data (FDG-PET) and BOLD data to identify boundaries that indicate abrupt change of functional connectivity. Following this, we conduct a comparative analysis of the boundary morphologies derived from these two distinct imaging modalities, aiming to quantify their degree of alignment.
+              * Research Focus: We plan to use PET-MRI data to detect boundaries signifying abrupt change in metabolism rate and functional connectivity. Then we will compare the boundary morphologies derived from these two modalities, and quantify how well they align with each other. We also plan to compare the results with other parcellation criteria such as cytoarchitecture and anatomical landmarks.
               * Supervisor: Dr. Jingyuan Chen
     design:
       columns: '2'
@@ -108,7 +108,7 @@ sections:
         - certificate_url: https://penghui-du.com/uploads/bme.jpg
           date_end: '2022-07-01'
           date_start: '2022-03-20'
-          description: 'We utilized a deep learning model, combining Transformer and UNet, for labeling the key organs involved in radiotherapy in CT images. Our unique pre-training approach ensured high segmentation accuracy and reduced computational cost, earning us first prize in the competition.'
+          description: 'We designed a deep learning model, combining Transformer and UNet, for labeling the key organs involved in radiotherapy in CT images. Our unique pre-training approach ensured high segmentation accuracy and reduced computational cost, earning us first prize in the competition.'
           organization: Guangdong Biomedical Engineering Association
           organization_url: http://gdsbme.com/
           title: 'First Prize in 2022 Guangdong Undergraduate Biomedical Engineering Innovation Design Competition'
