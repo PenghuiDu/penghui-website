@@ -86,7 +86,6 @@ sections:
           organization_url: http://edu.gd.gov.cn/
           title: 'First prize in 13th "Challenge Cup" Entrepreneurship Competition.'
           url: ''
-        
 
         - certificate_url: https://penghui-du.com/uploads/neuromatch.pdf
           date_end: ''
