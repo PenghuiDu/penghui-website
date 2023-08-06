@@ -2,7 +2,7 @@
 title: In Prep | Exploring the effect of psychotropic drugs on zebrafish brain
   dynamics by high-throughput calcium imaging
 subtitle: ""
-date: 2022-09-30T19:12:26.021Z
+date: 2023-07-31T19:12:26.021Z
 summary: In this research project, we employed a novel high-throughput screening
   system to collect a vast amount of neural activity data (via calcium imaging)
   from zebrafish exposed to psychotropic drugs. Subsequently, we analyzed the
