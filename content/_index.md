@@ -49,6 +49,7 @@ sections:
           date_end: '2023-06-15'
           description: |2-
               * Main Subject: Neuroinformatics
+              * Courses: Clinical Neuroscience; Comparative Behavioural Neuroscience; Computational Vision; Models of Computation; Primates Origins of Human Sociality, Cognition, and Mind 
               * GPA: 5.3 / 6
         
         - title: Undergraduate Research Assistant
