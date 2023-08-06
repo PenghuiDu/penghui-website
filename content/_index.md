@@ -34,9 +34,9 @@ sections:
           date_start: '2020-08-27'
           date_end: '2024-06-27'
           description: |2-
-              * Major: Intelligent Medical Engineering
-              * Academic Supervisor: Dr. Quanying Liu
-              * GPA: 3.84 / 4 (92.79), Ranking 2 / 22
+              * **Major:** Intelligent Medical Engineering
+              * **Academic Supervisor:** Dr. Quanying Liu
+              * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22
               * 2022 BME "Fortunatt" Scholarship
               * 2022 Outstanding Student Scholarships (First Prize)
           
@@ -48,9 +48,9 @@ sections:
           date_start: '2023-02-01'
           date_end: '2023-06-15'
           description: |2-
-              * Main Subject: Neuroinformatics
-              * Courses: Clinical Neuroscience; Comparative Behavioural Neuroscience; Computational Vision; Models of Computation; Primates Origins of Human Sociality, Cognition, and Mind 
-              * GPA: 5.3 / 6
+              * **Main Subject:** Neuroinformatics
+              * **Courses:** Clinical Neuroscience; Comparative Behavioural Neuroscience; Computational Vision; Models of Computation; Primates Origins of Human Sociality, Cognition, and Mind 
+              * **GPA:** 5.3 / 6
         
         - title: Undergraduate Research Assistant
           company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
