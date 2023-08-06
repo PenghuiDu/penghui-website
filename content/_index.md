@@ -60,8 +60,8 @@ sections:
           date_start: '2023-07-05'
           date_end: '2024-02-29'
           description: |2-
-              * Supervisor: Dr. Jingyuan Chen (https://jechenlab.com/)
-              * Research Focus: Human brain boundary mapping based on PET-MRI data.
+              * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/)
+              * **Research Focus:** Human brain boundary mapping based on PET-MRI data.
     design:
       columns: '2'
   - block: accomplishments
