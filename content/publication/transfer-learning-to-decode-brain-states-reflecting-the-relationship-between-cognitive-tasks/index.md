@@ -21,12 +21,12 @@ url_pdf: ""
 publication_types:
   - "1"
 authors:
-  - Y Qu
-  - X Jian
-  - W Che
-  - P Du
-  - K Fu
-  - Q Liu
+  - Youzhi Qu
+  - Xinyao Jian
+  - Wenxin Che
+  - admin
+  - Kai Fu
+  - Quanying Liu
 author_notes: []
 publication: In International Workshop on Human Brain and Artificial Intelligence
 summary: ""
