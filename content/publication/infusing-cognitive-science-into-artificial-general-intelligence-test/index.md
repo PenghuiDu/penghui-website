@@ -1,6 +1,7 @@
 ---
-title: Infusing cognitive science into artificial general intelligence test
-subtitle: Submitted
+title: Submitted | Infusing cognitive science into artificial general
+  intelligence test
+subtitle: ""
 publication_types:
   - "0"
 authors:
