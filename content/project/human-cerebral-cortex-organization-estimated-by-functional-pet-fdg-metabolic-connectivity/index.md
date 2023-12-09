@@ -1,7 +1,7 @@
 ---
 title: "Human Cerebral Cortex Organization Estimated by Functional PET-FDG Metabolic Connectivity"
 date: 2023-12-08T20:10:24.884Z
-summary: The recent development of high-temporal resolution functional PET (fPET) introduces an emerging focus on "metabolic connectivity (MC)" , providing a complementary perspective to the hemodynamic-based "functional connectivity (FC)" assessed by fMRI . In this study, we applied a connectivity gradient-based analytical scheme on a resting-state simultaneous fPET-fMRI dataset, aiming to characterize the detailed cortical organization of fPET-derived MC and understand how it differs from the fMRI-derived functional network structures.
+summary: The recent development of high-temporal resolution functional PET (fPET) introduces an emerging focus on "metabolic connectivity (MC)" , providing a complementary perspective to the hemodynamic-based "functional connectivity (FC)" assessed by fMRI. In this study, we applied a connectivity gradient-based analytical scheme on a resting-state simultaneous fPET-fMRI dataset, aiming to characterize the detailed cortical organization of fPET-derived MC and understand how it differs from the fMRI-derived functional network structures.
 draft: false
 featured: false
 authors:
