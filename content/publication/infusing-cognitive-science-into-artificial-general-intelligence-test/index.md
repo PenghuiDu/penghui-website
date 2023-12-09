@@ -1,9 +1,8 @@
 ---
-title: Submitted | Infusing cognitive science into artificial general
-  intelligence test
+title: Promoting interactions between cognitive science and large language models
 subtitle: ""
 publication_types:
-  - "0"
+  - "2"
 authors:
   - Youzhi Qu
   - admin
@@ -18,21 +17,21 @@ authors:
   - Haiyan Wu
   - Jia Liu
   - Quanying Liu
+publication: The Innovation
 abstract: Infusing cognitive science into model evaluation can guide the
   evolution of large models and improve model safety in human society; in turn,
   large language models as an emerging research subject of cognitive science
-  offer test beds to examine and manipulate the evolution of multidimensional
-  intelligence. Interdisciplinary collaborations are necessary to break down
+  offer test beds while emulating human-like judgments and enabling efficient
+  cognitive tests. Interdisciplinary collaborations are necessary to break down
   barriers between academia and industry to jointly provide task sets, datasets,
-  and model sets
+  and model sets.
 draft: false
 featured: false
 tags:
   - Large Language Model
-  - Machine Learning
   - Deep Learning
-  - Computational Neuroscience
-  - Cognition
+  - Cognitive Science
+  - Artificial General Intelligence
 image:
   filename: featured.png
   focal_point: Smart
