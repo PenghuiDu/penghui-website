@@ -18,13 +18,16 @@ authors:
   - Jia Liu
   - Quanying Liu
 publication: The Innovation
-abstract: Infusing cognitive science into model evaluation can guide the
-  evolution of large models and improve model safety in human society; in turn,
-  large language models as an emerging research subject of cognitive science
-  offer test beds while emulating human-like judgments and enabling efficient
+abstract: >-
+  Infusing cognitive science into model evaluation can guide the evolution of
+  large models and improve model safety in human society; in turn, large
+  language models as an emerging research subject of cognitive science offer
+  test beds while emulating human-like judgments and enabling efficient
   cognitive tests. Interdisciplinary collaborations are necessary to break down
   barriers between academia and industry to jointly provide task sets, datasets,
   and model sets.
+
+  https://www.sciencedirect.com/science/article/pii/S2666675824000171
 draft: false
 featured: false
 tags:
