@@ -17,8 +17,8 @@ authors:
   - Haiyan Wu
   - Jia Liu
   - Quanying Liu
-doi: " https://doi.org/10.48550/arXiv.2402.02547"
-publication: iScience
+doi: 10.1016/j.xinn.2024.100579
+publication: The Innovation
 abstract: >-
   Infusing cognitive science into model evaluation can guide the evolution of
   large models and improve model safety in human society; in turn, large
