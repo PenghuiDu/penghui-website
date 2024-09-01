@@ -1,13 +1,12 @@
 ---
 title: Penghui Du
-role: Undergraduate
+role: Master Students
 avatar_filename: avatar.jpg
 bio: ""
 interests:
+  - Neuroimaging (fMRI, PET, EEG)
   - Computational Neuroscience
-  - Artificial Intelligence
-  - functional Magnetic Resonance Imaging
-  - Biological Perception
+  - Brain Computer Interface
 social:
   - icon: envelope
     icon_pack: fas
