@@ -1,6 +1,6 @@
 ---
 title: Human Cerebral Cortex Organization Estimated by Functional PET-FDG
-  Metabolic Connectivity
+  Metabolic Connectivity [OHBM 2024]
 date: 2023-12-08T20:10:24.884Z
 summary: The recent development of high-temporal resolution functional PET
   (fPET) introduces an emerging focus on "metabolic connectivity (MC)" ,
@@ -33,4 +33,4 @@ image:
   caption: "Figure adapted from: An approach for parcellating human cortical areas
     using resting-state correlations, Wig et al.,  2013"
 ---
-Abstract accepted to OHBM 2024, currently working on manuscript.
+Abstract presented at OHBM 2024, currently working on manuscript.
