@@ -13,7 +13,7 @@ social:
     link: /#contact
   - icon: twitter
     icon_pack: fab
-    url: https://x.com/penghui_du
+    link: https://x.com/penghui_du
     label: Follow me on X
     display:
       header: true
