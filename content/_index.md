@@ -209,15 +209,15 @@ sections:
       text: |-
 
       # Contact (add or remove contact options as necessary)
-      email: duph2020@mail.sustech.edu.cn / undefined0326@gmail.com
-      phone: +86 158 8937 2606 / +1 (617) 256-3945
+      email: penghui-du@outlook.com / penghui.du@epfl.ch
+      phone: +41 77 211 89 07 / +86 158 8937 2606
       address:
-        street: No.1088, Xueyuan Blvd
-        city: Shenzhen
-        region: Guangdong
-        postcode: '518055'
-        country: China
-        country_code: CN
+        street: 4 Rue Favre-Louis
+        city: Ecublens
+        region: Vaud
+        postcode: '1024'
+        country: Switzerland
+        country_code: CH
       # Automatically link email and phone or display as text?
       autolink: false
     design:
