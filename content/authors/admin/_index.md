@@ -1,6 +1,6 @@
 ---
 title: Penghui Du
-role: Master Students
+role: Master Student
 avatar_filename: avatar.jpg
 bio: ""
 interests:
@@ -49,8 +49,4 @@ highlight_name: true
 first_name: Penghui
 email: penghui-du@outlook.com
 ---
-🥳Aloha! My name is Penghui Du, I am doing my master in Neuro-X at EPFL. 
-
-I love coding, and I believe our brains also function according to an intricate, yet elegant, 'code' that enables our incredible cognitive abilities. Propelled by this notion, I am eager to delve into the field of neuroscience, aiming to uncover the underpinning 'code' that explains our mind and behaviour, and provide new insights into the treatment of neurological disorders.
-
-Outside of my academic interests, I enjoy cooking, jogging, and travelling.
+Adventurer, Explorer, Truth Seeker.
