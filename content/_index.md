@@ -35,7 +35,7 @@ sections:
 
 
         - title: Undergraduate Research Assistant
-          company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
+          company: Martinos Center for Biomedical Imaging, Harvard Medical School
           company_url: 'https://www.martinos.org/'
           company_logo: Martinos
           location: Charlestown, Unites States
@@ -46,7 +46,7 @@ sections:
               * **Research Focus:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity"
 
   
-        - title: Visiting Student in Neuroinformatics
+        - title: Regular Visiting Student in Neuroinformatics
           company: University of Zurich
           company_url: 'https://uzh.ch/cmsssl/en.html'
           company_logo: UZH
