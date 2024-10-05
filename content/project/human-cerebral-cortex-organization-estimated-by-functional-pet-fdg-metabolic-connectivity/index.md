@@ -26,6 +26,7 @@ tags:
   - metabolism
   - boundary mapping
   - neuroimaging
+external_link: https://penghui-du.com/uploads/Penghui_OHBM_2024.pdf
 image:
   filename: featured.png
   focal_point: Smart
