@@ -49,4 +49,4 @@ highlight_name: true
 first_name: Penghui
 email: penghui-du@outlook.com
 ---
-Adventurer, Explorer, Truth Seeker.
+Hi! I'm Penghui, a first-year master's student in Neuro-X at EPFL, with a strong passion for computational neuroimaging and neuromodulation techniques. My long-term goal is to pursue a PhD and contribute to advancements in this fascinating research field.
