@@ -34,7 +34,7 @@ organizations:
     url: https://www.epfl.ch/en/
 education:
   courses:
-    - course: Master in Neuro-X
+    - course: Master Student in Neuro-X
       institution: École Polytechnique Fédérale de Lausanne (EPFL)
       year: ""
   courses:

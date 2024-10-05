@@ -25,21 +25,27 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-      
-        - title: Undergraduate
-          company: Southern University of Science and Technology
-          company_url: 'https://www.sustech.edu.cn'
-          company_logo: sustech
-          location: Shenzhen, China
-          date_start: '2020-08-27'
-          date_end: '2024-06-27'
+
+        - title: Master Student in Neuro-X
+          company: École Polytechnique Fédérale de Lausanne (EPFL)
+          company_url: 'https://www.epfl.ch/'
+          company_logo: epfl
+          location: Ecublens, Switzerland
+          date_start: '2024-09-01'
+
+
+        - title: Undergraduate Research Assistant
+          company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
+          company_url: 'https://www.martinos.org/'
+          company_logo: Martinos
+          location: Charlestown, Unites States
+          date_start: '2023-07-05'
+          date_end: '2023-12-20'
           description: |2-
-              * **Major:** Intelligent Medical Engineering
-              * **Academic Supervisor:** Dr. Quanying Liu
-              * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22
-              * 2022 BME "Fortunatt" Scholarship
-              * 2022 Outstanding Student Scholarships (First Prize)
-          
+              * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/)
+              * **Research Focus:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity"
+
+  
         - title: Visiting Student
           company: University of Zurich
           company_url: 'https://uzh.ch/cmsssl/en.html'
@@ -51,17 +57,23 @@ sections:
               * **Main Subject:** Neuroinformatics
               * **Courses:** Clinical Neuroscience; Comparative Behavioural Neuroscience; Computational Vision; Models of Computation; Primates Origins of Human Sociality, Cognition, and Mind 
               * **GPA:** 5.3 / 6
-        
-        - title: Undergraduate Research Assistant
-          company: Athinoula A. Martinos Center for Biomedical Imaging, Harvard Medical School
-          company_url: 'https://www.martinos.org/'
-          company_logo: Martinos
-          location: Charlestown, Unites States
-          date_start: '2023-07-05'
-          date_end: '2023-12-20'
+      
+
+        - title: Undergraduate
+          company: Southern University of Science and Technology
+          company_url: 'https://www.sustech.edu.cn'
+          company_logo: sustech
+          location: Shenzhen, China
+          date_start: '2020-08-27'
+          date_end: '2024-06-27'
           description: |2-
-              * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/)
-              * **Research Focus:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity"
+              * **Major:** Intelligent Medical Engineering
+              * **Academic Supervisor:** Dr. Quanying Liu
+              * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22
+              * Outstanding Graduate, Class of 2024
+              * 2022 BME "Fortunatt" Scholarship
+              * 2022 Outstanding Student Scholarships (First Prize)
+        
 
     design:
       columns: '2'
