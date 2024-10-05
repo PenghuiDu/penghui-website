@@ -4,7 +4,7 @@ role: Master Student
 avatar_filename: avatar.jpg
 bio: ""
 interests:
-  - Neuroimaging (fMRI, PET, EEG)
+  - Neuroimaging Data Analysis
   - Personalized Neuromodulation
   - Computational Neuroscience
 social:
