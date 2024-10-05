@@ -31,7 +31,16 @@ image:
   filename: featured.png
   focal_point: Smart
   preview_only: false
-  caption: "Figure adapted from: An approach for parcellating human cortical areas
-    using resting-state correlations, Wig et al.,  2013"
+  caption: Functional connectivity (FC) derived from BOLD-fMRI has provided
+    significant insights into human brain organization. The recent introduction
+    of constant-infusion functional [18F]PET (fPET)-FDG has enabled us to track
+    dynamic changes in glucose metabolism over time, sparking growing interest
+    in 'metabolic connectivity' (MC)—the temporal synchrony of FDG-based
+    metabolic dynamics between distant brain regions. In this study, we employed
+    a connectivity gradient-based analysis scheme on a resting-state
+    simultaneous fPET-fMRI dataset, aiming to characterize the detailed cortical
+    organization of fPET-derived MC and understand its differences from
+    fMRI-derived network structures
+  alt_text: ""
 ---
 Abstract presented at OHBM 2024, currently working on manuscript.
