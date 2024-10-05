@@ -46,20 +46,16 @@ sections:
               * **Research Focus:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity"
 
   
-        - title: Visiting Student
+        - title: Visiting Student in Neuroinformatics
           company: University of Zurich
           company_url: 'https://uzh.ch/cmsssl/en.html'
           company_logo: UZH
           location: Zurich, Switzerland
           date_start: '2023-02-01'
           date_end: '2023-06-15'
-          description: |2-
-              * **Main Subject:** Neuroinformatics
-              * **Courses:** Clinical Neuroscience; Comparative Behavioural Neuroscience; Computational Vision; Models of Computation; Primates Origins of Human Sociality, Cognition, and Mind 
-              * **GPA:** 5.3 / 6
       
 
-        - title: Undergraduate
+        - title: BSc in Intelligent Medical Engineering
           company: Southern University of Science and Technology
           company_url: 'https://www.sustech.edu.cn'
           company_logo: sustech
@@ -67,10 +63,9 @@ sections:
           date_start: '2020-08-27'
           date_end: '2024-06-27'
           description: |2-
-              * **Major:** Intelligent Medical Engineering
               * **Academic Supervisor:** Dr. Quanying Liu
               * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22
-              * Outstanding Graduate, Class of 2024
+              * 2024 Outstanding Graduate
               * 2022 BME "Fortunatt" Scholarship
               * 2022 Outstanding Student Scholarships (First Prize)
         
