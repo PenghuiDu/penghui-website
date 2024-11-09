@@ -32,8 +32,6 @@ sections:
           company_logo: epfl
           location: Ecublens, Switzerland
           date_start: '2024-09-01'
-          description: |2-
-              * Shenzhen Universiade Foundation - Outstanding Overseas Student Scholarship
 
 
         - title: Undergraduate Research Assistant
