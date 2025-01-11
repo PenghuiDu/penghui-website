@@ -1,9 +1,9 @@
 ---
 title: "[Science on Tap] The Organization of Human Cerebral Cortex Estimated by
   Functional PET-FDG: The Promise and Controversy of Metabolic Connectivity"
-abstract: 'I am super glad about the opportunity to present my research at
-  Science on Tap. In this talk, I discussed the promises held in fPET "metabolic
-  connectivity" based on my work at martinos center, and I also talked about the
+abstract: '🥳I am glad to share that I present my research at Science on Tap at
+  Martinos Center! This presentation mainly discussed the promises held in fPET
+  "metabolic connectivity" based on my work at martinos center, and the
   controversy and potential caveats to be aware of. '
 location: Martinos Center for Biomedical Imaging, Harvard Medical Schoool
 date: 2024-02-23T15:00:00.000Z
