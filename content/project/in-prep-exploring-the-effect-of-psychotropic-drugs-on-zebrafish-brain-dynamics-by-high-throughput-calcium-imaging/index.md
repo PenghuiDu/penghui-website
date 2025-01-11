@@ -25,4 +25,4 @@ image:
   caption: "Figure adapted from (Fish Capsules: A System for High-Throughput
     Screening of Combinatorial Drugs, Tang et al., 2022)"
 ---
-In this research project, we employed a novel high-throughput screening system to collect a vast amount of neural activity data (via calcium imaging) from zebrafish exposed to psychotropic drugs. Subsequently, we analyzed the data to explore the influence of psychotropic drugs on the activity across various brain regions, as well as the functional connectivity within the zebrafish's brain.
+We collected calcium imaging data from zebrafish under various drug conditions using epifluorescence microscope, and explored the effects of distinct drugs on the activity and connectivity of brain networks.
