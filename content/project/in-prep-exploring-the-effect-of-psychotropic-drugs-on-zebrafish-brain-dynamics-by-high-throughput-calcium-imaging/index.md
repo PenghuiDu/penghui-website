@@ -25,4 +25,4 @@ image:
   caption: "Figure adapted from (Fish Capsules: A System for High-Throughput
     Screening of Combinatorial Drugs, Tang et al., 2022)"
 ---
-We collected calcium imaging data from zebrafish under various drug conditions using epifluorescence microscope, and explored the effects of distinct drugs on the activity and connectivity of brain networks.
+In this study, we collected calcium imaging data from zebrafish under various drug conditions using epifluorescence microscope, and explored the effects of distinct drugs on the activity and connectivity of brain networks.
