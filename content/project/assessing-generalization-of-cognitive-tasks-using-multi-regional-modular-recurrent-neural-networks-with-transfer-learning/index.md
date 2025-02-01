@@ -2,14 +2,7 @@
 title: Assessing Generalization of Cognitive Tasks Using Multi-regional Modular
   Recurrent Neural Networks with Transfer Learning
 date: 2023-07-13T03:36:53.908Z
-summary: "In this study, we proposed a multi-regional modular recurrent neural
-  network to simulate the cognitive processes. The model is structured into
-  three different modules: perception, information integration, and decision.
-  Here a transfer learning approach is adopted to investigate generalizability
-  across tasks. After training models on source tasks, we fixed the information
-  integration layers, transferred the models to target tasks, and tested their
-  performance. By comparing the performance of different source-target task
-  pairs, we assessed the similarity between different cognitive tasks."
+summary: 
 draft: false
 featured: false
 authors:
@@ -29,8 +22,8 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-**Supervisor:** Professor Quanying Liu
 
+In this study, we proposed a multi-regional modular recurrent neural network to simulate the cognitive processes. The model is structured into three different modules: perception, information integration, and decision. Here a transfer learning approach is adopted to investigate generalizability across tasks. After training models on source tasks, we fixed the information integration layers, transferred the models to target tasks, and tested their performance. By comparing the performance of different source-target task pairs, we assessed the similarity between different cognitive tasks."
 # Introduction
 
 The study of cognitive tasks plays a crucial role in understanding human mental processes, such as working memory. Recently, recurrent neural networks (RNNs) have been widely applied in the computational modelling of cognition, offering a controllable and interpretable approach to investigating cognitive processes and the relationship between cognitive tasks. However, current research primarily focuses on specific tasks, ignoring the fact that real brains have knowledge of multiple tasks simultaneously in different brain regions.

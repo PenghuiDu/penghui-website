@@ -65,7 +65,7 @@ sections:
           description: |2-
               * **Academic Supervisor:** Dr. Quanying Liu
               * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22
-              * 2024 Outstanding Graduate
+              * 2024 Outstanding BSc Award
               * 2022 BME "Fortunatt" Scholarship
               * 2022 Outstanding Student Scholarships (First Prize)
         
