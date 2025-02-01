@@ -22,9 +22,6 @@ main:
   - name: Talks
     url: '#talks'
     weight: 40
-  - name: Topics
-    url: '#topics'
-    weight: 70
   - name: Gallery
     url: '#gallery'
     weight: 80

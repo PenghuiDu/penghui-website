@@ -203,12 +203,6 @@ sections:
     design:
       columns: '2'
       view: citation
-  - block: tag_cloud
-    id: topics
-    content:
-      title: Popular Topics
-    design:
-      columns: '2'
   - block: markdown
     id: gallery
     content:
