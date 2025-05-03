@@ -32,6 +32,8 @@ sections:
           company_logo: epfl
           location: Ecublens, Switzerland
           date_start: '2024-09-01'
+          description: |2-
+            * EPFL/HMS Bertarelli Fellowship (Expected to Start from 2026 March)
 
 
         - title: Undergraduate Research Assistant
