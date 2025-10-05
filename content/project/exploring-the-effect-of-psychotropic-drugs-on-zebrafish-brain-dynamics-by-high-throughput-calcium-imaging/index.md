@@ -1,6 +1,5 @@
 ---
-title: In Prep | Exploring the effect of psychotropic drugs on zebrafish brain
-  dynamics by high-throughput calcium imaging
+title: Exploring the effect of psychotropic drugs on zebrafish brain dynamics by high-throughput calcium imaging
 subtitle: ""
 date: 2023-07-31T19:12:26.021Z
 summary: 
