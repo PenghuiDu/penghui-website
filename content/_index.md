@@ -56,6 +56,7 @@ sections:
           company_logo: epfl
           location: Ecublens, Switzerland
           date_start: '2024-09-01'
+          date_end: '2027-02-28'
           description: |2-
             * GPA: 5.40 / 6
             * EPFL/HMS Bertarelli Fellowship
