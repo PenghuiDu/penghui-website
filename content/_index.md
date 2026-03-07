@@ -35,7 +35,7 @@ sections:
           date_end: '2027-02-28'
           description: |2-
               * Supported by EPFL/HMS Bertarelli Fellowship.
-              * **Supervisor:** Dr. Randy Buckner (https://bucknerlab.fas.harvard.edu/)
+              * **Supervisor:** Dr. Randy Buckner (https://bucknerlab.fas.harvard.edu/).
 
         - title: Summer Intern
           company: Max Planck Institute for Human Cognitive and Brain Sciences
@@ -45,10 +45,9 @@ sections:
           date_start: '2025-06-01'
           date_end: '2025-08-31'
           description: |2-
-              * Summer intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/)
-              * Supervised by Dr. Bin Wan and Dr. Sofie Valk
-              * **Research Project:** A deep learning pipeline for predicting individual brain glucose metabolism from geometry, microstructure, and hemodynamics. 
-
+              * Summer intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/).
+              * Supervised by Dr. Bin Wan and Dr. Sofie Valk.
+              * **Research Project:** A deep learning pipeline for predicting individual brain glucose metabolism from geometry, microstructure, and hemodynamics.
 
         - title: Master Student in Neuro-X
           company: École Polytechnique Fédérale de Lausanne (EPFL)
@@ -59,7 +58,7 @@ sections:
           date_end: '2027-02-28'
           description: |2-
             * GPA: 5.40 / 6
-            * EPFL/HMS Bertarelli Fellowship
+            * EPFL/HMS Bertarelli Fellowship.
             * **2025/09 - 2026/01: Semester project at MIP Lab**, supervised by Michael Chan and Dr. Dimitri Van De Ville. We explored how to characterize structure-informed functional connectivity via statistical signal analysis on graphs.
             * **2025/02 - 2025/06: Semester project at MetMRS Group**, supervised by Dr. Zhiwei Huang and Dr. Lijing Xin. We explored statistical analysis of functional glutamate mapping under visual tasks, and compared to brain activity patterns derived from BOLD-fMRI.
             * **2025/02 - 2025/06: Lab immersion at Laboratory of Sensory Processing**, supervised by Dr. Sylvain Crochet and Dr. Carl Petersen. We developed a computational model on mouse licking behaviour, incoporating various biological priors includuing motivation, expectation, exploration and behaviour cost.
@@ -73,8 +72,8 @@ sections:
           date_start: '2023-07-05'
           date_end: '2023-12-20'
           description: |2-
-              * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/)
-              * **Research Project:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity"
+              * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/).
+              * **Research Project:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity".
 
   
         - title: Regular Visiting Student in Neuroinformatics
@@ -94,11 +93,11 @@ sections:
           date_start: '2020-08-27'
           date_end: '2024-06-27'
           description: |2-
-              * **Academic Supervisor:** Dr. Quanying Liu
-              * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22
-              * 2024 Outstanding BSc Award
-              * 2022 BME "Fortunatt" Scholarship
-              * 2022 Outstanding Student Scholarships (First Prize)
+              * **Academic Supervisor:** Dr. Quanying Liu.
+              * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22.
+              * 2024 Distinguished Graduate Award.
+              * 2022 BME "Fortunatt" Scholarship.
+              * 2022 SUSTech Outstanding Student Scholarship.
         
 
     design:
