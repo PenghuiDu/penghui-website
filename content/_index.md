@@ -26,6 +26,29 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
 
+        - title: Visiting Graduate Student
+          company: Harvard University
+          company_url: https://www.harvard.edu/
+          company_logo: Martinos
+          location: Cambridge, MA, USA
+          date_start: '2026-03-02'
+          date_end: '2027-02-28'
+          description: |2-
+              * Supported by EPFL/HMS Bertarelli Fellowship.
+              * **Supervisor:** Dr. Randy Buckner (https://bucknerlab.fas.harvard.edu/)
+
+        - title: Summer Intern
+          company: Max Planck Institute for Human Cognitive and Brain Sciences
+          company_url: https://www.cbs.mpg.de/en
+          company_logo: MPI
+          location: Lelzig, Germany
+          date_start: '2025-06-01'
+          date_end: '2025-08-31'
+          description: |2-
+              * Summer intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/)
+              * Supervised by Dr. Bin Wan and Dr. Sofie Valk
+
+
         - title: Master Student in Neuro-X
           company: École Polytechnique Fédérale de Lausanne (EPFL)
           company_url: 'https://www.epfl.ch/'
@@ -33,14 +56,15 @@ sections:
           location: Ecublens, Switzerland
           date_start: '2024-09-01'
           description: |2-
-            * EPFL/HMS Bertarelli Fellowship (Expected to Start from 2026 March)
+            * GPA: 5.40 / 6
+            * EPFL/HMS Bertarelli Fellowship
 
 
         - title: Undergraduate Research Assistant
           company: Martinos Center for Biomedical Imaging, Harvard Medical School
           company_url: 'https://www.martinos.org/'
           company_logo: Martinos
-          location: Charlestown, Unites States
+          location: Charlestown, MA, USA
           date_start: '2023-07-05'
           date_end: '2023-12-20'
           description: |2-
