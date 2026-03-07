@@ -47,6 +47,7 @@ sections:
           description: |2-
               * Summer intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/)
               * Supervised by Dr. Bin Wan and Dr. Sofie Valk
+              * **Research Project:** A deep learning pipeline for predicting individual brain glucose metabolism from geometry, microstructure, and hemodynamics. 
 
 
         - title: Master Student in Neuro-X
@@ -69,7 +70,7 @@ sections:
           date_end: '2023-12-20'
           description: |2-
               * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/)
-              * **Research Focus:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity"
+              * **Research Project:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity"
 
   
         - title: Regular Visiting Student in Neuroinformatics
