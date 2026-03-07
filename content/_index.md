@@ -60,9 +60,9 @@ sections:
           description: |2-
             * GPA: 5.40 / 6
             * EPFL/HMS Bertarelli Fellowship
-            * 2025/09 - 2026/01: Semester project at MIP Lab, supervised by Michael Chan and Dr. Dimitri Van De Ville. We explored how to characterize structure-informed functional connectivity via statistical signal analysis on graphs.
-            * 2025/02 - 2025/06: Semester project at MetMRS Group, supervised by Dr. Zhiwei Huang and Dr. Lijing Xin. We explored statistical analysis of functional glutamate mapping under visual tasks, and compared to brain activity patterns derived from BOLD-fMRI.
-            * 2025/02 - 2025/06: Lab immersion at Laboratory of Sensory Processing, supervised by Dr. Sylvain Crochet and Dr. Carl Petersen. We developed a computational model on mouse licking behaviour, incoporating various biological priors includuing motivation, expectation, exploration and behaviour cost.
+            * **2025/09 - 2026/01: Semester project at MIP Lab**, supervised by Michael Chan and Dr. Dimitri Van De Ville. We explored how to characterize structure-informed functional connectivity via statistical signal analysis on graphs.
+            * **2025/02 - 2025/06: Semester project at MetMRS Group**, supervised by Dr. Zhiwei Huang and Dr. Lijing Xin. We explored statistical analysis of functional glutamate mapping under visual tasks, and compared to brain activity patterns derived from BOLD-fMRI.
+            * **2025/02 - 2025/06: Lab immersion at Laboratory of Sensory Processing**, supervised by Dr. Sylvain Crochet and Dr. Carl Petersen. We developed a computational model on mouse licking behaviour, incoporating various biological priors includuing motivation, expectation, exploration and behaviour cost.
 
 
         - title: Undergraduate Research Assistant
