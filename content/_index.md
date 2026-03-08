@@ -76,7 +76,7 @@ sections:
               * **Research Project:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity".
 
   
-        - title: Regular Visiting Student in Neuroinformatics
+        - title: Visiting Student in Neuroinformatics
           company: University of Zurich
           company_url: 'https://uzh.ch/cmsssl/en.html'
           company_logo: UZH
