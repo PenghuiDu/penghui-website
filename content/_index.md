@@ -45,8 +45,7 @@ sections:
           date_start: '2025-06-01'
           date_end: '2025-08-31'
           description: |2-
-              * Summer intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/).
-              * Supervised by Dr. Bin Wan and Dr. Sofie Valk.
+              * Summer intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/)， Supervised by Dr. Bin Wan and Dr. Sofie Valk.
               * **Research Project:** A deep learning pipeline for predicting individual brain glucose metabolism from geometry, microstructure, and hemodynamics.
 
         - title: Master Student in Neuro-X
