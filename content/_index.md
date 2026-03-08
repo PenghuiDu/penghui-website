@@ -83,6 +83,8 @@ sections:
           location: Zurich, Switzerland
           date_start: '2023-02-01'
           date_end: '2023-06-15'
+          description: |2-
+              * GPA: 5.21 / 6
       
 
         - title: BSc in Intelligent Medical Engineering
