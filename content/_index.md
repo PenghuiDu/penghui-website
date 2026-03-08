@@ -56,7 +56,7 @@ sections:
           date_start: '2024-09-01'
           date_end: '2027-02-28'
           description: |2-
-            * GPA: 5.40 / 6
+            * **GPA**: 5.40 / 6
             * EPFL/HMS Bertarelli Fellowship.
             * **2025/09 - 2026/01: Semester project at MIP Lab**, supervised by Michael Chan and Dr. Dimitri Van De Ville. We explored how to characterize structure-informed functional connectivity via statistical signal analysis on graphs.
             * **2025/02 - 2025/06: Semester project at MetMRS Group**, supervised by Dr. Zhiwei Huang and Dr. Lijing Xin. We explored statistical analysis of functional glutamate mapping under visual tasks, and compared to brain activity patterns derived from BOLD-fMRI.
@@ -83,7 +83,7 @@ sections:
           date_start: '2023-02-01'
           date_end: '2023-06-15'
           description: |2-
-              * GPA: 5.21 / 6
+              * **GPA**: 5.21 / 6
       
 
         - title: BSc in Intelligent Medical Engineering
