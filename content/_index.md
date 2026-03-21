@@ -36,6 +36,7 @@ sections:
           description: |2-
               * Supported by EPFL/HMS Bertarelli Fellowship.
               * **Supervisor:** Dr. Randy Buckner (https://bucknerlab.fas.harvard.edu/).
+              * **Research Project:** My research at Buckner Lab will focuses on individual-specific functional brain organization and its application to precision targeting strategies for transcranial magnetic stimulation in depression.
 
         - title: Summer Intern
           company: Max Planck Institute for Human Cognitive and Brain Sciences
