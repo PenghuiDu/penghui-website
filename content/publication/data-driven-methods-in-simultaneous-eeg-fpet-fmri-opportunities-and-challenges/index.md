@@ -15,7 +15,7 @@ url_project: ""
 publication_short: ""
 url_source: ""
 url_video: ""
-title: Data-Driven Methods in Simultaneous EEG-fPET-fMRI: Opportunities and Challenges
+title: Data-Driven Methods in Simultaneous EEG-fPET-fMRI Opportunities and Challenges
 doi: 
 featured: false
 tags:
