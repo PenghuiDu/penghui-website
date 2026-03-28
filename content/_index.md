@@ -36,7 +36,7 @@ sections:
         description: |2-
             * Supported by EPFL/HMS Bertarelli Fellowship.
             * **Supervisor:** Prof. Randy Buckner (https://bucknerlab.fas.harvard.edu/).
-            * **Research Project:** Investigating precision brain mapping for personalized transcranial magnetic stimulation in depression by comparing empirical, group-level, and individualized targeting strategies and assessing their relative benefits and practical trade-offs.
+            * **Research Project:** Investigating precision brain mapping for personalized transcranial magnetic stimulation by comparing empirical, group-level, and individualized targeting strategies and assessing their relative benefits and practical trade-offs.
 
       - title: Summer Intern
         company: Max Planck Institute for Human Cognitive and Brain Sciences
