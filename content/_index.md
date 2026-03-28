@@ -26,80 +26,77 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
 
-        - title: Visiting Graduate Student
-          company: Harvard University
-          company_url: https://www.harvard.edu/
-          company_logo: Martinos
-          location: Cambridge, MA, USA
-          date_start: '2026-03-02'
-          date_end: '2027-02-28'
-          description: |2-
-              * Supported by EPFL/HMS Bertarelli Fellowship.
-              * **Supervisor:** Dr. Randy Buckner (https://bucknerlab.fas.harvard.edu/).
-              * **Research Project:** My research at Buckner Lab will focus on individual-specific functional brain organization and its application to precision targeting strategies in transcranial magnetic stimulation for depression.
+      - title: Visiting Graduate Student
+        company: Harvard University
+        company_url: https://www.harvard.edu/
+        company_logo: Martinos
+        location: Cambridge, MA, USA
+        date_start: '2026-03-02'
+        date_end: '2027-02-28'
+        description: |2-
+            * Supported by EPFL/HMS Bertarelli Fellowship.
+            * **Supervisor:** Prof. Randy Buckner (https://bucknerlab.fas.harvard.edu/).
+            * **Research Project:** Investigating precision brain mapping for personalized transcranial magnetic stimulation in depression by comparing empirical, group-level, and individualized targeting strategies and assessing their relative benefits and practical trade-offs.
 
-        - title: Summer Intern
-          company: Max Planck Institute for Human Cognitive and Brain Sciences
-          company_url: https://www.cbs.mpg.de/en
-          company_logo: MPI
-          location: Lelzig, Germany
-          date_start: '2025-06-01'
-          date_end: '2025-08-31'
-          description: |2-
-              * Summer intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/)， Supervised by Dr. Bin Wan and Dr. Sofie Valk.
-              * **Research Project:** A deep learning pipeline for predicting individual brain glucose metabolism from geometry, microstructure, and hemodynamics.
+      - title: Summer Intern
+        company: Max Planck Institute for Human Cognitive and Brain Sciences
+        company_url: https://www.cbs.mpg.de/en
+        company_logo: MPI
+        location: Leipzig, Germany
+        date_start: '2025-06-01'
+        date_end: '2025-08-31'
+        description: |2-
+            * Summer Intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/), supervised by Dr. Bin Wan and Prof. Sofie Valk.
+            * **Research Project:** Developed a deep learning framework to predict individual brain glucose metabolism from structural and functional MRI features, demonstrating that metabolic organization can be inferred from MRI-based representations.
 
-        - title: Master Student in Neuro-X
-          company: École Polytechnique Fédérale de Lausanne (EPFL)
-          company_url: 'https://www.epfl.ch/'
-          company_logo: epfl
-          location: Ecublens, Switzerland
-          date_start: '2024-09-01'
-          date_end: '2027-02-28'
-          description: |2-
-            * **GPA**: 5.40 / 6
+      - title: Master Student in Neuro-X
+        company: École Polytechnique Fédérale de Lausanne (EPFL)
+        company_url: 'https://www.epfl.ch/'
+        company_logo: epfl
+        location: Ecublens, Switzerland
+        date_start: '2024-09-01'
+        date_end: '2027-02-28'
+        description: |2-
+            * **GPA:** 5.40 / 6
             * EPFL/HMS Bertarelli Fellowship.
-            * **2025/09 - 2026/01: Semester project at MIP Lab**, supervised by Michael Chan and Dr. Dimitri Van De Ville. We explored how to characterize structure-informed functional connectivity via statistical signal analysis on graphs.
-            * **2025/02 - 2025/06: Semester project at MetMRS Group**, supervised by Dr. Zhiwei Huang and Dr. Lijing Xin. We explored statistical analysis of functional glutamate mapping under visual tasks, and compared to brain activity patterns derived from BOLD-fMRI.
-            * **2025/02 - 2025/06: Lab immersion at Laboratory of Sensory Processing**, supervised by Dr. Sylvain Crochet and Dr. Carl Petersen. We developed a computational model on mouse licking behaviour, incoporating various biological priors includuing motivation, expectation, exploration and behaviour cost.
+            * **2025/09 - 2026/01: Semester Project at MIP Lab**, supervised by Michael Chan and Prof. Dimitri Van De Ville. Characterized structure-informed functional connectivity using statistical signal analysis on graphs.
+            * **2025/02 - 2025/06: Semester Project at MetMRS Group**, supervised by Dr. Zhiwei Huang and Prof. Lijing Xin. Analyzed functional glutamate mapping under visual tasks and compared with activity patterns derived from BOLD-fMRI.
+            * **2025/02 - 2025/06: Lab Immersion at Laboratory of Sensory Processing**, supervised by Dr. Sylvain Crochet and Prof. Carl Petersen. Developed a computational model of mouse licking behavior incorporating motivation, expectation, exploration, and cost-related priors.
+
+      - title: Undergraduate Research Assistant
+        company: Martinos Center for Biomedical Imaging, Harvard Medical School
+        company_url: 'https://www.martinos.org/'
+        company_logo: Martinos
+        location: Charlestown, MA, USA
+        date_start: '2023-07-05'
+        date_end: '2023-12-20'
+        description: |2-
+            * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/).
+            * **Research Project:** Investigated the cortical organization of resting-state metabolic connectivity (fPET-FDG), identifying a robust superior–inferior gradient driven by low-frequency dynamics and aligned with known functional and anatomical organization.
+        
+      - title: Visiting Student in Neuroinformatics
+        company: University of Zurich
+        company_url: 'https://uzh.ch/cmsssl/en.html'
+        company_logo: UZH
+        location: Zurich, Switzerland
+        date_start: '2023-02-01'
+        date_end: '2023-06-15'
+        description: |2-
 
 
-        - title: Undergraduate Research Assistant
-          company: Martinos Center for Biomedical Imaging, Harvard Medical School
-          company_url: 'https://www.martinos.org/'
-          company_logo: Martinos
-          location: Charlestown, MA, USA
-          date_start: '2023-07-05'
-          date_end: '2023-12-20'
-          description: |2-
-              * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/).
-              * **Research Project:** Human Cerebral Cortex Organization Estimated by Functional PET-FDG "Metabolic Connectivity".
-
-  
-        - title: Visiting Student in Neuroinformatics
-          company: University of Zurich
-          company_url: 'https://uzh.ch/cmsssl/en.html'
-          company_logo: UZH
-          location: Zurich, Switzerland
-          date_start: '2023-02-01'
-          date_end: '2023-06-15'
-          description: |2-
-              * **GPA**: 5.21 / 6
-      
-
-        - title: BSc in Intelligent Medical Engineering
-          company: Southern University of Science and Technology
-          company_url: 'https://www.sustech.edu.cn'
-          company_logo: sustech
-          location: Shenzhen, China
-          date_start: '2020-08-27'
-          date_end: '2024-06-27'
-          description: |2-
-              * **Academic Supervisor:** Dr. Quanying Liu.
-              * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22.
-              * 2024 Distinguished Graduate Award.
-              * 2022 BME "Fortunatt" Scholarship.
-              * 2022 SUSTech Outstanding Student Scholarship.
+      - title: BSc in Intelligent Medical Engineering
+        company: Southern University of Science and Technology
+        company_url: 'https://www.sustech.edu.cn'
+        company_logo: sustech
+        location: Shenzhen, China
+        date_start: '2020-08-27'
+        date_end: '2024-06-27'
+        description: |2-
+            * **Academic Supervisor:** Dr. Quanying Liu.
+            * **GPA:** 3.84 / 4 (92.79), Ranking 2 / 22.
+            * 2024 Distinguished Graduate Award.
+            * 2022 BME "Fortunatt" Scholarship.
+            * 2022 SUSTech Outstanding Student Scholarship.
         
 
     design:
