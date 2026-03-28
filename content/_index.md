@@ -47,7 +47,7 @@ sections:
         date_end: '2025-08-31'
         description: |2-
             * Summer Intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/), supervised by Dr. Bin Wan and Prof. Sofie Valk.
-            * **Research Project:** Developed a deep learning framework to predict individual brain glucose metabolism from structural and functional MRI features, demonstrating that metabolic organization can be inferred from MRI-based representations.
+            * **Research Project:** Developed a deep learning framework to predict individual brain glucose metabolism from structural and functional MRI features, demonstrating that glucose metabolism can be potentially inferred from MRI-based representations.
 
       - title: Master Student in Neuro-X
         company: École Polytechnique Fédérale de Lausanne (EPFL)
@@ -71,7 +71,7 @@ sections:
         date_start: '2023-07-05'
         date_end: '2023-12-20'
         description: |2-
-            * **Supervisor:** Dr. Jingyuan Chen (https://jechenlab.com/).
+            * **Supervisor:** Prof. Jingyuan Chen (https://jechenlab.com/).
             * **Research Project:** Investigated the cortical organization of resting-state metabolic connectivity (fPET-FDG), identifying a robust superior–inferior gradient driven by low-frequency dynamics and aligned with known functional and anatomical organization.
         
       - title: Visiting Student in Neuroinformatics
