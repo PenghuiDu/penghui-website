@@ -35,7 +35,7 @@ sections:
         date_end: '2027-02-28'
         description: |2-
             * Supported by EPFL/HMS Bertarelli Fellowship.
-            * **Supervisor:** Prof. Randy Buckner (https://bucknerlab.fas.harvard.edu/).
+            * **Supervisor:** Prof. Randy Buckner (https://bucknerlab.fas.harvard.edu).
             * **Research Project:** Investigating precision brain mapping for personalized transcranial magnetic stimulation by comparing empirical, group-level, and individualized targeting strategies and assessing their relative benefits and practical trade-offs.
 
       - title: Summer Intern
@@ -46,7 +46,7 @@ sections:
         date_start: '2025-06-01'
         date_end: '2025-08-31'
         description: |2-
-            * Summer Intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io/), supervised by Dr. Bin Wan and Prof. Sofie Valk.
+            * Summer Intern at Cognitive Neurogenetics Lab (https://cng-lab.github.io), supervised by Dr. Bin Wan and Prof. Sofie Valk.
             * **Research Project:** Developed a deep learning framework to predict individual brain glucose metabolism from structural and functional MRI features, demonstrating that glucose metabolism can be potentially inferred from MRI-based representations.
 
       - title: Master Student in Neuro-X
