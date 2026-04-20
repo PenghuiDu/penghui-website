@@ -16,7 +16,7 @@ publication_short: ""
 url_source: ""
 url_video: ""
 title: Data-Driven Methods in Simultaneous EEG-fPET-fMRI Opportunities and Challenges
-doi: 
+doi: 10.1109/IEEECONF67917.2025.11443781
 featured: false
 tags:
   - Multimodal Neuroimaging
