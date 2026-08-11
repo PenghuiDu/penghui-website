@@ -15,8 +15,8 @@ authors:
   - Julie C. Price
   - Quanying Liu
   - Jingyuan E. Chen
-doi: https://doi.org/10.64898/2026.02.15.706044
-publication: BioRxiv
+doi: https://doi.org/10.1007/s00259-026-08109-5
+publication: Eur J Nucl Med Mol Imaging
 abstract: >-
     **Purpose**: In this study, we characterize the spatiotemporal organization of resting-state metabolic connectivity (RSMC) in the human brain, as measured by [18F]- fluorodeoxyglucose (FDG) functional PET (fPET-FDG). We examine the relationship between RSMC organization and resting-state functional connectivity (RSFC) derived from functional magnetic resonance imaging and other known cortical organizational principles.
 
@@ -26,7 +26,7 @@ abstract: >-
 
     **Conclusion**： This study characterizes the spatiotemporal organizational principles of RSMC, deepening insight into the brain’s energetic framework and providing a basis for future cognitive and clinical investigations of metabolic connectivity organization.
 
-    https://www.biorxiv.org/content/10.64898/2026.02.15.706044v1
+    https://link.springer.com/article/10.1007/s00259-026-08109-5
 
 draft: false
 featured: false
