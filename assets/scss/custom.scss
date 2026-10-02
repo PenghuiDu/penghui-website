@@ -40,19 +40,33 @@
 
 // --- Collection density ---------------------------------------------------
 // Entries in `compact` collections (Research, Talks and Posters, Publications).
-// Theme defaults: 2rem between items, 12px above the metadata line, 10px above
-// the attachment buttons.
-.stream-item:not(:last-child) {
-  margin-bottom: 0.9rem;
+//
+// IMPORTANT: the theme writes these as `.media.stream-item...`, i.e. three
+// class-level selectors. A plain `.stream-item...` override loses the cascade
+// and silently does nothing, so the `.media` prefix below is required, not
+// decorative.
+//
+// Also note `html { font-size: 21px }` on this site, so the theme's `2rem`
+// gap is 42px, not 32px. Combined with the 15px bottom margin that
+// `.article-metadata` carries, consecutive entries sat ~57px apart. Use px
+// here so the value does not get multiplied by the large root font size.
+.media.stream-item:not(:last-child) {
+  margin-bottom: 14px;
 }
 
-.stream-item .stream-meta {
-  margin-top: 4px;
+.media.stream-item .stream-meta {
+  margin-top: 3px;
+}
+
+// The metadata line (date, location, authors) adds 15px below itself, which
+// lands between entries rather than inside them.
+.media.stream-item .article-metadata {
+  margin-bottom: 0;
 }
 
 // Scoped to list items so the buttons in page headers keep their own spacing.
-.stream-item .btn-links {
-  padding-top: 5px;
+.media.stream-item .btn-links {
+  padding-top: 4px;
 }
 
 // --- Experience density ---------------------------------------------------
