@@ -28,7 +28,6 @@ abstract: >-
   barriers between academia and industry to jointly provide task sets, datasets,
   and model sets.
 
-  https://www.sciencedirect.com/science/article/pii/S2666675824000171
 draft: false
 featured: false
 tags:

@@ -37,7 +37,7 @@ url_source: ""
 url_video: ""
 title: Transfer learning to decode brain states reflecting the relationship
   between cognitive tasks
-doi: https://doi.org/10.1007/978-981-19-8222-4_10
+doi: 10.1007/978-981-19-8222-4_10
 featured: false
 tags:
   - Transfer learning

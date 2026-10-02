@@ -1,7 +1,6 @@
 ---
 abstract: "Recent advances in human dynamic functional imaging now allow simultaneous tracking of electrophysiological activity (EEG), hemodynamic responses (fMRI), and metabolic fluctuations using a novel functional [18F]-fluorodeoxyglucose PET technique (fPET-FDG). This tri-modal approach yields an exceptionally rich dataset that captures complementary physiological processes across distinct spatial and temporal scales. This conference paper addresses the analytical challenges and opportunities posed by such datasets, with a particular focus on timeresolved fusion methods capable of probing the intricate interplay among neuronal, hemodynamic, and metabolic dynamics. We first outline the specific signal characteristics and experimental design considerations for tri-modal EEG-fPET-fMRI acquisition. We then discuss existing and emerging approaches for time-resolved data integration and highlight methodological considerations for leveraging versatile, data-driven techniques to advance holistic interpretations of brain function."
 slides: ""
-doi: https://doi.org/10.1109/IEEECONF67917.2025.11443781
 publication_types:
   - "1"
 authors:
@@ -9,10 +8,11 @@ authors:
   - Jingyuan E. Chen
 author_notes: []
 publication: 2025 59th Asilomar Conference on Signals, Systems, and Computers
+publication_short: Asilomar 2025
 summary: ""
 url_dataset: ""
 url_project: ""
-publication_short: ""
+
 url_source: ""
 url_video: ""
 title: Data-Driven Methods in Simultaneous EEG-fPET-fMRI Opportunities and Challenges

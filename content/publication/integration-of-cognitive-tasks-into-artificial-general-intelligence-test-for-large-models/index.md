@@ -17,7 +17,7 @@ authors:
   - Haiyan Wu
   - Jia Liu
   - Quanying Liu
-doi: " https://doi.org/10.48550/arXiv.2402.02547"
+doi: 10.48550/arXiv.2402.02547
 publication: iScience
 abstract: During the evolution of large models, performance evaluation is
   necessarily performed on the intermediate models to assess their capabilities,

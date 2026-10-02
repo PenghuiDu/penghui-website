@@ -8,3 +8,9 @@ jsconfig.json
 node_modules/
 go.sum
 .hugo_build.lock
+
+# macOS / Windows cruft
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
