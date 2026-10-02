@@ -40,6 +40,11 @@ sections:
         - **Aug 2024:** 📚 Began the MSc in Neuro-X at EPFL.
         - **Jul 2024:** 🎓 Graduated from SUSTech with a BSc in Intelligent Medical
           Engineering and the **2024 Distinguished Graduate Award**!
+        - **Jul 2023:** 🧲 Joined the CANDY Lab
+          ([Prof. Jingyuan Chen](https://jechenlab.com/)) at the Martinos Center,
+          Harvard Medical School, as a visiting undergraduate student. Hooray!
+        - **Feb 2023:** 🏫 Started an exchange semester in Neuroinformatics at the
+          University of Zurich.
     design:
       columns: '1'
 
