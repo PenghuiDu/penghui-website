@@ -101,9 +101,8 @@ sections:
         date_start: '2026-03-02'
         date_end: '2027-02-28'
         description: |2-
-            * Supervised by [Prof. Randy Buckner](https://bucknerlab.fas.harvard.edu), supported by the **EPFL/HMS Bertarelli Fellowship**.
-            * **[Precision mapping for personalized TMS](#research):** comparing empirical, group-level, and individualized targeting strategies, and assessing their relative benefits and practical trade-offs.
-            * **[iGENMap](#research):** developed a generative method that uses individual functional eigenmodes to map individual-specific cortical networks, matching the reliability of MS-HBM with roughly a quarter of the fMRI data.
+            * [Buckner Lab](https://bucknerlab.fas.harvard.edu), supervised by Prof. Randy Buckner.
+            * Supported by the **EPFL/HMS Bertarelli Fellowship**.
 
       - title: Summer Intern
         company: Max Planck Institute for Human Cognitive and Brain Sciences
@@ -114,7 +113,6 @@ sections:
         date_end: '2025-08-31'
         description: |2-
             * [Cognitive Neurogenetics Lab](https://cng-lab.github.io), supervised by Dr. Bin Wan and Prof. Sofie Valk.
-            * **[Predicting glucose metabolism from MRI](#research):** built a deep learning framework to predict individual brain glucose metabolism from structural and functional MRI features.
 
       - title: Master Student in Neuro-X
         company: École Polytechnique Fédérale de Lausanne (EPFL)
@@ -124,8 +122,8 @@ sections:
         date_start: '2024-09-01'
         date_end: '2027-02-28'
         description: |2-
-            * **GPA:** 5.40 / 6 · **EPFL/HMS Bertarelli Fellowship**
-            * **Semester project at MIP Lab** (2025/09 - 2026/01), supervised by Michael Chan and [Prof. Dimitri Van De Ville](https://miplab.epfl.ch): characterized structure-informed functional connectivity using statistical signal analysis on graphs.
+            * **GPA:** 5.40 / 6
+            * **EPFL/HMS Bertarelli Fellowship**
 
       - title: Undergraduate Research Assistant
         company: Martinos Center for Biomedical Imaging, Harvard Medical School
@@ -136,7 +134,6 @@ sections:
         date_end: '2023-12-20'
         description: |2-
             * Supervised by [Prof. Jingyuan Chen](https://jechenlab.com/).
-            * **[Cortical organization of metabolic connectivity](#research):** characterized resting-state fPET-FDG metabolic connectivity, identifying a robust superior-inferior gradient driven by low-frequency dynamics. Published in *Eur J Nucl Med Mol Imaging*.
 
       - title: Visiting Student in Neuroinformatics
         company: University of Zurich
