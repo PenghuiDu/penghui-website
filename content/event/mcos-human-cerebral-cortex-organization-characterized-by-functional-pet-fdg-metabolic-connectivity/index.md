@@ -25,4 +25,7 @@ image:
   filename: featured.jpg
   focal_point: Smart
   preview_only: false
+url_video: 'https://www.youtube.com/watch?v=V6n_9mKgC9s'
 ---
+
+{{< youtube V6n_9mKgC9s >}}
