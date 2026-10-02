@@ -64,6 +64,3 @@ functional networks are organized within individual brains can deepen our
 understanding of human cognition, neurological / psychiatric disorders, and
 neuromodulation. I am also interested in multimodal integration (such as fMRI,
 PET, and EEG).
-
-I plan to pursue a PhD, and what motivates me most is work that brings
-neuroimaging methods closer to clinical practice.
