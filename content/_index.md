@@ -37,7 +37,7 @@ sections:
         - **Mar 2026:** 🔬 Started as a Visiting Graduate Student in the
           [Buckner Lab](https://bucknerlab.fas.harvard.edu) at Harvard, supported by
           the **EPFL/HMS Bertarelli Fellowship**. Excited for the year ahead!
-        - **Aug 2024:** 🇨🇭 Began the MSc in Neuro-X at EPFL.
+        - **Aug 2024:** 📚 Began the MSc in Neuro-X at EPFL.
         - **Jul 2024:** 🎓 Graduated from SUSTech with a BSc in Intelligent Medical
           Engineering and the **2024 Distinguished Graduate Award**!
     design:

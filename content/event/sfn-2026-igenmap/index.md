@@ -4,6 +4,7 @@
 # would otherwise hide a page whose `publishDate` is in the future.
 title: "iGENMap: Individualized Generative Mapping of Cortical Networks Using
   Functional Eigenmodes"
+slug: sfn-2026-igenmap
 event: Society for Neuroscience (SfN) Annual Meeting 2026
 event_url: 'https://www.sfn.org/meetings/neuroscience-2026'
 location: Washington, DC

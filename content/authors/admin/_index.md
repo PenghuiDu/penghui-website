@@ -61,9 +61,9 @@ at Harvard, supported by the EPFL/HMS Bertarelli Fellowship.
 
 My current work is on **precision functional mapping**. I hope that studying how
 functional networks are organized within individual brains can deepen our
-understanding of development, aging, disease, and neuromodulation. I am also
-interested in multimodal integration, and I have worked with fMRI, functional PET,
-and EEG.
+understanding of human cognition, neurological / psychiatric disorders, and
+neuromodulation. I am also interested in multimodal integration, and I have worked
+with fMRI, functional PET, and EEG.
 
 I plan to pursue a PhD, and I want to turn neuroimaging methods into something
 clinically useful.
