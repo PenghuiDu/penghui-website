@@ -1,6 +1,7 @@
 // Custom SCSS. This file shadows the theme's empty `assets/scss/custom.scss`
 // and is imported last by the theme's `main.scss`, so anything here wins.
 
+// --- News list ------------------------------------------------------------
 // The site body font is large (`appearance.font_size: l` => 21px), which suits
 // prose but makes a dated news list look oversized. The `markdown` block emits
 // no class of its own, so scope by the block's `id` instead.
@@ -15,4 +16,36 @@
   li + li {
     margin-top: 0.45em;
   }
+}
+
+// --- Section rhythm -------------------------------------------------------
+// The theme sets `padding: 110px 0` on every home section, so two adjacent
+// sections sit 220px apart. On a CV-style page that reads as very sparse.
+// Halving it keeps the sections clearly separated while roughly doubling how
+// much fits on screen.
+//
+// Note on ordering: this rule is not inside a media query, but because
+// `custom.scss` is imported last it still overrides the theme's
+// `max-width: 768px` override (same specificity, later source order). The
+// explicit mobile block below therefore has to restate the smaller value.
+.home-section {
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    padding: 36px 0;
+  }
+}
+
+// --- Collection density ---------------------------------------------------
+// Tighten the gap between entries in `compact` collections (Research, Talks
+// and Posters). Theme defaults are 2rem between items and 12px above the
+// metadata line.
+.stream-item:not(:last-child) {
+  margin-bottom: 1.35rem;
+}
+
+.stream-item .stream-meta {
+  margin-top: 8px;
 }
