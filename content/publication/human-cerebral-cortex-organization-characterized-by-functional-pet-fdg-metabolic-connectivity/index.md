@@ -40,6 +40,5 @@ image:
   filename: featured.png
   focal_point: Smart
   preview_only: false
-# TODO(Penghui): exact publication day guessed as the 1st; correct if needed.
 date: 2026-08-01T00:00:00.000Z
 ---

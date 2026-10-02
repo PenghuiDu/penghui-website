@@ -16,7 +16,7 @@ main:
   - name: Publications
     url: '#publications'
     weight: 40
-  - name: Talks
+  - name: Talks and Posters
     url: '#talks'
     weight: 50
   - name: Experience

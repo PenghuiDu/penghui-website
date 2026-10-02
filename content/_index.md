@@ -24,20 +24,22 @@ sections:
       title: News
       subtitle: ''
       text: |-
-        - **Sep 2026:** *iGENMap* accepted as a **Late-Breaking Abstract** at
-          [SfN 2026](#talks).
-        - **Aug 2026:** Our fPET-FDG metabolic connectivity paper is out in
-          [*European Journal of Nuclear Medicine and Molecular Imaging*](https://doi.org/10.1007/s00259-026-08109-5).
-        - **Mar 2026:** Presented our metabolic connectivity work at the
+        - **Sep 2026:** 🧠 *iGENMap* was accepted as a **Late-Breaking Abstract** at
+          [SfN 2026](#talks). See you in Washington, DC!
+        - **Aug 2026:** 🎉 Our fPET-FDG metabolic connectivity paper is finally out in
+          [*European Journal of Nuclear Medicine and Molecular Imaging*](https://doi.org/10.1007/s00259-026-08109-5)!
+        - **Mar 2026:** 📄 Our conference paper on tri-modal EEG-fPET-fMRI analysis is
+          now online in the
+          [Asilomar 2025](https://doi.org/10.1109/IEEECONF67917.2025.11443781)
+          proceedings.
+        - **Mar 2026:** 🎤 Presented our metabolic connectivity work at the
           [Molecular Connectivity Online Symposium](#talks).
-        - **Mar 2026:** Started as a Visiting Graduate Student in the
+        - **Mar 2026:** 🔬 Started as a Visiting Graduate Student in the
           [Buckner Lab](https://bucknerlab.fas.harvard.edu) at Harvard, supported by
-          the **EPFL/HMS Bertarelli Fellowship**.
-        - **Dec 2025:** Conference paper on tri-modal EEG-fPET-fMRI analysis
-          accepted at [Asilomar 2025](https://doi.org/10.1109/IEEECONF67917.2025.11443781).
-        - **Aug 2024:** Started the MSc in Neuro-X at EPFL.
-        - **Jul 2024:** Graduated with a BSc in Intelligent Medical Engineering from
-          SUSTech, with the **2024 Distinguished Graduate Award**.
+          the **EPFL/HMS Bertarelli Fellowship**. Still a little surreal to be here!
+        - **Aug 2024:** 🇨🇭 Began the MSc in Neuro-X at EPFL.
+        - **Jul 2024:** 🎓 Graduated from SUSTech with a BSc in Intelligent Medical
+          Engineering and the **2024 Distinguished Graduate Award**!
     design:
       columns: '1'
 
