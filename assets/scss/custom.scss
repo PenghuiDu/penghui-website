@@ -39,13 +39,54 @@
 }
 
 // --- Collection density ---------------------------------------------------
-// Tighten the gap between entries in `compact` collections (Research, Talks
-// and Posters). Theme defaults are 2rem between items and 12px above the
-// metadata line.
+// Entries in `compact` collections (Research, Talks and Posters, Publications).
+// Theme defaults: 2rem between items, 12px above the metadata line, 10px above
+// the attachment buttons.
 .stream-item:not(:last-child) {
-  margin-bottom: 1.35rem;
+  margin-bottom: 0.9rem;
 }
 
 .stream-item .stream-meta {
-  margin-top: 8px;
+  margin-top: 4px;
+}
+
+// Scoped to list items so the buttons in page headers keep their own spacing.
+.stream-item .btn-links {
+  padding-top: 5px;
+}
+
+// --- Experience density ---------------------------------------------------
+// Each item is `.col.py-2 > .card > .card-body`. The defaults stack up: 8px of
+// column padding plus a 15px card margin on each side (~31px between cards),
+// with another 20px of padding inside every card and a 1rem bottom margin on
+// the bullet list. That is what makes the timeline feel loose.
+#experience {
+  // `.py-2` ships with `!important`, so the override needs it too.
+  .col.py-2 {
+    padding-top: 0.15rem !important;
+    padding-bottom: 0.15rem !important;
+  }
+
+  .card {
+    margin-bottom: 8px;
+  }
+
+  .card-body {
+    padding: 0.85rem 1rem;
+  }
+
+  // Bootstrap gives the bullet list a 1rem bottom margin inside each card.
+  .card-text ul {
+    margin-bottom: 0;
+  }
+
+  .card-text li + li {
+    margin-top: 1px;
+  }
+
+  // Logo gutter: the template hardcodes `.mr-2.mb-2`, which leaves a wide gap
+  // under the 56px logo in the now-shorter cards.
+  .d-flex .mb-2 {
+    margin-bottom: 0 !important;
+  }
 }
