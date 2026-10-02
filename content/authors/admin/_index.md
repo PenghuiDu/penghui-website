@@ -3,10 +3,10 @@ title: Penghui Du
 role: MSc Neuro-X, EPFL · Visiting Graduate Student, Buckner Lab, Harvard
 avatar_filename: avatar.jpg
 bio: Neuro-X master's student at EPFL and visiting graduate student in the Buckner
-  Lab at Harvard, working on precision functional brain mapping and individualized
-  neuromodulation.
+  Lab at Harvard, working on precision functional mapping and multimodal
+  neuroimaging.
 interests:
-  - Precision Functional Brain Mapping
+  - Precision Functional Mapping
   - Personalized Neuromodulation (TMS)
   - Multimodal Neuroimaging (fMRI / fPET / EEG)
 social:
@@ -59,9 +59,11 @@ Hi! I'm Penghui, a master's student in the Neuro-X program at EPFL, currently a
 visiting graduate student in the [Buckner Lab](https://bucknerlab.fas.harvard.edu)
 at Harvard, supported by the EPFL/HMS Bertarelli Fellowship.
 
-I work on **precision functional brain mapping** — estimating the brain network
-organization of individual people rather than group averages — and on how those
-individualized maps can make neuromodulation such as TMS more precise. My work
-spans fMRI, functional PET, and EEG, and combines signal processing with machine
-learning. I plan to pursue a PhD, and I'm motivated by translating neuroimaging
-methods into something clinically useful.
+My current work is on **precision functional mapping**. I hope that studying how
+functional networks are organized within individual brains can deepen our
+understanding of development, aging, disease, and neuromodulation. I am also
+interested in multimodal integration, and I have worked with fMRI, functional PET,
+and EEG.
+
+I plan to pursue a PhD, and I want to turn neuroimaging methods into something
+clinically useful.

@@ -19,9 +19,9 @@ links: []
 ---
 
 Functional PET-FDG (fPET-FDG) makes it possible to track glucose metabolism
-dynamically, raising the question of whether metabolism shows a connectivity
-structure analogous to the functional connectivity measured with fMRI — and what
-that structure would mean.
+dynamically. This raises the question of whether metabolism shows a connectivity
+structure analogous to the functional connectivity measured with fMRI, and what
+such a structure would mean.
 
 Using resting-state fPET-FDG data from 24 individuals, I characterized **local**
 metabolic organization with connectivity-based boundary mapping (adapted for the

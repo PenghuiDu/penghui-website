@@ -19,9 +19,9 @@ links: []
 ---
 
 Precision functional mapping has revealed that human brain network topography is
-highly individual-specific — but reliable individual estimates typically demand
-extensive fMRI data from every subject, which is impractical at scale and in the
-clinic.
+highly individual-specific. However, reliable individual estimates typically
+demand extensive fMRI data from every subject, which is impractical at scale and
+in the clinic.
 
 We observed that **functional eigenmodes closely follow each subject's fine-scale
 network topography**, and that the correspondence between eigenmodes and networks

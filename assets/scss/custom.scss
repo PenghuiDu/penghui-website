@@ -1,0 +1,18 @@
+// Custom SCSS. This file shadows the theme's empty `assets/scss/custom.scss`
+// and is imported last by the theme's `main.scss`, so anything here wins.
+
+// The site body font is large (`appearance.font_size: l` => 21px), which suits
+// prose but makes a dated news list look oversized. The `markdown` block emits
+// no class of its own, so scope by the block's `id` instead.
+#news {
+  ul {
+    font-size: 0.78em;
+    line-height: 1.65;
+    margin-bottom: 0;
+    padding-left: 1.15em;
+  }
+
+  li + li {
+    margin-top: 0.45em;
+  }
+}

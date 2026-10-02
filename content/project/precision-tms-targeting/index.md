@@ -19,15 +19,14 @@ links: []
 ---
 
 Transcranial magnetic stimulation (TMS) is used clinically to treat depression, but
-the choice of stimulation target varies widely in practice — from scalp-based
-heuristics, to group-average functional maps, to targets derived from an
-individual's own functional connectivity.
+the choice of stimulation target varies widely in practice. Targets may come from
+scalp-based heuristics, from group-average functional maps, or from an individual's
+own functional connectivity.
 
 This project investigates precision brain mapping for personalized TMS by directly
-comparing **empirical, group-level, and individualized targeting strategies**, and
-assessing what each actually buys you: how much targeting precision improves, how
-much data each approach requires, and where the practical trade-offs lie for
-clinical deployment.
+comparing **empirical, group-level, and individualized targeting strategies**. I am
+assessing how much each approach actually improves targeting precision, how much
+data it requires, and where the practical trade-offs lie for clinical use.
 
 Work carried out in the [Buckner Lab](https://bucknerlab.fas.harvard.edu) at
 Harvard, supported by the EPFL/HMS Bertarelli Fellowship.

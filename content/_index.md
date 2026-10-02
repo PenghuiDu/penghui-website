@@ -24,17 +24,20 @@ sections:
       title: News
       subtitle: ''
       text: |-
-        - **Oct 2026** — *iGENMap* accepted as a **Late-Breaking Abstract** at
+        - **Sep 2026:** *iGENMap* accepted as a **Late-Breaking Abstract** at
           [SfN 2026](#talks).
-        - **Mar 2026** — Started as a Visiting Graduate Student in the
+        - **Aug 2026:** Our fPET-FDG metabolic connectivity paper is out in
+          [*European Journal of Nuclear Medicine and Molecular Imaging*](https://doi.org/10.1007/s00259-026-08109-5).
+        - **Mar 2026:** Presented our metabolic connectivity work at the
+          [Molecular Connectivity Online Symposium](#talks).
+        - **Mar 2026:** Started as a Visiting Graduate Student in the
           [Buckner Lab](https://bucknerlab.fas.harvard.edu) at Harvard, supported by
           the **EPFL/HMS Bertarelli Fellowship**.
-        - **Mar 2026** — Our fPET-FDG metabolic connectivity paper is out in
-          [*European Journal of Nuclear Medicine and Molecular Imaging*](https://doi.org/10.1007/s00259-026-08109-5).
-        - **Mar 2026** — Presented our metabolic connectivity work at the
-          [Molecular Connectivity Online Symposium](#talks).
-        - **Oct 2025** — Conference paper on tri-modal EEG-fPET-fMRI analysis
-          presented at [Asilomar 2025](https://doi.org/10.1109/IEEECONF67917.2025.11443781).
+        - **Dec 2025:** Conference paper on tri-modal EEG-fPET-fMRI analysis
+          accepted at [Asilomar 2025](https://doi.org/10.1109/IEEECONF67917.2025.11443781).
+        - **Aug 2024:** Started the MSc in Neuro-X at EPFL.
+        - **Jul 2024:** Graduated with a BSc in Intelligent Medical Engineering from
+          SUSTech, with the **2024 Distinguished Graduate Award**.
     design:
       columns: '1'
 
@@ -42,8 +45,6 @@ sections:
     id: research
     content:
       title: Research
-      text: |-
-        A few of the questions I have been working on. Each links to a short write-up.
       filters:
         folders:
           - project
@@ -57,8 +58,6 @@ sections:
     id: publications
     content:
       title: Publications
-      text: |-
-        See also my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=RMFYKDYAAAAJ).
       filters:
         folders:
           - publication
@@ -124,7 +123,7 @@ sections:
         date_end: '2027-02-28'
         description: |2-
             * **GPA:** 5.40 / 6 · **EPFL/HMS Bertarelli Fellowship**
-            * **[Semester project at MIP Lab](#research)** (2025/09 - 2026/01), supervised by Michael Chan and [Prof. Dimitri Van De Ville](https://miplab.epfl.ch): characterized structure-informed functional connectivity using statistical signal analysis on graphs.
+            * **Semester project at MIP Lab** (2025/09 - 2026/01), supervised by Michael Chan and [Prof. Dimitri Van De Ville](https://miplab.epfl.ch): characterized structure-informed functional connectivity using statistical signal analysis on graphs.
 
       - title: Undergraduate Research Assistant
         company: Martinos Center for Biomedical Imaging, Harvard Medical School
@@ -168,7 +167,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        The fastest way to reach me is email.
+
       # Contact (add or remove contact options as necessary)
       email: penghui-du@outlook.com
       address:
@@ -186,7 +185,7 @@ sections:
   - block: markdown
     id: gallery
     content:
-      title: Beyond the Lab
+      title: Photos
       subtitle: ''
       text: |-
         {{< gallery album="my_album" >}}
