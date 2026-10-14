@@ -1,0 +1,91 @@
+# Pulls the resume project from Overleaf (via its Git bridge), compiles it,
+# and commits static/uploads/resume.pdf whenever the Overleaf source changes.
+# Netlify then redeploys the site from the new commit.
+#
+# Requires repo secret OVERLEAF_TOKEN (Overleaf → Account Settings → Git integration).
+
+name: Sync resume from Overleaf
+
+on:
+  schedule:
+    - cron: "17 * * * *" # hourly
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Recompile even if Overleaf has not changed"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-resume
+  cancel-in-progress: false
+
+env:
+  OVERLEAF_PROJECT: 65cd16619b4ebc5f9d3e5859
+  ROOT_FILE: cv_7.tex
+  SHA_FILE: .github/resume-overleaf-sha
+  PDF_PATH: static/uploads/resume.pdf
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Overleaf for changes
+        id: check
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ -z "$OVERLEAF_TOKEN" ]; then
+            echo "::error::Secret OVERLEAF_TOKEN is not set"
+            exit 1
+          fi
+          remote=$(git ls-remote "https://git:${OVERLEAF_TOKEN}@git.overleaf.com/${OVERLEAF_PROJECT}" HEAD | cut -f1)
+          if [ -z "$remote" ]; then
+            echo "::error::Could not read Overleaf project (token expired?)"
+            exit 1
+          fi
+          last=$(cat "$SHA_FILE" 2>/dev/null || true)
+          echo "sha=$remote" >> "$GITHUB_OUTPUT"
+          if [ "$remote" != "$last" ] || [ "$FORCE" = "true" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Overleaf changed: ${last:-none} -> $remote"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Overleaf unchanged at $remote"
+          fi
+
+      - name: Clone Overleaf project
+        if: steps.check.outputs.changed == 'true'
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+        run: git clone --depth 1 "https://git:${OVERLEAF_TOKEN}@git.overleaf.com/${OVERLEAF_PROJECT}" resume-src
+
+      - name: Compile resume
+        if: steps.check.outputs.changed == 'true'
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ${{ env.ROOT_FILE }}
+          working_directory: resume-src
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        env:
+          SHA: ${{ steps.check.outputs.sha }}
+        run: |
+          cp "resume-src/${ROOT_FILE%.tex}.pdf" "$PDF_PATH"
+          echo "$SHA" > "$SHA_FILE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PDF_PATH" "$SHA_FILE"
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Update resume.pdf from Overleaf (${SHA:0:7})"
+          git push
