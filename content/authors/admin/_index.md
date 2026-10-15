@@ -8,7 +8,7 @@ bio: Neuro-X master's student at EPFL and visiting graduate student in the Buckn
 interests:
   - Precision Functional Mapping
   - Personalized Neuromodulation (TMS)
-  - Multimodal Neuroimaging (fMRI / fPET / EEG)
+  - Multimodal Neuroimaging (fMRI / fPET / MEG / EEG)
 social:
   - icon: envelope
     icon_pack: fas
@@ -63,4 +63,4 @@ My current work is on **precision functional mapping**. I hope that studying how
 functional networks are organized within individual brains can deepen our
 understanding of human cognition, neurological / psychiatric disorders, and
 neuromodulation. I am also interested in multimodal integration (such as fMRI,
-PET, and EEG).
+PET, MEG and EEG).
