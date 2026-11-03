@@ -59,8 +59,4 @@ Hi! I'm Penghui, a master's student in the Neuro-X program at EPFL, currently a
 visiting graduate student in the [Buckner Lab](https://bucknerlab.fas.harvard.edu)
 at Harvard, supported by the EPFL/HMS Bertarelli Fellowship.
 
-My current work is on **precision functional mapping**. I hope that studying how
-functional networks are organized within individual brains can deepen our
-understanding of human cognition, neurological / psychiatric disorders, and
-neuromodulation. I am also interested in multimodal integration (such as fMRI,
-PET, MEG and EEG).
+I am curious about how individual brain networks support cognitive functions like language, memory, and emotion; how disruptions in these networks lead to neurological and psychiatric disorders; with the ultimate goal of identifying biomarkers and neuromodulation targets to advance personalized brain healthcare.
