@@ -45,7 +45,7 @@ tags:
   - Autism
   - Schizophrenia
 image:
-  filename: ""
+  filename: featured.jpg
   focal_point: Smart
   preview_only: false
 date: 2026-11-02T00:00:00.000Z
