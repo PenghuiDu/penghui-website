@@ -1,12 +1,6 @@
 ---
-# Note: `publishDate` is intentionally set to the past so this entry shows on the
-# live site before the meeting. Netlify builds without `--buildFuture`, which
-# would otherwise hide a page whose `publishDate` is in the future.
-#
-# TODO(Penghui): replace the title below with the exact title of the accepted
-# Late-Breaking Abstract if it differs.
-title: "iGENMap: Individualized Generative Mapping of Cortical Networks Using
-  Functional Eigenmodes"
+title: "Functional Eigenmodes Enable Data-Efficient Precision Functional Mapping"
+# Explicit slug so the URL stays stable even if the title is reworded later.
 slug: sfn-2026-igenmap
 event: Society for Neuroscience (SfN) Annual Meeting 2026
 event_url: 'https://www.sfn.org/meetings/neuroscience-2026'
@@ -15,21 +9,26 @@ address:
   city: Washington
   region: DC
   country: United States
-summary: Late-Breaking Abstract accepted at SfN 2026.
-# Placeholder: currently reuses the iGENMap project figure. Swap for the real
-# poster preview after the meeting (the OHBM entry shows how: rasterize the PDF).
-image:
-  filename: featured.png
-  focal_point: Smart
-  preview_only: false
-abstract: 'Accepted as a **Late-Breaking Abstract** at the Society for Neuroscience
-  Annual Meeting 2026. We show that individual functional eigenmodes closely follow
-  each subject’s fine-scale cortical network topography, and that this
-  correspondence can be learned across subjects to map individual networks from far
-  less fMRI data than current state-of-the-art approaches require. More details,
-  slides, and the poster will be shared closer to the meeting.'
+summary: 'Late-Breaking Poster LBP077.04 introducing iGENMap, which estimates
+  individual functional networks from as little as 14 minutes of fMRI using
+  functional eigenmodes.'
+abstract: 'Late-Breaking Poster **LBP077.04**, presented at the 2026 Society for
+  Neuroscience Annual Meeting. Functional networks vary substantially across
+  individuals, and precision functional mapping can reveal fine-scale network
+  topography that group maps obscure, but it typically requires hours of fMRI data.
+  We observed that functional eigenmodes closely follow individual network
+  topography, show similar eigenmode-network correspondence across individuals, and
+  remain reliable even under limited data. Building on this, we developed
+  Individual GENerative Mapping using eigenmodes (iGENMap), which trains a shared
+  linear decoder to estimate individual networks from eigenmodes. Across a healthy
+  cohort and two cross-dataset generalization cohorts (including patients with
+  depression), iGENMap gave more reliable network estimates than MS-HBM under
+  limited data, enabling reliable within-individual network estimation from as
+  little as 14 minutes of data, including L-DLPFC networks relevant to TMS
+  targeting. A preprint is in preparation.'
 date: 2026-11-18T09:00:00.000Z
 all_day: true
+# Kept in the past on purpose: Netlify builds without `--buildFuture`.
 publishDate: 2026-10-02T00:00:00.000Z
 draft: false
 featured: true
@@ -37,4 +36,10 @@ authors: []
 tags:
   - Poster
   - Precision Functional Mapping
+  - Functional Eigenmodes
+image:
+  filename: featured.jpg
+  focal_point: Smart
+  preview_only: false
+url_poster: uploads/sfn-2026-poster.pdf
 ---
