@@ -24,9 +24,8 @@ sections:
       title: News
       subtitle: ''
       text: |-
-        - **Nov 2026:** 🪧 Presented *iGENMap* at [SfN 2026](#talks) in Washington, DC
-          ([poster](/uploads/sfn-2026-poster.pdf)): reliable individual network mapping
-          from as little as 14 minutes of fMRI. Stay tuned for the preprint!
+        - **Nov 2026:** 🪧 Presented *iGENMap* at [SfN 2026](#talks)
+          ([poster](/uploads/sfn-2026-poster.pdf)). Stay tuned for the preprint!
         - **Sep 2026:** 🧠 *iGENMap* was accepted as a **Late-Breaking Abstract** at
           [SfN 2026](#talks). See you in Washington, DC!
         - **Aug 2026:** 🎉 Our fPET-FDG metabolic connectivity paper is finally out in
