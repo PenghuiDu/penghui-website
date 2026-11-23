@@ -26,8 +26,6 @@ sections:
       text: |-
         - **Nov 2026:** 🪧 Presented *iGENMap* at [SfN 2026](#talks)
           ([poster](/uploads/sfn-2026-poster.pdf)). Stay tuned for the preprint!
-        - **Sep 2026:** 🧠 *iGENMap* was accepted as a **Late-Breaking Abstract** at
-          [SfN 2026](#talks). See you in Washington, DC!
         - **Aug 2026:** 🎉 Our fPET-FDG metabolic connectivity paper is finally out in
           [*European Journal of Nuclear Medicine and Molecular Imaging*](https://doi.org/10.1007/s00259-026-08109-5)!
         - **Mar 2026:** 📄 Our conference paper on tri-modal EEG-fPET-fMRI analysis is
